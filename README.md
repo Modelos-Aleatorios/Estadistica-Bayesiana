@@ -1,0 +1,2 @@
+# Estadistica-Bayesiana
+Estadística Bayesiana

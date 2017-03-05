@@ -137,6 +137,596 @@
 }
 \includegraphics{Capitulo2-Teoria_files/figure-latex/unnamed-chunk-2-1.pdf}
 
+\section{2.2 Hablando Bayesiano}\label{hablando-bayesiano}
+
+\subsection{2.2.1 Bases}\label{bases}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejercicio 2.5}\label{ejercicio-2.5}
+
+\textbf{Muestre que
+\(\pi(\theta|\mathcal{D})=\frac{l(\theta|\mathcal{D})\pi(\theta)}{\int l(\theta|\mathcal{D})\pi(\theta) d\theta}\)
+puede ser calculada por el ajuste de \(\theta\) como una variable
+aleatoria con función de densidad \(\pi\) y entonces la distribución
+condicional \(D\) en \(\theta\) como una distribución de
+\(l(\theta|\mathcal{D})\)}
+
+Por el teorema de Bayes tenemos
+\[\pi(\theta| \mathcal{D})=\frac{\pi(\theta, \mathcal{D})}{\pi({\mathcal{D}})}\]
+Lo que implica
+
+\[\pi(\theta, \mathcal{D})=\pi(\theta| \mathcal{D})\pi({\mathcal{D}})=\pi(\mathcal{D}|\theta)\pi(\theta)\]
+
+Si usamos \(L(\theta|\mathcal{D})\) como estimador de
+\(\pi(\theta|\mathcal{D})\) tenemos:
+\[\pi(\theta| \mathcal{D})=\frac{\pi(\mathcal{D}|\theta)\pi(\theta)}{\pi({\mathcal{\mathcal{D}}})}\propto L(\mathcal{D}|\theta)\pi(\theta)\]
+
+\begin{quote}
+1.1 \textbf{Si suponemos que el cambio relativo en los reportes de
+hurtos tienen una media \(\mu\) entre -0.5 y 0.5 y no provee una
+información a priori, cambiaremos la priori por una distribución
+Uniforme \(\mathcal{U}(-0.5,0.5)\)}
+\end{quote}
+
+La distribución a posteriori viene dada por
+\[\pi(\theta|\mathcal{D})=\frac{L(\theta|\mathcal{D})\pi(\theta)}{\int L(\theta|\mathcal{D})\pi(\theta)d\theta}\]
+
+Donde asumiremos que los datos \(x_1,x_2,...,x_n\) son normales
+\(\mathcal{N}(\mu,\sigma^2)\) iid, entonces la verosimilitud viene dada
+por: \[
+\begin{array}{rl}
+L(\theta|\mathcal{D}) & = f_\theta(x_1)f_\theta(x_2)...f_\theta(x_n)\\
+L(\theta|\mathcal{D}) & = \prod_{i=1}^n f_\theta(x_i)\\
+L(\theta|\mathcal{D}) & = \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sigma}e^{\frac{1}{2\sigma^2}(x_i-\mu)^2}\\
+L(\theta|\mathcal{D}) & = \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu)^2}
+\end{array}
+\]
+
+Desarrollando \(\sum_{i=1}^n(x_i-\mu)^2\) tenemos \[
+\begin{array}{rl}
+\sum_{i=1}^n(x_i-\mu)^2 & = \sum_{i=1}^n (x_i^2-2\mu x_i +\mu^2)\\
+\sum_{i=1}^n(x_i-\mu)^2 & = \sum_{i=1}^n x_i^2-2\mu \sum_{i=1}^n x_i +\sum_{i=1}^n\mu^2\\
+\sum_{i=1}^n(x_i-\mu)^2 & = \sum_{i=1}^n x_i^2-2\mu n\frac{\sum_{i=1}^n x_i}{n} +n\mu^2\\
+\sum_{i=1}^n(x_i-\mu)^2 & = \sum_{i=1}^n x_i^2-2\mu n\bar x +n\mu^2\\
+\sum_{i=1}^n(x_i-\mu)^2 & = \sum_{i=1}^n x_i^2-2\mu n\bar x +n\mu^2 +n\bar x^2 - n\bar x^2\\
+\sum_{i=1}^n(x_i-\mu)^2 & = \sum_{i=1}^n x_i^2+n(-2\mu \bar x +\mu^2 +\bar x^2) - n\bar x^2\\
+\sum_{i=1}^n(x_i-\mu)^2 & = \sum_{i=1}^n x_i^2 - n\bar x^2 + n(\mu -\bar x)^2 \\
+\end{array}
+\]
+
+Sustituyendo esto tenemos: \[
+\begin{array}{rl}
+L(\theta|\mathcal{D}) & = \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\left(\sum_{i=1}^n x_i^2 - n\bar x^2 + n(\mu -\bar x)^2\right)}\\
+L(\theta|\mathcal{D}) & =\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{\frac{1}{2\sigma^2} n(\mu -\bar x)^2}\\
+\end{array}
+\]
+
+Sustituyendo esta verosimilitud en la distribución a posteriori tenemos:
+\[
+\begin{array}{rl}
+\pi(\theta|\mathcal{D}) & = \displaystyle \frac{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2}\mathbb{1}_{[-0.5,0.5]}}{\int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2}\mathbb{1}_{[-0.5,0.5]}d\theta}\\
+\pi(\theta|\mathcal{D}) &= \displaystyle \frac{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2}\mathbb{1}_{[-0.5,0.5]}}{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }\int_{-0.5}^{0.5} e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2}d\theta}\\
+\pi(\theta|\mathcal{D}) &=\displaystyle \frac{e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2}\mathbb{1}_{[-0.5,0.5]}}{\int_{-0.5}^{0.5} e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2}d\theta}\\
+\end{array}
+\] La cual es una distribución normal truncada.
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejercicio 2.6}\label{ejercicio-2.6}
+
+\textbf{Muestre que la minimización de \(\hat{\theta}\) en la esperanza
+\(E[L(\theta,\hat{\theta})|D]\), es la esperanza de la función de
+perdida cuadrática sobre la distribución con función de densidad
+\(\pi(\theta|D)\), produce el valor posterior esperado de la solución
+\(\hat\theta\)}
+
+La función de perdida se define como
+\(L(\theta, \hat{\theta})=\|\theta, \hat{\theta}\|^2\), entonces
+tenemos: \[
+\begin{array}{rl}
+\mathbb{E}(L(\theta, \hat{\theta})|\mathcal{D}) & = \mathbb{E}(\|\theta- \hat{\theta}\|^2|\mathcal{D})\\
+\mathbb{E}(L(\theta, \hat{\theta})|\mathcal{D}) & = \mathbb{E}(<\theta-\hat{\theta}><\theta-\hat{\theta}>|\mathcal{D})\\
+\mathbb{E}(L(\theta, \hat{\theta})|\mathcal{D}) & = \mathbb{E}(\theta^t\theta-\theta^t\hat{\theta}-\hat{\theta}^t\theta+\hat{\theta}^t\hat{\theta}|\mathcal{D})\\
+\mathbb{E}(L(\theta, \hat{\theta})|\mathcal{D}) & = \mathbb{E}(\|\theta\|^2-2\hat{\theta}^t\theta+\|\hat{\theta}\|^2|\mathcal{D})\\
+\mathbb{E}(L(\theta, \hat{\theta})|\mathcal{D}) & = \mathbb{E}(\|\theta\|^2|\mathcal{D})-2\mathbb{E}(\hat{\theta}^t\theta|\mathcal{D})+\mathbb{E}(\|\hat{\theta}\|^2|\mathcal{D})\\
+\mathbb{E}(L(\theta, \hat{\theta})|\mathcal{D}) & = \| \mathbb{E}(\theta|\mathcal{D})\|^2-2\hat{\theta}^t\mathbb{E}(\theta|\mathcal{D})+\|\hat{\theta}\|^2\\
+\mathbb{E}(L(\theta, \hat{\theta})|\mathcal{D}) & = \| \mathbb{E}(\theta|\mathcal{D})-\hat{\theta}\|^2
+\end{array}
+\]
+
+\subsection{2.2.2 Distribuciones a
+Priori}\label{distribuciones-a-priori}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejercicio 2.7}\label{ejercicio-2.7}
+
+\textbf{Muestre que la distribución Normal es de la familia exponencial}
+
+La función de densidad de una distribución normal es
+\(f_\theta(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}\),
+para probar que esta función es de la familia exponencial tenemos que
+escribirla de la forma
+\[f_\theta(x)=h(x)e^{\theta . R(x)-\psi(\theta)}\] Entonces tenemos: \[
+\begin{array}{rl}
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}\\
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(x^2-2x\mu+\mu^2)}\\
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{1}{2\sigma^2}(x^2-2x\mu)}e^{-\frac{1}{2\sigma^2} \mu^2}\\
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}}\frac{e^{-\frac{1}{2\sigma^2} \mu^2}}{\sigma} e^{-\frac{1}{2\sigma^2}(x^2-2x\mu)}\\
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}}\frac{e^{-\frac{1}{2\sigma^2} \mu^2}}{\sigma} e^{-\frac{1}{2\sigma^2}x^2+\frac{1}{2\sigma^2}2x\mu}\\
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}}\frac{e^{-\frac{1}{2\sigma^2} \mu^2}}{\sigma} e^{-\frac{1}{2\sigma^2}x^2+\frac{1}{\sigma^2}x\mu}\\
+\end{array}
+\]
+
+Notemos que: \[
+\displaystyle -\frac{1}{2\sigma^2}x^2+\frac{1}{\sigma^2}x\mu = \begin{bmatrix}
+-\frac{1}{2\sigma^2} & \frac{\mu}{\sigma^2}
+\end{bmatrix} 
+\begin{bmatrix}
+x^2 \\ x
+\end{bmatrix} = \theta. R(x)
+\]
+
+\[\displaystyle \frac{e^{-\frac{1}{2\sigma^2} \mu^2}}{\sigma}=\frac{e^{-\frac{1}{2\sigma^2} \mu^2}}{e^{\ln(\sigma)}}= e^{-\frac{1}{2\sigma^2} \mu^2-\ln(\sigma)}=e^{-\left(\frac{1}{2\sigma^2} \mu^2+\ln(\sigma)\right)}= e^{-\psi(\theta)}\]
+
+\[\frac{1}{\sqrt{2\pi}}=h(x)\]
+
+Asi tenemos la normal es de la familia exponencial.
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejercicio 2.8}\label{ejercicio-2.8}
+
+\textbf{Muestre que para una familia exponencial \(\psi(\theta)\) es
+definida por la restricción de que \(f_\theta\) es una función de
+densidad y que el valor esperado de esta distribución puede ser escrito
+como \(\frac{\partial \psi(\theta)}{\partial \theta}\) el vector de las
+derivadasde \(\psi (\theta)\) con respecto a la componente de
+\(\theta\)}
+
+Por ser \(f_\theta\) una función de densidad de la familia exponencial
+tenemos:
+
+\(\int f_\theta (y) dy = \int h(y)e^{\theta . R(y)-\psi(\theta)} dy =1\)
+
+Así: \[
+\begin{array}{rl}
+\int h(y)e^{\theta R(y)-\psi(\theta)} dy =1\\
+\int h(y)e^{\theta R(y)}e^{-\psi(\theta)} dy =1\\
+e^{-\psi(\theta)} \int h(y)e^{\theta R(y)} dy =1\\
+e^{\psi(\theta)} = \int h(y)e^{\theta R(y)} dy
+\end{array}
+\]
+
+\(R(y)\) es un estadístico suficiente tenemos:
+\[\mathbb{E}(R(y)) =\int R(y)h(y)e^{\theta . R(y)-\psi(\theta)} dy\]
+
+Observemos que \(\frac{\partial (\theta R(y))}{\partial \theta}=R(y)\),
+asi: \[
+\begin{array}{rl}
+\mathbb{E}(R(y)) & =\displaystyle \int \frac{\partial (\theta R(y))}{\partial \theta} h(y)e^{\theta  R(y)-\psi(\theta)} dy\\
+\mathbb{E}(R(y)) & = \displaystyle \int \frac{\partial (\theta R(y)+\psi(\theta)-\psi(\theta))}{\partial \theta} h(y)e^{\theta  R(y)-\psi(\theta)} dy\\
+\mathbb{E}(R(y)) & = \displaystyle \int \frac{\partial (\theta R(y)-\psi(\theta))}{\partial \theta} h(y)e^{\theta  R(y)-\psi(\theta)} dy\\
+ & +\displaystyle \int \frac{\partial (\psi(\theta))}{\partial \theta} h(y)e^{\theta  R(y)-\psi(\theta)} dy\\
+\mathbb{E}(R(y)) & = \displaystyle \int \frac{\partial (\theta R(y)-\psi(\theta))}{\partial \theta} h(y)e^{\theta  R(y)-\psi(\theta)} dy\\
+& +\displaystyle \frac{\partial (\psi(\theta))}{\partial \theta} \int h(y)e^{\theta  R(y)-\psi(\theta)} dy\\
+\end{array}
+\]
+
+Observemos que
+\(\frac{\partial (e^{\theta R(y)-\psi(\theta))}}{\partial \theta}=e^{\theta R(y)-\psi(\theta)}\frac{\partial (\theta R(y)-\psi(\theta))}{\partial \theta}\)
+asi: \[
+\begin{array}{rl}
+\mathbb{E}(R(y)) & = \displaystyle \int  h(y) \frac{\partial (e^{\theta R(y)-\psi(\theta)})}{\partial \theta} dy +\displaystyle \frac{\partial (\psi(\theta))}{\partial \theta}  1\\
+\mathbb{E}(R(y)) & = \displaystyle \frac{\partial}{\partial \theta} \int  h(y)  e^{\theta R(y)-\psi(\theta)} dy +\displaystyle \frac{\partial (\psi(\theta))}{\partial \theta}\\
+\mathbb{E}(R(y))& = \displaystyle \frac{\partial}{\partial \theta} 1 +\displaystyle \frac{\partial (\psi(\theta))}{\partial \theta}\\
+\mathbb{E}(R(y))& = \displaystyle \frac{\partial (\psi(\theta))}{\partial \theta}\\
+\end{array}
+\]
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejercicio 2.9}\label{ejercicio-2.9}
+
+\textbf{Muestre que los hiperparametros actualizados estan dado por
+\(\xi'(y) = \xi+R(y)\) y \(\lambda'(y)=\lambda +1\), encuentre la
+expresi?n correspondiente para
+\(\pi (\theta | \xi, \lambda, y_1,...,y_n)\)}
+
+Cuando el modelo es de la familia de distribuciones exponencial, existe
+una clase genérica de prioris llamadas clase de prioris conjugadas
+\(\pi (\theta| \xi, \lambda)\propto e^{\theta.\xi -\lambda\psi(\theta)}\).
+Esta distribución a priori parametrizada en \(\theta\) es tal que la
+distribución a posteriori tiene la misma forma, veamos esto: \[
+\begin{array}{rl}
+\pi(\theta|\xi, \lambda) & \propto f_\theta(y)\pi(\theta|\xi,\lambda)\\
+& = h(y)e^{\theta R(y)-\psi(\theta)} e^{\theta\xi -\lambda\psi(\theta)}\\
+& \propto e^{\theta R(y)-\psi(\theta)} e^{\theta\xi -\lambda\psi(\theta)}\\
+& = e^{\theta R(y)-\psi(\theta)+\theta\xi -\lambda\psi(\theta)}\\
+& = e^{\theta(R(y)-\xi) -\psi(\theta)(1+\lambda)}\\
+& = e^{\theta\xi'(y) -\psi(\theta)\lambda'(y)}
+\end{array}
+\]
+
+Entonces la distribución a posteriori será: \[
+\begin{array}{rl}
+\pi (\theta | \xi, \lambda, y_1,...,y_n) & \propto f_\theta(y)\pi(\theta|\xi, \lambda)\\
+\pi (\theta | \xi, \lambda, y_1,...,y_n)& = \prod_{i=1}^n h(y_i)e^{\theta R(y_i)-\psi(\theta)}\pi(\theta|\xi, \lambda)\\
+\pi (\theta | \xi, \lambda, y_1,...,y_n)& \propto \prod_{i=1}^n e^{\theta R(y_i)-\psi(\theta)}\pi(\theta|\xi, \lambda)\\
+\pi (\theta | \xi, \lambda, y_1,...,y_n)& = e^{\sum_{i=1}^n (\theta R(y_i)-\psi(\theta))}\pi(\theta|\xi, \lambda)\\
+\pi (\theta | \xi, \lambda, y_1,...,y_n)& = e^{\sum_{i=1}^n (\theta R(y_i)-\psi(\theta))}e^{\theta\xi -\lambda\psi(\theta)}\\
+\pi (\theta | \xi, \lambda, y_1,...,y_n)& = e^{\sum_{i=1}^n (\theta R(y_i)-\psi(\theta))+\theta\xi -\lambda\psi(\theta)}\\
+\pi (\theta | \xi, \lambda, y_1,...,y_n)& = e^{ \theta\sum_{i=1}^n R(y_i)-n\psi(\theta)+\theta\xi -\lambda\psi(\theta)}\\
+\pi (\theta | \xi, \lambda, y_1,...,y_n) & = e^{ \theta(\sum_{i=1}^n R(y_i)+\xi)-\psi(\theta)(n+\lambda)}\\
+\end{array}
+\]
+
+Asi tenemos que \(\xi(y_1,...,y_n)=\sum_{i=1}^n R(y_i)+\xi\) y
+\(\lambda(y_1,...,y_n)=n+\lambda\)
+\[\pi (\theta | \xi, \lambda, y_1,...,y_n)\propto e^{ \theta\xi(y_1,...,y_n)-\psi(\theta)\lambda(y_1,...,y_n)}\]
+
+Si tenemos una normal \(\mathcal{N}(\mu,1)\) este es un caso de la
+familia exponencial, es decir: \[
+\begin{array}{rl}
+f_\theta(x)&=\frac{1}{\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2}}\\
+f_\theta(x)&=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2-2x\mu+ \mu^2}{2}}\\
+f_\theta(x)&=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}+\frac{2x\mu- \mu^2}{2}}\\
+f_\theta(x)&=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}} e^{x\mu-\frac{\mu^2}{2}}\\
+\end{array}
+\] donde \(h(x)=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}}\),
+\(\psi(\theta)=\frac{\mu^2}{2}\), \(R(x)=x\) y \(\theta=\mu\). Asi
+tenemos que la priori puede escribirse como: \[
+\begin{array}{rl}
+\pi(\mu|\xi,\lambda) & \propto e^{\theta\xi-\lambda\psi(\theta)}\\
+\pi(\mu|\xi,\lambda) & = e^{\mu\xi-\lambda\frac{\mu^2}{2}}
+\end{array}
+\]
+
+Veamos que esto implica que la priori conjugada de \(\mu\) es tambi?n
+una normal \(\mathcal{N}(\lambda^{-1}\xi,\lambda^{-1})\) \[
+\begin{array}{rl}
+\pi(\mu|\xi,\lambda) & \propto  e^{\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda) & =  e^{-\frac{\lambda}{2}[\mu^2-2\mu\frac{\xi}{\lambda} +(\frac{\xi}{\lambda})^2- (\frac{\xi}{\lambda})^2]}\\
+\pi(\mu|\xi,\lambda) & =  e^{-\frac{\lambda}{2}[\mu^2-2\mu\frac{\xi}{\lambda} +(\frac{\xi}{\lambda})^2] +\frac{\lambda}{2}(\frac{\xi}{\lambda})^2}\\
+\pi(\mu|\xi,\lambda) & =  e^{-\frac{\lambda}{2}(\mu-\frac{\xi}{\lambda})^2} e^{\frac{\lambda}{2}\frac{\xi^2}{\lambda^2}}\\
+\pi(\mu|\xi,\lambda) & =  e^{-\frac{1}{2(\frac{1}{\lambda})}(\mu-\frac{\xi}{\lambda})^2} e^{\frac{\xi^2}{2\lambda}}\\
+\pi(\mu|\xi,\lambda) & \propto  e^{-\frac{1}{2(\frac{1}{\lambda})}(\mu-\frac{\xi}{\lambda})^2} \\
+\end{array}
+\] Esto es una normal con media \(\frac{\xi}{\lambda}\) y varianza
+\(\frac{1}{\lambda}\).
+
+Para calcular la distribuci?n a priori de \(\mu\) usaremos el teorema de
+Bayes, recordemos que estamos suponiendo que
+\(X\sim \mathcal{N}(\mu,1)\) por lo tanto \[
+\begin{array}{rl}
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(x-\mu)^2}\\
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(x^2-2x\mu+\mu^2)}\\
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^2} e^{\frac{1}{2}(2x\mu-\mu^2)}\\
+f_\theta(x) & =\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^2} e^{x\mu-\frac{\mu^2}{2}}\\
+\end{array}
+\]
+
+Por lo tanto la distribución a priori de \(\mu\) es: \[
+\begin{array}{rl}
+\pi(\mu|x,\xi,\lambda) & \propto \pi(x|\mu)\pi(\mu|\xi,\lambda)\\
+\pi(\mu|x,\xi,\lambda) & = e^{x\mu-\frac{\mu^2}{2}}e^{\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|x,\xi,\lambda) & = e^{x\mu-\frac{\mu^2}{2}+\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|x,\xi,\lambda) & = e^{-\frac{\mu^2}{2}(1+\lambda)+ x\mu +\mu\xi}\\
+\pi(\mu|x,\xi,\lambda) & = e^{-\frac{(1+\lambda)}{2}[\mu^2- x\mu\frac{2}{1+\lambda} -\mu\xi\frac{2}{1+\lambda}]}\\
+\pi(\mu|x,\xi,\lambda) & = e^{-\frac{(1+\lambda)}{2}[\mu^2- 2\mu(\frac{x}{1+\lambda} + \frac{\xi}{1+\lambda})]}\\
+\pi(\mu|x,\xi,\lambda) & = e^{-\frac{(1+\lambda)}{2}[\mu^2- 2\mu(\frac{x+\xi}{1+\lambda})+ (\frac{x+\xi}{1+\lambda})^2- (\frac{x+\xi}{1+\lambda})^2]}\\
+\pi(\mu|x,\xi,\lambda) & = e^{-\frac{(1+\lambda)}{2}[(\mu- \frac{x+\xi}{1+\lambda})^2- (\frac{x+\xi}{1+\lambda})^2]}\\
+\pi(\mu|x,\xi,\lambda) & = e^{-\frac{(1+\lambda)}{2}(\mu- \frac{x+\xi}{1+\lambda})^2}e^{- (\frac{x+\xi}{1+\lambda})^2}\\
+\pi(\mu|x,\xi,\lambda) & \propto e^{-\frac{(1+\lambda)}{2}(\mu- \frac{x+\xi}{1+\lambda})^2}
+\end{array}
+\]
+
+Con lo cual tenemos una distribuci?n normal con media
+\(\frac{x+\xi}{1+\lambda}\) y varianza \(\frac{1}{(1+\lambda)}\)
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejecicio 2.10}\label{ejecicio-2.10}
+
+\textbf{Calcular la distribución posterior para una muestra simple iid
+\(\mathcal{D}=(x_1,x_2,...,x_n)\) de \(\mathcal{N}(\mu,1)\) y muestre
+que esto solo depende del estadístico suficiente
+\(\bar{x}=\frac{\sum_{i=1}^n x_{i}}{n}\)}
+
+De lo anterior sabemos que la priori conjugada es
+\(\pi(\mu|\xi,\lambda) = e^{\mu\xi-\lambda\frac{\mu^2}{2}}\) y la
+verosimilitud de los datos es
+\(L(\mu|\mathcal{D})=\prod_{i=1}^n \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(x_i-\mu)^2}\),
+sustituyendo este tenemos: \[
+\begin{array}{rl}
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto L(\mu|\mathcal{D})\pi(\mu|\xi,\lambda)\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & = \prod_{i=1}^n \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(x_i-\mu)^2}e^{\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto  \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2} \sum_{i=1}^{n}(x_i-\mu)^2}e^{\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2} \sum_{i=1}^{n}(x_i-\mu)^2+\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2} \sum_{i=1}^{n}(x_i^2-2\mu x_i +\mu^2)+\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2} (\sum_{i=1}^{n}x_i^2-2\mu n \bar{x} +n\mu^2)+\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & = \frac{1}{\sqrt{2\pi}}e^{-\frac{\sum_{i=1}^{n}x_i^2}{2} +n \mu \bar{x} -\frac{n\mu^2}{2}+\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & = \frac{1}{\sqrt{2\pi}}e^{-\frac{\sum_{i=1}^{n}x_i^2}{2} +n \mu \bar{x} -\frac{n\mu^2}{2}+\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & = \frac{1}{\sqrt{2\pi}}e^{-\frac{\sum_{i=1}^{n}x_i^2}{2} +n \mu \bar{x} -\frac{n\mu^2}{2}+\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ n \mu \bar{x} -\frac{n\mu^2}{2}+\mu\xi-\lambda\frac{\mu^2}{2}}\\
+\end{array}
+\]
+
+Completando cuadrados tenemos: \[
+\begin{array}{rl}
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ \mu^2(-\frac{n}{2}-\frac{\lambda}{2})+\mu(n\bar{x} +\xi)}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ -\frac{1}{2}(n+\lambda)\mu^2+\mu(n\bar{x} +\xi)}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ -\frac{1}{2}(n+\lambda)[\mu^2-\mu(n\bar{x} +\xi)\frac{2}{(n+\lambda)}]}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ -\frac{1}{2}(n+\lambda)[\mu^2-2\mu\frac{n\bar{x}+ \xi}{n+\lambda}]}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ -\frac{n+\lambda}{2}[\mu^2-2\mu\frac{n\bar{x} +\xi}{n+\lambda}+(\frac{n\bar{x}+ \xi}{n+\lambda})^2-(\frac{n\bar{x} +\xi}{n+\lambda})^2]}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ -\frac{n+\lambda}{2}[\mu-\frac{n\bar{x}+ \xi}{n+\lambda}]^2+\frac{n+\lambda}{2}(\frac{n\bar{x} +\xi}{n+\lambda})^2}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ -\frac{n+\lambda}{2}[\mu-\frac{n\bar{x} +\xi}{n+\lambda}]^2+\frac{1}{2}\frac{(n\bar{x} +\xi)^2}{n+\lambda}}\\
+\pi(\mu|\xi,\lambda,\mathcal{D}) & \propto e^{ -\frac{n+\lambda}{2}[\mu-\frac{n\bar{x} +\xi}{n+\lambda}]^2}\\
+\end{array}
+\]
+
+La cual es una normal con media \(\frac{n\bar{x} +\xi}{n+\lambda}\) y
+varianza \(\frac{1}{n+\lambda}\), notemos que la media solo depende del
+estadístico de prueba \(\bar x\).
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejercicio 2.11}\label{ejercicio-2.11}
+
+\textbf{De el rango de valores de la media posteriori, donde el par
+\((\lambda,\lambda^{-1}\xi)\) varia sobre
+\(\mathbb{R}^+\times\mathbb{R}\)}
+
+La media de la distribución a priori de \(\mu\) es:
+\[\frac{x+\xi}{1+\lambda}=\frac{1}{1+\lambda}x+\frac{1}{1+\lambda}\xi\]
+
+Lo que es igual
+\[\frac{\lambda^{-1}}{1+\lambda^{-1}}x+\frac{\xi\lambda^{-1}}{1+\lambda^{-1}}\]
+
+Estamos suponiendo que \(\lambda>0\)
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(\lambda\to \infty\) entonces
+  \(\frac{\lambda^{-1}}{1+\lambda^{-1}}\to 0\).
+\item
+  Si \(\lambda\to 0\) entonces
+  \(\frac{\lambda^{-1}}{1+\lambda^{-1}}\to 1\), ya que el valor de
+  arriba será igual que el denominador.
+\end{itemize}
+
+Por lo tanto \[\frac{\lambda^{-1}}{1+\lambda^{-1}}\le 1\]
+
+\textbf{Si tengo una muestra simple idd \(\mathcal{D}=(x_1,...,x_n)\) de
+una distribución normal \(\mathcal{N}(\mu,\sigma^2)\) y
+\(\theta=(\mu, \sigma^2)\), la priori de \(\theta\) es el producto de
+una inversa gamma en \(\sigma^2\),
+\(\mathcal{IG}(\lambda_\sigma-1,\frac{\alpha}{2})\) y \(\mu\)
+condicionada a \(\sigma^2\) como
+\(\mathcal{N}(\xi,\frac{\sigma^2}{\lambda_\mu})\)} \[
+\begin{array}{rl}
+\pi(\theta|\mathcal{D}) & \propto L(\theta|\mathcal{D})\pi(\theta)\\
+\pi(\theta|\mathcal{D}) & = L(\theta|\mathcal{D})\pi(\mu, \sigma^2)\\
+\pi(\theta|\mathcal{D}) & = L(\theta|\mathcal{D})\pi(\mu| \sigma^2)\pi(\sigma^2)\\
+\end{array}
+\]
+
+Donde \[
+\begin{array}{rl}
+L(\theta|\mathcal{D})&=\prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(x_i-\mu)^2}\\
+L(\theta|\mathcal{D})&= \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu)^2}\\
+L(\theta|\mathcal{D})&= \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i^2-2x_i\mu+\mu^2)}\\
+L(\theta|\mathcal{D})&= \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}(\sum_{i=1}^n x_i^2-2n\mu\frac{\sum_{i=1}^n
+x_i}{n}+n\mu^2)}\\
+L(\theta|\mathcal{D})&= \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}(\sum_{i=1}^n x_i^2-2n\mu\bar x+n\mu^2)}\\
+L(\theta|\mathcal{D})&= \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}(\sum_{i=1}^n x_i^2+n(\mu^2-2\mu\bar x+\bar x^2-\bar x^2))}\\
+L(\theta|\mathcal{D})&= \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}(\sum_{i=1}^n x_i^2+n(\mu-\bar x)^2-n\bar x^2)}\\
+L(\theta|\mathcal{D})&= \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}(n(\mu-\bar x)^2 + \sum_{i=1}^n x_i^2-n\bar x^2)}\\
+L(\theta|\mathcal{D})&= \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}(n(\mu-\bar x)^2 + S_x)}
+\end{array}
+\]
+
+Las prioris son: \[
+\begin{array}{rl}
+\pi(\mu| \sigma^2) & = \frac{1}{\sqrt{2\pi\frac{\sigma^2}{\lambda_\mu}}}e^{-\frac{1}{2\frac{\sigma^2}{\lambda_\mu}}(\mu-\xi)^2}\\
+& =\frac{\sqrt{\lambda_\mu}}{\sqrt{2\pi \sigma^2}}e^{-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2}
+\end{array}
+\]
+
+\[\pi(\sigma^2)=\frac{\left(\frac{\alpha}{2}\right)^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)}\frac{e^{-\frac{\alpha}{2\sigma^2}}}{{\sigma^2}^{\lambda_\sigma+1}}\]
+
+Asi tenemos: \[
+\begin{array}{rl}
+\pi(\theta|\mathcal{D}) & =  \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}[n(\mu-\bar x)^2 + S_x]}\frac{\sqrt{\lambda_\mu}}{\sqrt{2\pi \sigma^2}}e^{-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2}\frac{\left(\frac{\alpha}{2}\right)^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)}\frac{e^{-\frac{\alpha}{2\sigma^2}}}{{\sigma^2}^{\lambda_\sigma+1}}\\
+\pi(\theta|\mathcal{D}) & \propto \left( \frac{1}{\sigma}\right)^ne^{-\frac{1}{2\sigma^2}[n(\mu-\bar x)^2 + S_x]}\frac{1}{\sigma}e^{-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2}\frac{e^{-\frac{\alpha}{2\sigma^2}}}{{\sigma^2}^{\lambda_\sigma+1}}\\
+\pi(\theta|\mathcal{D}) & = \frac{1}{\sigma^n} e^{-\frac{1}{2\sigma^2}[n(\mu-\bar x)^2 + S_x]}\frac{1}{\sigma}e^{-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2}e^{-\frac{\alpha}{2\sigma^2}}\frac{1}{{\sigma}^{2\lambda_\sigma+2}}\\
+\pi(\theta|\mathcal{D}) & = \frac{1}{\sigma^{n+1+2\lambda_\sigma+2}} e^{-\frac{1}{2\sigma^2}[n(\mu-\bar x)^2 + S_x]}e^{-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2}e^{-\frac{\alpha}{2\sigma^2}}\\
+\pi(\theta|\mathcal{D}) & = \frac{1}{\sigma^{n+2\lambda_\sigma+3}} e^{-\frac{1}{2\sigma^2}[n(\mu-\bar x)^2 + S_x]-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2-\frac{\alpha}{2\sigma^2}}\\
+\pi(\theta|\mathcal{D}) & = \frac{1}{\sigma^{n+2\lambda_\sigma+3}} e^{-\frac{1}{2\sigma^2}[n(\mu-\bar x)^2 + S_x+\lambda_\mu(\mu-\xi)^2+\alpha]}\\
+\pi(\theta|\mathcal{D}) & = \frac{1}{(\sigma^2)^{\frac{n}{2}+\lambda_\sigma+\frac{3}{2}}} e^{-\frac{1}{2\sigma^2}[n(\mu-\bar x)^2 + S_x+\lambda_\mu(\mu-\xi)^2+\alpha]}\\
+\end{array}
+\]
+
+Si hacemos
+\(\lambda_\sigma(\mathcal{D})=\frac{n}{2}+\lambda_\sigma+\frac{3}{2}\),
+\(\lambda_\mu(\mathcal{D})=\lambda_\mu\) y
+\(\alpha(\mathcal{D})=n(\mu-\bar x)^2 + S_x+\alpha\)
+
+\[\pi(\theta|\mathcal{D}) = \frac{1}{(\sigma^2)^{\lambda_\sigma(\mathcal{D})}} e^{-\frac{1}{2\sigma^2}[\lambda_\mu(\mathcal{D})(\mu-\xi)^2+\alpha(\mathcal{D})]}\]
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejercicio 2.12}\label{ejercicio-2.12}
+
+\textbf{Una distribución Weibull \(\mathcal{W}(\alpha, \beta,\gamma)\)
+es definida como una potencia de una gamma
+\(\mathcal{G}(\alpha, \beta)\): Si
+\(X\sim\mathcal{W}(\alpha, \beta,\gamma)\) entonces
+\(X^\gamma\sim\mathcal{G}(\alpha, \beta)\). Muestre que cuando
+\(\gamma\) es conocida \(\mathcal{W}(\alpha, \beta,\gamma)\) es una
+familia exponencial pero no lo es cuando \(\gamma\) es desconocida.}
+
+La distribución Weibull es:
+
+\[f_\theta(x)=\frac{\gamma \alpha^\beta}{\Gamma(\beta)}x^{(\beta+1)\gamma -1}e^{-x^\gamma\alpha}\]
+Supongamos que \(\gamma\) es conocido y probemos que la Weibull es de la
+familia exponencial: \[
+\begin{array}{rl}
+f_\theta(x) & = \frac{\gamma \alpha^\beta}{\Gamma(\beta)}x^{(\beta+1)\gamma -1}e^{-x^\gamma\alpha}\\
+f_\theta(x) & = e^{\ln(\frac{\gamma \alpha^\beta}{\Gamma(\beta)}x^{(\beta+1)\gamma -1})}e^{-x^\gamma\alpha}\\
+f_\theta(x) & = e^{\ln(\gamma \alpha^\beta) -\ln(\Gamma(\beta))+((\beta+1)\gamma -1)\ln(x)}e^{-x^\gamma\alpha}\\
+f_\theta(x) & = e^{\ln(\gamma \alpha^\beta) -\ln(\Gamma(\beta))+((\beta+1)\gamma -1)\ln(x)-x^\gamma\alpha}\\
+f_\theta(x) & = e^{\ln(\gamma \alpha^\beta) -\ln(\Gamma(\beta))+(\beta+1)\gamma\ln(x)-\ln(x)-x^\gamma\alpha}\\
+f_\theta(x) & = e^{\ln(\gamma \alpha^\beta) -\ln(\Gamma(\beta))+\beta\gamma\ln(x)+\gamma\ln(x)+\gamma\ln(x)-\ln(x)-x^\gamma\alpha}\\
+f_\theta(x) & = e^{\ln(\gamma \alpha^\beta) -\ln(\Gamma(\beta))+\beta\gamma\ln(x)+\gamma\ln(x)+\gamma\ln(x)-\ln(x)-x^\gamma\alpha}\\
+\end{array}
+\]
+
+Si hacemos
+\(\psi(\theta)= -\ln(\gamma \alpha^\beta) +\ln(\Gamma(\beta))\) \[
+\begin{array}{rl}
+f_\theta(x) & = e^{-\psi(\theta)+\beta\gamma\ln(x)-x^\gamma\alpha+\gamma\ln(x)-\ln(x)} \\
+f_\theta(x) & = e^{-\psi(\theta)+\beta\gamma\ln(x)-x^\gamma\alpha+(\gamma-1)\ln(x)} \\
+\end{array}
+\]
+
+Notemos que:
+\[\beta\gamma\ln(x)-x^\gamma\alpha=[\beta, \alpha]\begin{bmatrix} \gamma\ln(x) \\ -x^\gamma \end{bmatrix}\]
+
+Entonces tenemos que \(\theta=[\beta, \alpha]\),
+\(R(x)=[\gamma\ln(x), -x^\gamma]^t\) \[
+\begin{array}{rl}
+f_\theta(x) & = e^{\theta R(x)-\psi(\theta)+(\gamma-1)\ln(x)} \\
+f_\theta(x) & = e^{\theta R(x)-\psi(\theta)}e^{(\gamma-1)\ln(x)} \\
+f_\theta(x) & = e^{\theta R(x)-\psi(\theta)}e^{\ln(x^{(\gamma-1)})} \\
+f_\theta(x) & = x^{(\gamma-1)} e^{\theta R(x)-\psi(\theta)}\\
+\end{array}
+\]
+
+Finalmente \(h(x)=x^{(\gamma-1)}\), por lo tanto
+\[f_\theta(x) = h(x) e^{\theta R(x)-\psi(\theta)}\] Así la función
+Weibull es de la familia exponencial cuando \(\gamma\) es conocido.
+Cuando \(\gamma\) es desconocido es imposible conseguir la forma de la
+familia exponencial.
+
+Además notemos que si \(y=x^\gamma\) entonces \(y'=\gamma x^{\gamma-1}\)
+y \(x=y^{\frac{1}{\gamma}}\) \[
+\begin{array}{rl}
+f_\theta(x) & = \frac{\gamma}{\gamma}x^{(\gamma-1)} e^{[\beta, \gamma]\begin{bmatrix}\ln(x) \\ -x^\gamma \end{bmatrix} +\ln(\gamma \alpha^\beta) -\ln(\Gamma(\beta))+(\gamma-1)\ln(x)}\\
+f_\theta(x) & = \frac{y'}{\gamma} e^{[\beta, \alpha]\begin{bmatrix} \ln(y^{\frac{1}{\gamma}}) \\ -y \end{bmatrix} +\ln(\gamma \alpha^\beta) -\ln(\Gamma(\beta))+(\gamma-1)\ln(y^{\frac{1}{\gamma}})}\\
+f_\theta(x) & = \frac{y'}{\gamma} e^{[\beta, \alpha]\begin{bmatrix} \frac{1}{\gamma}\ln(y) \\ -y \end{bmatrix} +\ln(\gamma \alpha^\beta) -\ln(\Gamma(\beta))+\frac{\gamma-1}{\gamma}\ln(y)}\\
+f_\theta(x) & = \frac{y'}{\gamma} e^{\frac{\beta}{\gamma}\ln(y) -y\alpha +\ln(\frac{\gamma \alpha^\beta}{\Gamma(\beta)}) +\frac{\gamma-1}{\gamma}\ln(y)}\\
+f_\theta(x) & = \frac{y'}{\gamma} e^{\frac{\beta}{\gamma}\ln(y)}e^{-y\alpha}e^{\ln(\frac{\gamma \alpha^\beta}{\Gamma(\beta)})} e^{\frac{\gamma-1}{\gamma}\ln(y)}\\
+f_\theta(x) & = \frac{y'}{\gamma} e^{\ln(y^{\frac{\beta}{\gamma}})}e^{-y\alpha}e^{\ln(\frac{\gamma \alpha^\beta}{\Gamma(\beta)})} e^{\ln(y^\frac{\gamma-1}{\gamma})}\\
+f_\theta(x) & = \frac{y'}{\gamma} y^{\frac{\beta}{\gamma}}e^{-y\alpha} \frac{\gamma \alpha^\beta}{\Gamma(\beta)} y^\frac{\gamma-1}{\gamma}\\
+f_\theta(x) & = \frac{y'}{\gamma} y^{\frac{\beta}{\gamma}+\frac{\gamma-1}{\gamma}}e^{-y\alpha} \frac{\gamma \alpha^\beta}{\Gamma(\beta)} \\
+f_\theta(x) & = \frac{y'}{\gamma} y^{\frac{\beta-1+2\gamma}{\gamma}-1}e^{-y\alpha} \frac{\gamma \alpha^\beta}{\Gamma(\beta)} \\
+\end{array}
+\]
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsubsection{Ejercicio 2.13}\label{ejercicio-2.13}
+
+\textbf{Muestre que cuando la priori de \(\theta=(\mu, \sigma^2)\) es
+\(\mathcal{N}(\xi,\frac{\sigma^2}{\lambda_\mu})\times \mathcal{IG}(\lambda_s,\alpha)\),
+la marginal de \(\mu\) es una distribuci?n \emph{t-Student}
+\(\mathcal{T}(1\lambda_s,\xi,2\alpha)\). Dar la correspondiente marginal
+a priori de \(\sigma^2\). Para una muestra simple iid
+\(\mathcal{D}=(x_1,...x_n)\) de \(\mathcal{N}(\mu,\sigma^2)\)}
+
+La priori de \(\theta\) es: \[
+\begin{array}{rl}
+\pi(\theta) & =\frac{\sqrt{\lambda_\mu}}{\sqrt{2\pi \sigma^2}}e^{-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2}\frac{\alpha^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)}\frac{e^{-\frac{\alpha}{\sigma^2}}}{{\sigma^2}^{\lambda_\sigma+1}}\\
+\pi(\theta) & =\frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\sqrt{2\pi }\Gamma(\lambda_\sigma)}\frac{1}{{\sigma^2}^{(\frac{1}{2}+\lambda_\sigma+1)}}e^{-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2-\frac{\alpha}{\sigma^2}}\\
+\pi(\theta) & =\frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\sqrt{2\pi }\Gamma(\lambda_\sigma)}\frac{1}{{\sigma^2}^{(\frac{3}{2}+\lambda_\sigma)}}e^{-\frac{1}{2\sigma^2}[\lambda_\mu(\mu-\xi)^2-2\alpha]}\\
+\end{array}
+\]
+
+Entonces tenemos que la priori de \(\mu\) es: \[
+\begin{array}{rl}
+\pi(\mu) & =\displaystyle \int \pi(\theta)d\sigma^2\\
+\pi(\mu) & =\displaystyle \int \frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\sqrt{2\pi }\Gamma(\lambda_\sigma)}\frac{1}{{\sigma^2}^{(\frac{3}{2}+\lambda_\sigma)}}e^{-\frac{1}{2\sigma^2}[\lambda_\mu(\mu-\xi)^2-2\alpha]}d\sigma^2\\
+\pi(\mu) & =\displaystyle \frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\sqrt{2\pi }\Gamma(\lambda_\sigma)} \int \frac{1}{{\sigma^2}^{(\frac{3}{2}+\lambda_\sigma)}}e^{-\frac{1}{2\sigma^2}[\lambda_\mu(\mu-\xi)^2-2\alpha]}d\sigma^2
+\end{array}
+\]
+
+Si llamamos \(A=\frac{3}{2}+\lambda_\sigma\),
+\(C=\frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\sqrt{2\pi }\Gamma(\lambda_\sigma)}\)
+y \(B=\frac{1}{2}[\lambda_\mu(\mu-\xi)^2-2\alpha]\) tenemos \[
+\begin{array}{rl}
+\pi(\mu) & =\displaystyle C \int \frac{1}{{\sigma^2}^A}e^{-\frac{1}{\sigma^2}B}d\sigma^2\\
+\pi(\mu) & =\displaystyle C \int \left(\frac{1}{{\sigma^2}}\right)^Ae^{-(\frac{1}{\sigma^2})B}d\sigma^2\\
+\pi(\mu) & =\displaystyle C \int \left(\frac{1}{{\sigma^2}}\right)^{A+2-2}e^{-(\frac{1}{\sigma^2})B}d\sigma^2\\
+\pi(\mu) & =\displaystyle C \int \left(\frac{1}{{\sigma^2}}\right)^{A-2}e^{-(\frac{1}{\sigma^2})B}\left(\frac{1}{{\sigma^2}}\right)^2 d\sigma^2\\
+\end{array}
+\]
+
+Haciendo el cambio de variable \(u=\frac{1}{\sigma^2}\)
+\(du=-\left( \frac{1}{\sigma^2} \right)^2d\sigma^2\) \[
+\begin{array}{rl}
+\pi(\mu) & =\displaystyle -C \int u^{A-2}e^{-uB} du\\
+\pi(\mu) & =\displaystyle -C \int u^{(A-1)-1}e^{-uB} \frac{B^{A-1}}{\Gamma(A-1)}\frac{\Gamma(A-1)}{B^{A-1}}du\\
+\pi(\mu) & =\displaystyle -C\frac{\Gamma(A-1)}{B^{A-1}}
+\int u^{(A-1)-1}e^{-uB} \frac{B^{A-1}}{\Gamma(A-1)}du\\
+\pi(\mu) & =\displaystyle -C\frac{\Gamma(A-1)}{B^{A-1}}
+\end{array}
+\]
+
+Ya que \(u^{(A-1)-1}e^{-uB} \frac{A^{B-1}}{\Gamma(B-1)}\) es la funci?n
+de densidad de una distribuci?n Gamma con par?metros \(A-1\) y \(B\) \[
+\begin{array}{rl}
+\pi(\mu) & \propto B^{-(A-1)} \\
+\pi(\mu) & \propto B^{1-A} \\
+\pi(\mu) & = (\frac{1}{2}[\lambda_\mu(\mu-\xi)^2-2\alpha])^{1-[\frac{3}{2}+\lambda_\sigma]}\\
+\pi(\mu) & \propto [\lambda_\mu(\mu-\xi)^2-2\alpha]^{-\frac{1}{2}-\lambda_\sigma}\\
+\pi(\mu) & \propto [-2\alpha(1-\frac{\lambda_\mu(\mu-\xi)^2}{2\alpha})]^{-\frac{1}{2}-\lambda_\sigma}\\
+\pi(\mu) & \propto (1-\frac{\lambda_\mu\lambda_\sigma(\mu-\xi)^2}{2\alpha\lambda_\sigma})^{-\frac{1+2\lambda_\sigma}{2}}
+\end{array}
+\]
+
+La priori marginal correspondiente para \(\sigma^2\) será: \[
+\begin{array}{rl}
+\pi(\mu) & =\displaystyle \int \pi(\theta)d\mu\\
+\pi(\mu) & =\displaystyle \int \frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\sqrt{2\pi }\Gamma(\lambda_\sigma)}\frac{1}{{\sigma^2}^{(\frac{3}{2}+\lambda_\sigma)}}e^{-\frac{1}{2\sigma^2}[\lambda_\mu(\mu-\xi)^2-2\alpha]}d\mu\\
+\pi(\mu) & =\displaystyle \frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\sqrt{2\pi }\Gamma(\lambda_\sigma)} \frac{1}{{\sigma^2}^{(\frac{3}{2}+\lambda_\sigma)}}e^{\frac{\alpha}{\sigma^2}}\int e^{-\frac{1}{2\sigma^2}\lambda_\mu(\mu-\xi)^2}d\mu\\
+\pi(\mu) & =\displaystyle \frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)} \frac{1}{{\sigma^2}^{(\frac{3}{2}+\lambda_\sigma)}}e^{\frac{\alpha}{\sigma^2}}\int \frac{1}{\sqrt{2\pi }}e^{-\frac{1}{2\sigma^2}\lambda_\mu(\mu-\xi)^2}d\mu
+\end{array}
+\]
+
+Ahora llamemos
+\(D=\frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)} \frac{1}{{\sigma^2}^{(\frac{3}{2}+\lambda_\sigma)}}e^{\frac{\alpha}{\sigma^2}}\)
+\[
+\begin{array}{rl}
+\pi(\mu) & =\displaystyle D\int \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2\sigma^2}\lambda_\mu(\mu-\xi)^2}d\mu\\
+\pi(\mu) & =\displaystyle D\int \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2\frac{\sigma^2}{\lambda_\mu}} (\mu-\xi)^2}d\mu\\
+\pi(\mu) & =\displaystyle D\int \frac{\sqrt{\frac{\sigma^2}{\lambda_\mu}}}{\sqrt{2\pi\frac{\sigma^2}{\lambda_\mu}}}e^{-\frac{1}{2\frac{\sigma^2}{\lambda_\mu}} (\mu-\xi)^2}d\mu\\
+\pi(\mu) & = D\sqrt{\frac{\sigma^2}{\lambda_\mu}} \displaystyle \int \frac{1}{\sqrt{2\pi\frac{\sigma^2}{\lambda_\mu}}}e^{-\frac{1}{2\frac{\sigma^2}{\lambda_\mu}} (\mu-\xi)^2}d\mu\\
+\pi(\mu) & = D\sqrt{\frac{\sigma^2}{\lambda_\mu}}
+\end{array}
+\]
+
+Ya que
+\(\frac{1}{\sqrt{2\pi\frac{\sigma^2}{\lambda_\mu}}}e^{-\frac{1}{2\frac{\sigma^2}{\lambda_\mu}} (\mu-\xi)^2}\)
+es una función de densidad de una normal con media \(\xi\) y varianza
+\(\frac{\sigma^2}{\lambda_\mu}\)
+
+Por lo tanto: \[
+\begin{array}{rl}
+\pi(\mu) & = \frac{\sqrt{\lambda_\mu}\alpha^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)} \frac{1}{{\sigma^2}^{(\frac{3}{2}+\lambda_\sigma)}}e^{\frac{\alpha}{\sigma^2}} \sqrt{\frac{\sigma^2}{\lambda_\mu}}\\
+\pi(\mu) & = \frac{\alpha^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)}e^{\frac{\alpha}{\sigma^2}} (\sigma^2)^{\frac{1}{2}-\frac{3}{2}-\lambda_\sigma}\\
+\pi(\mu) & = \frac{\alpha^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)}e^{\frac{\alpha}{\sigma^2}} (\sigma^2)^{-1-\lambda_\sigma}\\
+\pi(\mu) & = \frac{\alpha^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)}e^{\frac{\alpha}{\sigma^2}}\frac{1}{(\sigma^2)^{\lambda_\sigma+1}}
+\end{array}
+\]
+
+La cual es la función de densidad de una Inversa Gamma con parámetros
+\(\lambda_\sigma\) y \(\alpha\).
+
+La distribución a posteriori para la muestra normal será entonces:
+
 \subsection{2.2.3 Intervalos de
 Confianza}\label{intervalos-de-confianza}
 
@@ -183,11 +773,80 @@ Para \textbf{normaldata}, utilizando el parámetro
 \(\mu\) utilizando el \emph{a priori} \(\pi(\theta)=1/\sigma^2\) es una
 distribución \emph{t-Student} \[
 \pi(\mu|\mathcal{D})\propto [n(\mu-\bar{x})^2+s_x^2]^{-n/2}
-\] con \(n-1=89\) grados de libertad, como se puede ver en (2.7), la
-región de confianza correspondiente al \(95\%\) para \(\mu\) es el
-intervalo \([-0.070,-0.013]\). Note que como el \(0\) no pertenece al
-intervalo, uno puede sentir justificado el reporte de un decrecimiento
-en el número robos entre 1991 y 1995.
+\] Veamos como llegan a esto:
+
+La distribución a posteriori viene dada por
+\(\pi(\theta|\mathcal{D})\propto l(\theta|\mathcal{D})\pi(\theta)\)
+
+Como los datos se distribuyen normal con media \(\mu\) y varianza
+\(\sigma^2\) tenemos que la verosimilitud de los datos viene dada por:
+\[
+\begin{array}{rl}
+l(\theta|\mathcal{D}) & = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{1}{2\sigma^2}(x_i-\mu)^2}\\
+& =  \left( \frac{1}{\sqrt{2\pi\sigma^2}}\right)^n e^{\frac{1}{2\sigma^2}\sum_{i=1}^n (x_i-\mu)^2}\\
+\end{array}
+\]
+
+Donde \[
+\begin{array}{rl}
+\sum_{i=1}^n (x_i-\mu)^2 & = \sum_{i=1}^n x_i^2 -2x_i\mu +\mu^2\\
+& = \sum_{i=1}^n x_i^2 -2\mu\sum_{i=1}^n x_i +\sum_{i=1}^n \mu^2\\
+& = \sum_{i=1}^n x_i^2 -2\mu\frac{n\sum_{i=1}^nx_i}{n}  +n \mu^2\\
+& = \sum_{i=1}^n x_i^2 -2n\mu\bar x  +n \mu^2\\
+& = \sum_{i=1}^n x_i^2 + n(\mu^2-2\mu\bar x )\\
+& = \sum_{i=1}^n x_i^2 + n(\mu^2-2\mu\bar x +\bar x^2-\bar x^2)\\
+& = \sum_{i=1}^n x_i^2 + n((\mu-\bar x)^2 -\bar x^2)\\
+& = \sum_{i=1}^n x_i^2 - n\bar x^2 + n(\mu-\bar x)^2\\
+& = S_x + n(\mu-\bar x)^2
+\end{array}
+\]
+
+Con \(S_x=\sum_{i=1}^n x_i^2 - n\bar x^2\). Sustituyendo este nos queda:
+\[l(\theta|\mathcal{D})= \left( \frac{1}{\sqrt{2\pi\sigma^2}}\right)^n e^{\frac{1}{2\sigma^2}\left[ S_x + n(\mu-\bar x)^2\right]}\]
+
+Por lo tanto \[
+\begin{array}{rl}
+\pi(\theta|\mathcal{D}) & \propto \left( \frac{1}{\sqrt{2\pi\sigma^2}}\right)^n e^{-\frac{1}{2\sigma^2}\left[ S_x + n(\mu-\bar x)^2\right]}\frac{1}{\sigma^2}\\
+\pi(\theta|\mathcal{D}) & \propto \left( \frac{1}{\sqrt{\sigma^2}}\right)^n \frac{1}{\sigma^2} e^{-\frac{1}{2\sigma^2}\left[ S_x + n(\mu-\bar x)^2\right]}\\
+\pi(\theta|\mathcal{D}) & \propto \left( \frac{1}{\sigma^2}\right)^{\frac{n}{2}+1}  e^{-\frac{1}{2\sigma^2}\left[ S_x + n(\mu-\bar x)^2\right]}
+\end{array}
+\]
+
+Para conseguir la distribución a posteriori del parámetro \(\mu\)
+tenemos que integrar esta última función con respecto a \(\sigma^2\) \[
+\begin{array}{rl}
+\pi(\mu|\mathcal{D}) & = \displaystyle \int \pi(\theta|\mathcal{D}) d\sigma^2\\
+\pi(\mu|\mathcal{D}) & = \displaystyle \int \left( \frac{1}{\sigma^2}\right)^{\frac{n}{2}+1}  e^{-\frac{1}{2\sigma^2}\left[ S_x + n(\mu-\bar x)^2\right]}d\sigma^2\\
+\pi(\mu|\mathcal{D}) & = \displaystyle \int \left( \frac{1}{\sigma^2}\right)^{\frac{n}{2}+1}e^{-\frac{1}{2\sigma^2}A}d\sigma^2\\
+\pi(\mu|\mathcal{D}) & = \displaystyle \int \left( \frac{1}{\sigma^2}\right)^{\frac{n}{2}-1}\left( \frac{1}{\sigma^2}\right)^{2}e^{-\frac{1}{2\sigma^2}A}d\sigma^2
+\end{array}
+\] Haciendo el cambio de variable \(u=\frac{1}{\sigma^2}\) entonces
+\(du=-\left(\frac{1}{\sigma^2}\right)^2 d\sigma^2\) \[
+\begin{array}{rl}
+\pi(\mu|\mathcal{D}) & = \displaystyle \int (u)^{\frac{n}{2}-1}e^{-\frac{1}{2}uA}du\\
+\pi(\mu|\mathcal{D}) & = \displaystyle \int (u)^{\frac{n}{2}-1}e^{-\frac{1}{2}Au}\frac{(\frac{A}{2})^{\frac{n}{2}}}{\Gamma{(\frac{n}{2}})}\frac{\Gamma{(\frac{n}{2}})}{(\frac{A}{2})^{\frac{n}{2}}}du\\
+\pi(\mu|\mathcal{D}) & = \displaystyle \frac{\Gamma{(\frac{n}{2}})}{(\frac{A}{2})^{\frac{n}{2}}} \int \frac{(\frac{A}{2})^{\frac{n}{2}}}{\Gamma{(\frac{n}{2}})} (u)^{\frac{n}{2}-1}e^{-\frac{1}{2}Au}du\\
+\end{array}
+\]
+
+Donde
+\(\frac{(\frac{A}{2})^{\frac{n}{2}}}{\Gamma{(\frac{n}{2}})}(u)^{\frac{n}{2}-1}e^{-\frac{1}{2}Au}\)
+es la función de densidad de una distribución Gamma con parámetros
+\(\frac{n}{2}\) y \(\frac{A}{2}\), así esta intendral da 1, por lo
+tanto: \[
+\begin{array}{rl}
+\pi(\mu|\mathcal{D}) & = \displaystyle \frac{\Gamma{(\frac{n}{2}})}{(\frac{A}{2})^{\frac{n}{2}}}\\
+\pi(\mu|\mathcal{D}) & \propto \left( \frac{A}{2}\right)^{-\frac{n}{2}}\\
+\pi(\mu|\mathcal{D}) & \propto  \frac{\left(S_x + n(\mu-\bar x)^2\right)^{-\frac{n}{2}}}{\left(2\right)^{-\frac{n}{2}}}\\
+\pi(\mu|\mathcal{D}) & \propto  \left(S_x + n(\mu-\bar x)^2\right)^{-\frac{n}{2}}\\
+\end{array}
+\]
+
+con \(n-1=89\) grados de libertad, como se puede ver en (2.7), la región
+de confianza correspondiente al \(95\%\) para \(\mu\) es el intervalo
+\([-0.070,-0.013]\). Note que como el \(0\) no pertenece al intervalo,
+uno puede sentir justificado el reporte de un decrecimiento en el número
+robos entre 1991 y 1995.
 
 Intervalo sobre \(\mu\) \[
 [\bar{x}\ -\ t_{\alpha/2,n-1}s_x/\sqrt{n(n-1)},\ \bar{x}\ +\ t_{\alpha/2,n-1}s_x/\sqrt{n(n-1)}]
@@ -388,7 +1047,7 @@ Por lo tanto nos queda \[
 
 Para esta clase de funciones de pérdida, la hipótesis nula \(H_0\) se
 rechaza cuando la probabilidad posterior de \(H_0\) es muy pequeña, el
-nivel de aceptación \(a_1/(a_0+a_1)\) se está determinando por la
+nivel de aceptación \(a_1/(a_0+a_1)\) está determinando por la
 escogencia de (\(a_0,a_1\)).
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
@@ -397,8 +1056,8 @@ escogencia de (\(a_0,a_1\)).
 
 Cuando \(\theta\in\{\theta_0,\theta_1\}\), muestre que el procedimiento
 Bayesiano sólo depende de la razón/ratio
-\(\varrho_0f_{\theta_0}(x)/(1-\varrho_0)f_{\theta_1}\), donde
-\(\varrho_0\) es el peso \emph{a priori} sobre \(\theta_0\).
+\(\frac{(1-\varrho_0) f_{\theta_1}(x)}{\varrho_0 f_{\theta_0}(x)}\),
+donde \(\varrho_0\) es el peso \emph{a priori} sobre \(\theta_0\).
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -418,12 +1077,16 @@ Para \(x\sim\mathcal{N}(\mu,\sigma^2)\) y
 \(\mu\sim\mathcal{N}(\xi,\tau^2)\), recordemos que \(\pi(\mu|x)\) es la
 distribución normal con \(\mathcal{N}(\xi(x),w^2)\) con \[
 \xi(x)=\frac{\sigma^2\xi+\tau^2x}{\sigma^2+\tau^2}\ \text{ y }\ \omega^2=\frac{\sigma^2\tau^2}{\sigma^2+\tau^2}
-\] Para probar \(H_0:\mu<0\) calculamos \[
+\]
+
+Para probar \(H_0:\mu<0\) calculamos \[
 \begin{array}{rl}
 P^\pi(\mu<0|x) = &  \displaystyle P^\pi\Bigg(\frac{\mu-\xi(x)}{\omega}<\frac{-\xi(x)}{\omega} \Bigg) \sim \mathcal{N}(0,1) \\
 = & \displaystyle   \Phi\bigg(\frac{-\xi(x)}{\omega}\bigg)
 \end{array}
-\] Si \(z_{a_0,a_1}\) es el cuantil \(\frac{a_1}{a_0+a_1}\) de una
+\]
+
+Si \(z_{a_0,a_1}\) es el cuantil \(\frac{a_1}{a_0+a_1}\) de una
 distribución normal \(\mathcal{N}(0,1)\) (por ejemplo,
 \(\Phi(z_{a_0,a_1})=\frac{a_1}{a_0+a_1}\)), aceptamos la hipótesis nula
 \(H_0\) cuando \[
@@ -435,11 +1098,15 @@ distribución normal \(\mathcal{N}(0,1)\) (por ejemplo,
 x<& \displaystyle \frac{-z_{ a_0,a_1}\omega(\sigma^2+\tau^2) - \sigma^2\xi}{\tau^2} \\
 x<& \displaystyle -\frac{z_{ a_0,a_1}\omega(\sigma^2+\tau^2)}{\tau^2} - \frac{\sigma^2\xi}{\tau^2}
 \end{array}
-\] la cota de aceptación superior es \[
+\]
+
+La cota de aceptación superior es \[
 x<-\frac{\sigma^2}{\tau^2}\xi - \bigg(1+ \frac{\sigma^2}{\tau^2} \bigg)z_{a_0,a_1}\omega
-\] Esto ilustra una vez más la falta de robustez de la distribución
-\emph{a priori} conjugada: Esta cota puede ser cualquier real cuando
-\(\xi\) varía en \(\mathbb{R}\).
+\]
+
+Esto ilustra una vez más la falta de robustez de la distribución \emph{a
+priori} conjugada: Esta cota puede ser cualquier real cuando \(\xi\)
+varía en \(\mathbb{R}\).
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
@@ -452,11 +1119,53 @@ cuando \(\xi\) tiende a \(0\) y \(\tau\) tiende a \(\infty\) es
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
 Para \(x\sim\mathcal{N}(\mu,\sigma^2)\) y
-\(\mu\sim\mathcal{N}(\xi,\tau^2)\), recordemos que \(\pi(\mu|x)\) es la
+\(\mu\sim\mathcal{N}(\xi,\tau^2)\), probemos que \(\pi(\mu|x)\) es la
 distribución normal con \(\mathcal{N}(\xi(x),w^2)\) con
 \(P^\pi(\mu<0|x)=\Phi\bigg(\frac{-\xi(x)}{\omega}\bigg)\) \[
 \xi(x)=\frac{\sigma^2\xi+\tau^2x}{\sigma^2+\tau^2}\ \text{ y }\ \omega^2=\frac{\sigma^2\tau^2}{\sigma^2+\tau^2}
-\] Entonces \[
+\]
+
+La distribución a posteriori de \(\pi(\mu|x)\) es: \[
+\begin{array}{rl}
+\pi(\mu|x) & = l(\mu|x)\pi(\mu)\\
+\pi(\mu|x) & = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}\frac{1}{\sqrt{2\pi\tau^2}}e^{-\frac{1}{2\tau^2}(\mu-\xi)^2}\\
+\pi(\mu|x) & \propto e^{-\frac{1}{2\sigma^2}(x-\mu)^2}e^{-\frac{1}{2\tau^2}(\mu-\xi)^2}\\
+\pi(\mu|x) & \propto e^{-\frac{1}{2\sigma^2}(x-\mu)^2-\frac{1}{2\tau^2}(\mu-\xi)^2}\\
+\pi(\mu|x) & \propto e^{-\frac{1}{2}\left[\frac{(x-\mu)^2}{\sigma^2}+\frac{(\mu-\xi)^2}{\tau^2}\right]}\\
+\end{array}
+\]
+
+Desarrollando \(\frac{(x-\mu)^2}{\sigma^2}+\frac{(\mu-\xi)^2}{\tau^2}\)
+tenemos: \[
+\begin{array}{rl}
+\frac{(x-\mu)^2}{\sigma^2}+\frac{(\mu-\xi)^2}{\tau^2} & = \frac{x^2-2x\mu+\mu^2}{\sigma^2}+\frac{\mu^2-2\mu\xi+\xi^2}{\tau^2}\\
+& = \frac{x^2}{\sigma^2}-\frac{2x\mu}{\sigma^2}+\frac{\mu^2}{\sigma^2}+\frac{\mu^2}{\tau^2}-\frac{2\mu\xi}{\tau^2}+\frac{\xi^2}{\tau^2}\\
+& = \mu^2\left(\frac{1}{\sigma^2}+\frac{1}{\tau^2}\right) -2\mu\left(\frac{x}{\sigma^2}+\frac{\xi}{\tau^2}\right)+\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2}\\
+\end{array}
+\]
+
+Sustituyendo estó: \[
+\begin{array}{rl}
+\pi(\mu|x) & \propto e^{-\frac{1}{2}\left[ \mu^2\left(\frac{1}{\sigma^2}+\frac{1}{\tau^2}\right) -2\mu\left(\frac{x}{\sigma^2}+\frac{\xi}{\tau^2}\right)+\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2}\right]}\\
+\pi(\mu|x) & \propto e^{-\frac{1}{2}\left[ \mu^2\left(\frac{1}{\sigma^2}+\frac{1}{\tau^2}\right) -2\mu\left(\frac{x}{\sigma^2}+\frac{\xi}{\tau^2}\right)\right]} e^{\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2}}\\
+\pi(\mu|x) & \propto e^{-\frac{1}{2}\left[ \mu^2\left(\frac{1}{\sigma^2}+\frac{1}{\tau^2}\right) -2\mu\left(\frac{x}{\sigma^2}+\frac{\xi}{\tau^2}\right)\right]}\\
+\pi(\mu|x) & \propto e^{-\frac{1}{2}\left[ \mu^2\left(\frac{\tau^2+\sigma^2}{\tau^2 \sigma^2}\right) -2\mu\left(\frac{x\tau^2+\xi\sigma^2}{\tau^2\sigma^2}\right)\right]}\\
+\pi(\mu|x) & \propto e^{-\frac{1}{2\tau^2\sigma^2}[ \mu^2(\tau^2+\sigma^2) -2\mu(x\tau^2+\xi\sigma^2)]}\\
+\pi(\mu|x) & \propto e^{-\frac{\tau^2+\sigma^2}{2\tau^2\sigma^2}\left[ \mu^2 -2\mu\frac{(x\tau^2+\xi\sigma^2)}{(\tau^2+\sigma^2)}\right]}\\
+\pi(\mu|x) & \propto e^{-\frac{1}{2\tau^2\sigma^2}[ \mu^2(\tau^2+\sigma^2) -2\mu(x\tau^2+\xi\sigma^2)]}\\
+\pi(\mu|x) & \propto e^{-\frac{\tau^2+\sigma^2}{2\tau^2\sigma^2}\left[ \mu^2 -2\mu\frac{x\tau^2+\xi\sigma^2}{\tau^2+\sigma^2}+\left( \frac{(x\tau^2+\xi\sigma^2)}{(\tau^2+\sigma^2)} \right)^2-\left( \frac{x\tau^2+\xi\sigma^2}{\tau^2+\sigma^2} \right)^2\right]}\\
+\pi(\mu|x) & \propto e^{-\frac{\tau^2+\sigma^2}{2\tau^2\sigma^2}\left[ \mu -\frac{x\tau^2+\xi\sigma^2}{\tau^2+\sigma^2}\right]^2}e^{\frac{(\tau^2+\sigma^2)}{2\tau^2\sigma^2}\left( \frac{x\tau^2+\xi\sigma^2}{\tau^2+\sigma^2} \right)^2}\\
+\pi(\mu|x) & \propto e^{-\frac{\tau^2+\sigma^2}{2\tau^2\sigma^2}\left[ \mu -\frac{x\tau^2+\xi\sigma^2}{\tau^2+\sigma^2}\right]^2}\\
+\pi(\mu|x) & \propto \frac{\sqrt{2\pi\frac{\tau^2\sigma^2}{\tau^2+\sigma^2}}}{\sqrt{2\pi\frac{\tau^2\sigma^2}{\tau^2+\sigma^2}}} e^{-\frac{1}{2\frac{\tau^2\sigma^2}{\tau^2+\sigma^2}}\left[ \mu -\frac{x\tau^2+\xi\sigma^2}{\tau^2+\sigma^2}\right]^2}\\
+\pi(\mu|x) & \propto \frac{1}{\sqrt{2\pi\frac{\tau^2\sigma^2}{\tau^2+\sigma^2}}}e^{-\frac{1}{2\frac{\tau^2\sigma^2}{\tau^2+\sigma^2}}\left[ \mu -\frac{x\tau^2+\xi\sigma^2}{\tau^2+\sigma^2}\right]^2}\\
+\end{array}
+\]
+
+Obteniendo la dristribución normal con media
+\(\xi(x)=\frac{\sigma^2\xi+\tau^2x}{\sigma^2+\tau^2}\) y la varianza
+\(\omega^2=\frac{\sigma^2\tau^2}{\sigma^2+\tau^2}\).
+
+Entonces: \[
 \begin{array}{rl}
 \Phi\bigg(\frac{-\xi(x)}{\omega}\bigg)=&\Phi\Bigg(-\displaystyle \frac{\displaystyle \sigma^2\xi+\tau^2x}{\sigma^2+\tau^2}\Bigg/{\displaystyle\sqrt{\frac{\sigma^2\tau^2}{\sigma^2+\tau^2}}}\Bigg)\\
 =&\Phi\Bigg(-\displaystyle \frac{\displaystyle \sigma^2\xi+\tau^2x}{\sqrt{\sigma^2+\tau^2} \sqrt{\sigma^2\tau^2}}\Bigg)\\
@@ -528,7 +1237,9 @@ Cuando la hipótesis que se va a probar es una hipótesis nula puntual,
 procedimiento Bayesiano, dado que, para una distribución \emph{a priori}
 contínua \(\pi\) \[
 P^\pi(\theta=\theta_0)=0
-\] Obviamente, las hipótesis nulas puntuales se pueden criticar y
+\]
+
+Obviamente, las hipótesis nulas puntuales se pueden criticar y
 considerar como artificiales e imposibles de probar (\emph{¿Con cuanta
 frecuencia se puede distinguir entre \(\theta=0\) de
 \(\theta=0.0001\)?!}), sin embargo también se deben realizar como parte
@@ -583,9 +1294,10 @@ Podemos escoger \(\xi\) igual a \(0\) si no contamos con información
 \begin{array}{rl}
 m_1(x)=&\displaystyle\int_{\Theta_1}f_\theta(x)\pi_1(\theta)d\theta\\
 =&\displaystyle\int_{\Theta_1} \frac{1}{\sqrt{2\pi}\sigma}\exp\bigg\{-\frac{(x-\mu)^2}{2\sigma^2}\bigg\}
-\frac{1}{\sqrt{2\pi}\tau}\exp\bigg\{-\frac{(\mu-\xi)^2}{2\tau^2}\bigg\}d\mu
+\frac{1}{\sqrt{2\pi}\tau}\exp\bigg\{-\frac{(\mu-\xi)^2}{2\tau^2}\bigg\}d\mu\\
+=&\displaystyle\int_{\Theta_1} \frac{1}{\sqrt{2\pi}\sigma}\frac{1}{\sqrt{2\pi}\tau} \exp\bigg\{-\frac{(x-\mu)^2}{2\sigma^2}-\frac{(\mu-\xi)^2}{2\tau^2}\bigg\}d\mu\\
 \end{array}
-\] vamos a ver los exponentes de las exponenciales \[
+\] vamos a ver el exponente de la exponencial \[
 \begin{array}{rl}
 -\frac{1}{2}\frac{(x-\mu)^2}{\sigma^2}-\frac{1}{2}\frac{(\mu-\xi)^2}{\tau^2}=&-\frac{1}{2}\frac{x^2-2x+\mu^2}{\sigma^2}-\frac{1}{2}\frac{\mu^2-2\mu\xi+\xi^2}{\tau^2}\\
 =&-\frac{1}{2}\bigg[\frac{x^2}{\sigma^2}-\frac{2x\mu}{\sigma^2}+\frac{\mu^2}{\sigma^2}+\frac{\mu^2}{\tau^2}-\frac{2\mu\xi}{\tau^2}+\frac{\xi^2}{\tau^2}  \bigg]\\
@@ -601,32 +1313,71 @@ m_1(x)=&\displaystyle\int_{\Theta_1}f_\theta(x)\pi_1(\theta)d\theta\\
 
 Ahora desarrollamos \(m_1(x)\) \[
 \begin{array}{rl}
-m_1(x)=&\displaystyle \int_{\Theta_1}\frac{1}{\sqrt{2\pi}\sigma}\exp\bigg\{ -\frac{1}{2}\bigg[\bigg(\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2} \bigg)+\bigg\{\bigg(\frac{\sigma^2+\tau^2}{\sigma^2\tau^2} \bigg)\bigg(\mu -  \frac{x\tau^2+\xi\sigma^2}{\sigma^2+\tau^2} \bigg)^2-
-\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}  \bigg\}  \bigg]\bigg\}\frac{1}{\sqrt{2\pi}\tau}d\mu\\
-=&\vdots\\
-=&\frac{1}{\sqrt{2\pi}\sqrt{\sigma^2+\tau^2}}\exp\bigg\{ -\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}\bigg\}
+m_1(x)=& \displaystyle\int_{\Theta_1} \frac{1}{\sqrt{2\pi}\sigma}\frac{1}{\sqrt{2\pi}\tau} e^{-\frac{1}{2}\bigg[\bigg(\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2} \bigg)+\bigg(\frac{\sigma^2+\tau^2}{\sigma^2\tau^2} \bigg)\bigg(\mu -  \frac{x\tau^2+\xi\sigma^2}{\sigma^2+\tau^2} \bigg)^2-
+\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}  \bigg]}d\mu\\
+m_1(x)=& \displaystyle\int_{\Theta_1} \frac{1}{\sqrt{2\pi}\sigma}\frac{1}{\sqrt{2\pi}\tau} e^{-\frac{1}{2}\bigg[\bigg(\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2} \bigg)-
+\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}+\bigg(\frac{\sigma^2+\tau^2}{\sigma^2\tau^2} \bigg)\bigg(\mu -  \frac{x\tau^2+\xi\sigma^2}{\sigma^2+\tau^2} \bigg)^2\bigg]}d\mu\\
+m_1(x)=& \displaystyle\int_{\Theta_1} \frac{1}{\sqrt{2\pi}\sigma}\frac{1}{\sqrt{2\pi}\tau} e^{-\frac{1}{2}\bigg[\bigg(\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2} \bigg)-
+\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}\bigg]}e^{\frac{1}{2}\bigg(\frac{\sigma^2+\tau^2}{\sigma^2\tau^2} \bigg)\bigg(\mu -  \frac{x\tau^2+\xi\sigma^2}{\sigma^2+\tau^2} \bigg)^2}d\mu\\
+m_1(x)=& \displaystyle \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}\bigg[\bigg(\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2} \bigg)-
+\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}\bigg]} \int_{\Theta_1}\frac{1}{\sqrt{2\pi}\sigma\tau} e^{\frac{1}{2}\bigg(\frac{\sigma^2+\tau^2}{\sigma^2\tau^2} \bigg)\bigg(\mu -\frac{x\tau^2+\xi\sigma^2}{\sigma^2+\tau^2} \bigg)^2}d\mu\\
+m_1(x)=& \displaystyle \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}\bigg[\bigg(\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2} \bigg)-
+\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}\bigg]} \int_{\Theta_1}\frac{\sqrt{\sigma^2+\tau^2}}{\sqrt{\sigma^2+\tau^2}}\frac{1}{\sqrt{2\pi}\sigma\tau} e^{\frac{1}{2}\bigg(\frac{\sigma^2+\tau^2}{\sigma^2\tau^2} \bigg)\bigg(\mu -\frac{x\tau^2+\xi\sigma^2}{\sigma^2+\tau^2} \bigg)^2}d\mu\\
+m_1(x)=& \displaystyle \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\bigg[\bigg(\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2} \bigg)-
+\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}\bigg]} \int_{\Theta_1}\frac{\sqrt{\sigma^2+\tau^2}}{\sqrt{2\pi\sigma^2\tau^2}} e^{\frac{1}{2}\bigg(\frac{\sigma^2+\tau^2}{\sigma^2\tau^2} \bigg)\bigg(\mu -\frac{x\tau^2+\xi\sigma^2}{\sigma^2+\tau^2} \bigg)^2}d\mu\\
+m_1(x)=& \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\bigg[\bigg(\frac{x^2}{\sigma^2}+\frac{\xi^2}{\tau^2} \bigg)-
+\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}\bigg]}\\
+m_1(x)=& \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\bigg[\frac{x^2\tau^2+\xi^2\sigma^2}{\tau^2\sigma^2}-
+\frac{(x\tau^2+\xi\sigma^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}\bigg]}
 \end{array}
-\] Como \[
+\]
+
+Si \(\xi=0\) tenemos: \[
+\begin{array}{rl}
+m_1(x)=& \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\left[\frac{x^2\tau^2}{\tau^2\sigma^2}-
+\frac{(x\tau^2)^2}{\sigma^2\tau^2(\sigma^2+\tau^2)}\right]}\\
+m_1(x)=& \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\left[\frac{x^2}{\sigma^2}-
+\frac{x^2\tau^2}{\sigma^2(\sigma^2+\tau^2)}\right]}\\
+m_1(x)=& \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\frac{x^2}{\sigma^2}\left[1-
+\frac{\tau^2}{\sigma^2+\tau^2}\right]}\\
+m_1(x)=& \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\frac{x^2}{\sigma^2}\left[\frac{\sigma^2+\tau^2-\tau^2}{\sigma^2+\tau^2}\right]}\\
+m_1(x)=& \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\frac{x^2}{\sigma^2}\left[\frac{\sigma^2}{\sigma^2+\tau^2}\right]}\\
+m_1(x)=& \frac{1}{\sqrt{2\pi(\sigma^2+\tau^2)}} e^{-\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}}\\
+m_1(x)=&\frac{1}{\sqrt{2\pi}\sqrt{\sigma^2+\tau^2}}e^{ -\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}}
+\end{array}
+\]
+
+Como \[
 f_0(x)=\frac{1}{\sqrt{2\pi\sigma^2}}\exp\bigg\{-\frac{(x-0)^2}{2\sigma^2} \bigg\}=\frac{1}{\sqrt{2\pi}\sigma}\exp\bigg\{-\frac{x^2}{2\sigma^2} \bigg\}\sim\mathcal{N(\mu,\sigma^2)}\text{ con }\mu=0
 \]
 
 entonces \(B_{10}^\pi\) \[
 \begin{array}{rl}
-B_{10}^\pi=\frac{m_1(x)}{f_0(x)}=&\frac{\frac{1}{\sqrt{2\pi}\sqrt{\sigma^2+\tau^2}}\exp\bigg\{ -\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}\bigg\}}{\frac{1}{\sqrt{2\pi}\sigma}\exp\bigg\{-\frac{x^2}{2\sigma^2} \bigg\}}\\
-=&\vdots\\
-=&\frac{\sigma}{\sqrt{\sigma^2+\tau^2}}\exp\bigg\{\frac{1}{2}\frac{x^2\tau^2}{\sigma^2(\sigma^2+\tau^2)} \bigg\}
+B_{10}^\pi & =\frac{m_1(x)}{f_0(x)}\\
+B_{10}^\pi & =\frac{ \frac{1}{\sqrt{2\pi}\sqrt{\sigma^2+\tau^2}}e^{ -\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}}}{\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{x^2}{2\sigma^2}}}\\
+B_{10}^\pi & =\frac{\sqrt{\sigma^2}}{\sqrt{\sigma^2+\tau^2}} e^{ -\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}+\frac{x^2}{2\sigma^2}}\\
+B_{10}^\pi & =\frac{\sqrt{\sigma^2}}{\sqrt{\sigma^2+\tau^2}} e^{ -\frac{1}{2}\left( \frac{x^2}{\sigma^2+\tau^2}-\frac{x^2}{\sigma^2}\right)}\\
+B_{10}^\pi & =\frac{\sqrt{\sigma^2}}{\sqrt{\sigma^2+\tau^2}} e^{ -\frac{1}{2}\left( \frac{x^2\sigma^2 -x^2(\sigma^2+\tau^2)}{\sigma^2(\sigma^2+\tau^2)}\right)}\\
+B_{10}^\pi & =\frac{\sqrt{\sigma^2}}{\sqrt{\sigma^2+\tau^2}} e^{-\frac{1}{2}\left( \frac{-x^2\tau^2}{\sigma^2(\sigma^2+\tau^2)}\right)}\\
+B_{10}^\pi & =\frac{\sqrt{\sigma^2}}{\sqrt{\sigma^2+\tau^2}} e^{ \frac{x^2\tau^2}{2\sigma^2(\sigma^2+\tau^2)}}
 \end{array}
 \]
 
 Entonces el \emph{Factor de Bayes} es la razón de las marginales bajo
 ambas hipótesis, \(\mu=0\) y \(\mu\ne 0\), \[
-\begin{array}{ll}
-B_{10}^\pi=\displaystyle \frac{m_1(x)}{f_0(x)}&=\displaystyle \frac{\sigma}{\sqrt{\sigma^2+\tau^2}}\frac{e^{-x^2/2(\sigma^2+\tau^2)}}{e^{-x^2/2\sigma^2}} \\
-&=\displaystyle \sqrt{\frac{\sigma^2}{\sigma^2+\tau^2}}\exp\bigg\{\frac{\tau^2x^2}{2\sigma^2(\sigma^2+\tau^2)} \bigg\}
-\end{array}
+B_{10}^\pi=\frac{m_1(x)}{f_0(x)}=\sqrt{\frac{\sigma^2}{\sigma^2+\tau^2}}e^{\frac{\tau^2x^2}{2\sigma^2(\sigma^2+\tau^2)}}
 \] y si partimos de que \(\rho=P(\theta=\theta_0)\) y
 \(\pi(\theta)=\rho 1_{\Theta_0}(\theta)+(1-\rho)\pi_1(\theta)\) \[
-\pi(\Theta_0|x)=\frac{f_{\Theta_0}(x)\rho}{\int f_{\Theta_0}(x)\pi(\theta)d\theta}=\frac{f_{\Theta_0}(x)\rho}{f_{\Theta_0}(x)\rho+(1-\rho)m_1(x)}
+\begin{array}{rl}
+\pi(\Theta_0|x) & =\frac{f_{\Theta_0}(x)\rho}{\int f_{\Theta_0}(x)\pi(\theta)d\theta}\\
+\pi(\Theta_0|x) & =\frac{f_{\Theta_0}(x)\rho}{f_{\Theta_0}(x)\rho+(1-\rho)m_1(x)}\\
+\pi(\Theta_0|x) & =\frac{\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{x^2}{2\sigma^2} }\rho}{\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{x^2}{2\sigma^2} }\rho+(1-\rho)\frac{1}{\sqrt{2\pi}\sqrt{\sigma^2+\tau^2}}e^{ -\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}}}\\
+\pi(\Theta_0|x) & =\frac{\frac{1}{\sigma}e^{-\frac{x^2}{2\sigma^2} }\rho}{\frac{1}{\sigma}e^{-\frac{x^2}{2\sigma^2} }\rho+(1-\rho)\frac{1}{\sqrt{\sigma^2+\tau^2}}e^{ -\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}}} \frac{\frac{1}{\frac{1}{\sigma}e^{-\frac{x^2}{2\sigma^2} }\rho}}{\frac{1}{\frac{1}{\sigma}e^{-\frac{x^2}{2\sigma^2} }\rho}}\\
+\pi(\Theta_0|x) & =\frac{1}{1+(1-\rho)\frac{1}{\sqrt{\sigma^2+\tau^2}}\frac{\sigma}{\rho} e^{ -\frac{1}{2}\frac{x^2}{\sigma^2+\tau^2}}e^{\frac{1}{2}\frac{x^2}{\sigma^2}}}\\
+\pi(\Theta_0|x) & =\frac{1}{1+(1-\rho)\frac{1}{\sqrt{\sigma^2+\tau^2}}\frac{\sigma}{\rho} e^{ -\frac{1}{2}\left(\frac{x^2}{\sigma^2+\tau^2}-\frac{x^2}{\sigma^2}\right)}}\\
+\pi(\Theta_0|x) & =\frac{1}{1+(1-\rho)\frac{1}{\sqrt{\sigma^2+\tau^2}}\frac{\sigma}{\rho} e^{ -\frac{1}{2}\left(\frac{x^2\sigma^2-x^2(\sigma^2+\tau^2)}{\sigma^2(\sigma^2+\tau^2)}\right)}}\\
+\pi(\Theta_0|x) & =\frac{1}{1+\frac{(1-\rho)}{\rho}\frac{\sqrt{\sigma^2}}{\sqrt{\sigma^2+\tau^2}} e^{ \frac{1}{2}\frac{x^2\tau^2}{\sigma^2(\sigma^2+\tau^2)}}}\\
+\end{array}
 \]
 
 entonces \(\pi(\mu=0|x)\) \[
@@ -722,10 +1473,14 @@ Cuando \(x\sim\mathcal{N}(\mu,1)\) y \(H_0:\mu=0\), la distribución
 \emph{a priori} imprópia (Jeffreys) es \(\pi_1(\mu)=1\); si escribimos
 \[
 \pi(\mu)=\frac{1}{2} 1_{0}(\mu)+\frac{1}{2} \cdotp 1
-\] entonces la probabilidad posterior es \[
-\pi(\mu=0|x)=  \frac{\displaystyle e^{-\frac{x^2}{2}}}{e^{-\frac{x^2}{2}}\ +\ \displaystyle \int_{-\infty}^{\infty}e^{-\frac{(x-\theta)^2}{2}}}=\frac{1}{1+\sqrt{2\pi}\ e^{\frac{x^2}{2}}}
-\] Una primera consecuencia de esta elección la probabilidad posterior
-de \(H_0\) es acotada superiormente por \[
+\]
+
+entonces la probabilidad posterior es \[
+\pi(\mu=0|x)=  \frac{\displaystyle e^{-\frac{x^2}{2}}}{e^{-\frac{x^2}{2}}\ +\ \displaystyle \int_{-\infty}^{\infty}e^{-\frac{(x-\theta)^2}{2}}d\theta}=\frac{1}{1+\sqrt{2\pi}\ e^{\frac{x^2}{2}}}
+\]
+
+Una primera consecuencia de esta elección la probabilidad posterior de
+\(H_0\) es acotada superiormente por \[
 \pi(\mu=0|x)\le\frac{1}{(1+\sqrt{2\pi})}=0.285
 \] La Tabla 2.2 provee la evolución (el cambio) de esta probabilidad
 cuando \(x\) se separa del \(0\). Un punto interesante es que los
@@ -878,15 +1633,15 @@ previo.
 Primero vamos a desarrollar \[
 \begin{array}{rl}
 (\mu-\bar{x})^2+(\mu-\bar{y})^2=&(\mu^2-2\mu\bar{x}+\bar{x}^2)+(\mu^2-2\mu\bar{y}+\bar{y}^2)\\
-=&2\mu^2-2\mu(\bar{x}+\bar{y})+\bar{x}^2+\bar{y}^2\\
-=&2(\mu^2-\mu(\bar{x}+\bar{y}))+\bar{x}^2+\bar{y}^2\\
-=&2(\mu^2-\mu(\bar{x}+\bar{y}) + \big(\frac{\bar{x}+\bar{y}}{2}\big)^2-\big(\frac{\bar{x}+\bar{y}}{2}\big)^2)+\bar{x}^2+\bar{y}^2\\
-=&2([\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2-\big(\frac{\bar{x}+\bar{y}}{2}\big)^2)+\bar{x}^2+\bar{y}^2\\
-=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2-2\big(\frac{\bar{x}+\bar{y}}{2}\big)^2+\bar{x}^2+\bar{y}^2\\
-=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2-\big(\frac{\bar{x}^2+2\bar{x}\bar{y}+\bar{y}^2}{2}\big)+2\frac{\bar{x}^2}{2}+2\frac{\bar{y}^2}{2}\\
-=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2-\frac{\bar{x}^2+2\bar{x}\bar{y}+\bar{y}^2-2\bar{x}^2-2\bar{y}^2}{2}\\
-=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{\bar{x}^2-2\bar{x}\bar{y}+\bar{y}^2}{2}\\
-=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{(\bar{x}-\bar{y})^2}{2}
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2\mu^2-2\mu(\bar{x}+\bar{y})+\bar{x}^2+\bar{y}^2\\
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2(\mu^2-\mu(\bar{x}+\bar{y}))+\bar{x}^2+\bar{y}^2\\
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2(\mu^2-\mu(\bar{x}+\bar{y}) + \big(\frac{\bar{x}+\bar{y}}{2}\big)^2-\big(\frac{\bar{x}+\bar{y}}{2}\big)^2)+\bar{x}^2+\bar{y}^2\\
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2([\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2-\big(\frac{\bar{x}+\bar{y}}{2}\big)^2)+\bar{x}^2+\bar{y}^2\\
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2-2\big(\frac{\bar{x}+\bar{y}}{2}\big)^2+\bar{x}^2+\bar{y}^2\\
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2-\big(\frac{\bar{x}^2+2\bar{x}\bar{y}+\bar{y}^2}{2}\big)+2\frac{\bar{x}^2}{2}+2\frac{\bar{y}^2}{2}\\
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2-\frac{\bar{x}^2+2\bar{x}\bar{y}+\bar{y}^2-2\bar{x}^2-2\bar{y}^2}{2}\\
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{\bar{x}^2-2\bar{x}\bar{y}+\bar{y}^2}{2}\\
+(\mu-\bar{x})^2+(\mu-\bar{y})^2=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{(\bar{x}-\bar{y})^2}{2}
 \end{array}
 \] sustituyendo esta expresión en el denominador de la integral
 anterior, tenemos \[
@@ -899,11 +1654,12 @@ anterior, tenemos \[
 \begin{array}{rl}
 \displaystyle \int[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]^{-n}d\mu=&2^{-(\nu+1)/2}\displaystyle \int\bigg( [\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}\bigg)^{-(\nu+1)/2}d\mu
 \end{array}
-\] si
-\(\sigma^2=\frac{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}{\nu}\)
+\]
+
+si \(\sigma^2=\frac{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}{\nu}\)
 queda \[
 \begin{array}{rl}
-\displaystyle \int[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]^{-n}d\mu=&2^{-(\nu+1)/2}\displaystyle \int\bigg( [\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\sigma^2\nu\bigg)^{-(\nu+1)/2}d\mu\\
+& \displaystyle \int[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]^{-n}d\mu=2^{-(\nu+1)/2}\displaystyle \int\left( [\mu- \left(\frac{\bar{x}+\bar{y}}{2}\right)]^2+\sigma^2\nu\right)^{-(\nu+1)/2}d\mu\\
 =&2^{-(\nu+1)/2}\displaystyle \int\bigg( \sigma^2\nu\bigg[ \frac{[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2}{\sigma^2\nu}+1\bigg]\bigg)^{-(\nu+1)/2}d\mu\\
 =&(2\sigma^2)^{-(\nu+1)/2}\displaystyle \int\nu^{-(\nu+1)/2}\bigg( \frac{[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2}{\sigma^2\nu}+1\bigg)^{-(\nu+1)/2}d\mu\\
 =&(2\sigma^2)^{-(\nu+1)/2}\frac{\sigma\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{\Gamma\bigg(\frac{\nu+1}{2}\bigg)} \displaystyle \int \frac{\Gamma\bigg(\frac{\nu+1}{2}\bigg)}{\sigma\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}\nu^{-(\nu+1)/2}\bigg( \frac{[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2}{\sigma^2\nu}+1\bigg)^{-(\nu+1)/2}d\mu\\

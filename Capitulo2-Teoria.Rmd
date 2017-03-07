@@ -125,9 +125,9 @@ $$
 Sustituyendo esta verosimilitud en la distribución a posteriori tenemos:
 $$
 \begin{array}{rl}
-\pi(\theta|\mathcal{D}) & = \displaystyle \frac{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2}\mathbb{1}_{[-0.5,0.5]}}{\int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2}\mathbb{1}_{[-0.5,0.5]}d\theta}\\
-\pi(\theta|\mathcal{D}) &= \displaystyle \frac{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2}\mathbb{1}_{[-0.5,0.5]}}{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }\int_{-0.5}^{0.5} e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2}d\theta}\\
-\pi(\theta|\mathcal{D}) &=\displaystyle \frac{e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2}\mathbb{1}_{[-0.5,0.5]}}{\int_{-0.5}^{0.5} e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2}d\theta}\\
+\pi(\theta|\mathcal{D}) & = \displaystyle \frac{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2} 1_{[-0.5,0.5]}}{\int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2} 1_{[-0.5,0.5]}d\theta}\\
+\pi(\theta|\mathcal{D}) &= \displaystyle \frac{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2} 1_{[-0.5,0.5]}}{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }\int_{-0.5}^{0.5} e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2}d\theta}\\
+\pi(\theta|\mathcal{D}) &=\displaystyle \frac{e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2} 1_{[-0.5,0.5]}}{\int_{-0.5}^{0.5} e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2}d\theta}\\
 \end{array}
 $$
 La cual es una distribución normal truncada.

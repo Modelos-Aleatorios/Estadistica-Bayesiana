@@ -748,14 +748,55 @@ y el riesgo asociado
 $$
 \begin{array}{rl}
 R(\theta,\delta) = & \mathbb{E}_\theta[L(\theta,\delta(x))]\\
-= & \displaystyle\int_\chi L(\theta,\delta(x))f_\theta(x)dx\\
-= & \bigg\{
+R(\theta,\delta) = & \sum L(\theta,\delta(x))P(\delta(x))\\
+R(\theta,\delta) = & L(\theta,\delta(x)=0)P(\delta(x)=0)+L(\theta,\delta(x)=1)P(\delta(x)=1)
+\end{array}
+$$
+
+Supongamos que $\theta \in \Theta_0$ entonces tenemos por definición de $L(\theta,\delta(x))$ que:
+$$
+\begin{array}{rl}
+L(\theta,\delta(x)=0)=1\ si \ d=0\\
+L(\theta,\delta(x)=1)=0\ si \ d=1\\
+\end{array}
+$$
+
+Sustituyendo esto nos queda:
+$$
+\begin{array}{rl}
+R(\theta,\delta) = & 1P(\delta(x)=0)+0P(\delta(x)=1)\\
+R(\theta,\delta) = & P(\delta(x)=0) \ si \ \theta\in \Theta_0 
+\end{array}
+$$
+
+Ahora supongamos que $\theta \notin \Theta_0$ entonces:
+$$
+\begin{array}{rl}
+L(\theta,\delta(x)=0)=0\ si \ d=0\\
+L(\theta,\delta(x)=1)=1\ si \ d=1\\
+\end{array}
+$$
+
+Así:
+$$
+\begin{array}{rl}
+R(\theta,\delta) = & 0P(\delta(x)=0)+1P(\delta(x)=1)\\
+R(\theta,\delta) = & P(\delta(x)=1) \ si \ \theta\notin \Theta_0 
+\end{array}
+$$
+
+Por lo tanto:
+$$
+\begin{array}{rl}
+R(\theta,\delta) = & \displaystyle\int_\chi L(\theta,\delta(x))f_\theta(x)dx\\
+R(\theta,\delta) = & \bigg\{
 \displaystyle\begin{array}{lr}
 P_\theta(\delta(x)=0), \text{ si }\theta\in\Theta_0\\
 P_\theta(\delta(x)=1), \text{ si no}
 \end{array}
 \end{array}
 $$
+
 donde $x$ denota los datos $\mathcal{D}$ disponibles. Bajo la función de pérdida $0-1$, el criterio de decisión de Bayes (estimador) asociado con la distribución *a priori* $\pi$ es
 $$
 \delta^\pi(x)=\Bigg\{

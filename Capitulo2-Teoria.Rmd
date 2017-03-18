@@ -114,7 +114,7 @@ $$
 \end{array}
 $$
 
-Sustituyendo esto tenemos:
+Sustituyendo:
 $$
 \begin{array}{rl}
 L(\theta|\mathcal{D}) & = \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\left(\sum_{i=1}^n x_i^2 - n\bar x^2 + n(\mu -\bar x)^2\right)}\\
@@ -122,7 +122,7 @@ L(\theta|\mathcal{D}) & =\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{
 \end{array}
 $$
 
-Sustituyendo esta verosimilitud en la distribución a posteriori tenemos:
+Sustituyendo esta verosimilitud en la distribución a posteriori:
 $$
 \begin{array}{rl}
 \pi(\theta|\mathcal{D}) & = \displaystyle \frac{\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\mu -\bar x)^2} 1_{[-0.5,0.5]}}{\int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n x_i^2 - n\bar x^2 }e^{-\frac{1}{2\sigma^2} n(\theta -\bar x)^2} 1_{[-0.5,0.5]}d\theta}\\
@@ -138,7 +138,7 @@ La cual es una distribución normal truncada.
 
 **Muestre que la minimización de $\hat{\theta}$ en la esperanza $E[L(\theta,\hat{\theta})|D]$, es la esperanza de la función de perdida cuadrática sobre la distribución con función de densidad $\pi(\theta|D)$, produce el valor posterior esperado de la solución $\hat\theta$**
 
-La función de perdida se define como $L(\theta, \hat{\theta})=\|\theta, \hat{\theta}\|^2$, entonces tenemos:
+La función de perdida se define como $L(\theta, \hat{\theta})=\|\theta, \hat{\theta}\|^2$, entonces:
 $$
 \begin{array}{rl}
 \mathbb{E}(L(\theta, \hat{\theta})|\mathcal{D}) & = \mathbb{E}(\|\theta- \hat{\theta}\|^2|\mathcal{D})\\
@@ -161,7 +161,7 @@ $$
 
 La función de densidad de una distribución normal es $f_\theta(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}$, para probar que esta función es de la familia exponencial tenemos que escribirla de la forma 
 $$f_\theta(x)=h(x)e^{\theta . R(x)-\psi(\theta)}$$
-Entonces tenemos:
+Entonces:
 $$
 \begin{array}{rl}
 f_\theta(x) & =\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}\\
@@ -186,7 +186,6 @@ $$
 $$\displaystyle \frac{e^{-\frac{1}{2\sigma^2} \mu^2}}{\sigma}=\frac{e^{-\frac{1}{2\sigma^2} \mu^2}}{e^{\ln(\sigma)}}= e^{-\frac{1}{2\sigma^2} \mu^2-\ln(\sigma)}=e^{-\left(\frac{1}{2\sigma^2} \mu^2+\ln(\sigma)\right)}= e^{-\psi(\theta)}$$ 
 
 $$\frac{1}{\sqrt{2\pi}}=h(x)$$
-
 Asi tenemos la normal es de la familia exponencial.
 
 -----
@@ -195,7 +194,7 @@ Asi tenemos la normal es de la familia exponencial.
 
 **Muestre que para una familia exponencial $\psi(\theta)$ es definida por la restricción de que $f_\theta$ es una función de densidad y que el valor esperado de esta distribución puede ser escrito como $\frac{\partial \psi(\theta)}{\partial \theta}$ el vector de las derivadasde $\psi (\theta)$ con respecto a la componente de $\theta$**
 
-Por ser $f_\theta$ una función de densidad de la familia exponencial tenemos:
+Por ser $f_\theta$ una función de densidad de la familia exponencial:
 
 $\int f_\theta (y) dy = \int h(y)e^{\theta . R(y)-\psi(\theta)} dy =1$
 
@@ -209,10 +208,10 @@ e^{\psi(\theta)} = \int h(y)e^{\theta R(y)} dy
 \end{array}
 $$
 
-$R(y)$ es un estadístico suficiente tenemos:
+$R(y)$ es un estadístico suficiente, por lo tanto:
 $$\mathbb{E}(R(y)) =\int R(y)h(y)e^{\theta . R(y)-\psi(\theta)} dy$$
 
-Observemos que $\frac{\partial (\theta R(y))}{\partial \theta}=R(y)$, asi:
+Observemos que $\frac{\partial (\theta R(y))}{\partial \theta}=R(y)$, así:
 $$
 \begin{array}{rl}
 \mathbb{E}(R(y)) & =\displaystyle \int \frac{\partial (\theta R(y))}{\partial \theta} h(y)e^{\theta  R(y)-\psi(\theta)} dy\\
@@ -224,7 +223,7 @@ $$
 \end{array}
 $$
 
-Observemos que $\frac{\partial (e^{\theta R(y)-\psi(\theta))}}{\partial \theta}=e^{\theta R(y)-\psi(\theta)}\frac{\partial (\theta R(y)-\psi(\theta))}{\partial \theta}$ asi:
+Observemos que $\frac{\partial (e^{\theta R(y)-\psi(\theta))}}{\partial \theta}=e^{\theta R(y)-\psi(\theta)}\frac{\partial (\theta R(y)-\psi(\theta))}{\partial \theta}$ así:
 $$
 \begin{array}{rl}
 \mathbb{E}(R(y)) & = \displaystyle \int  h(y) \frac{\partial (e^{\theta R(y)-\psi(\theta)})}{\partial \theta} dy +\displaystyle \frac{\partial (\psi(\theta))}{\partial \theta}  1\\
@@ -252,7 +251,7 @@ $$
 \end{array}
 $$
 
-Entonces la distribución a posteriori será:
+La distribución a posteriori será:
 $$
 \begin{array}{rl}
 \pi (\theta | \xi, \lambda, y_1,...,y_n) & \propto f_\theta(y)\pi(\theta|\xi, \lambda)\\
@@ -266,7 +265,7 @@ $$
 \end{array}
 $$
 
-Asi tenemos que $\xi(y_1,...,y_n)=\sum_{i=1}^n R(y_i)+\xi$ y $\lambda(y_1,...,y_n)=n+\lambda$
+Así $\xi(y_1,...,y_n)=\sum_{i=1}^n R(y_i)+\xi$ y $\lambda(y_1,...,y_n)=n+\lambda$
 $$\pi (\theta | \xi, \lambda, y_1,...,y_n)\propto e^{ \theta\xi(y_1,...,y_n)-\psi(\theta)\lambda(y_1,...,y_n)}$$
 
 Si tenemos una normal $\mathcal{N}(\mu,1)$ este es un caso de la familia exponencial, es decir:
@@ -278,7 +277,7 @@ f_\theta(x)&=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}+\frac{2x\mu- \mu^2}{2}}\\
 f_\theta(x)&=\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}} e^{x\mu-\frac{\mu^2}{2}}\\
 \end{array}
 $$
-donde $h(x)=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}}$, $\psi(\theta)=\frac{\mu^2}{2}$, $R(x)=x$ y $\theta=\mu$. Asi tenemos que la priori puede escribirse como:
+donde $h(x)=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}}$, $\psi(\theta)=\frac{\mu^2}{2}$, $R(x)=x$ y $\theta=\mu$. La priori puede escribirse como:
 $$
 \begin{array}{rl}
 \pi(\mu|\xi,\lambda) & \propto e^{\theta\xi-\lambda\psi(\theta)}\\
@@ -286,7 +285,7 @@ $$
 \end{array}
 $$
 
-Veamos que esto implica que la priori conjugada de $\mu$ es tambi?n una normal $\mathcal{N}(\lambda^{-1}\xi,\lambda^{-1})$
+Veamos que ésto implica que la priori conjugada de $\mu$ es también una normal $\mathcal{N}(\lambda^{-1}\xi,\lambda^{-1})$
 $$
 \begin{array}{rl}
 \pi(\mu|\xi,\lambda) & \propto  e^{\mu\xi-\lambda\frac{\mu^2}{2}}\\
@@ -297,9 +296,9 @@ $$
 \pi(\mu|\xi,\lambda) & \propto  e^{-\frac{1}{2(\frac{1}{\lambda})}(\mu-\frac{\xi}{\lambda})^2} \\
 \end{array}
 $$
-Esto es una normal con media $\frac{\xi}{\lambda}$ y varianza $\frac{1}{\lambda}$.
+Es una normal con media $\frac{\xi}{\lambda}$ y varianza $\frac{1}{\lambda}$.
 
-Para calcular la distribuci?n a priori de $\mu$ usaremos el teorema de Bayes, recordemos que estamos suponiendo que $X\sim \mathcal{N}(\mu,1)$ por lo tanto 
+Para calcular la distribución a priori de $\mu$ usaremos el teorema de Bayes, recordemos que estamos suponiendo que $X\sim \mathcal{N}(\mu,1)$ por lo tanto 
 $$
 \begin{array}{rl}
 f_\theta(x) & =\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(x-\mu)^2}\\
@@ -309,7 +308,7 @@ f_\theta(x) & =\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^2} e^{x\mu-\frac{\mu^2}{2}}
 \end{array}
 $$
 
-Por lo tanto la distribución a priori de $\mu$ es:
+La distribución a priori de $\mu$ es:
 $$
 \begin{array}{rl}
 \pi(\mu|x,\xi,\lambda) & \propto \pi(x|\mu)\pi(\mu|\xi,\lambda)\\
@@ -325,7 +324,7 @@ $$
 \end{array}
 $$
 
-Con lo cual tenemos una distribuci?n normal con media $\frac{x+\xi}{1+\lambda}$ y varianza $\frac{1}{(1+\lambda)}$
+Con lo cual obtenemos una distribución normal con media $\frac{x+\xi}{1+\lambda}$ y varianza $\frac{1}{(1+\lambda)}$
 
 -----
 
@@ -333,7 +332,7 @@ Con lo cual tenemos una distribuci?n normal con media $\frac{x+\xi}{1+\lambda}$ 
 
 **Calcular la distribución posterior para una muestra simple iid $\mathcal{D}=(x_1,x_2,...,x_n)$ de $\mathcal{N}(\mu,1)$ y muestre que esto solo depende del estadístico suficiente $\bar{x}=\frac{\sum_{i=1}^n x_{i}}{n}$**
 
-De lo anterior sabemos que la priori conjugada es $\pi(\mu|\xi,\lambda) = e^{\mu\xi-\lambda\frac{\mu^2}{2}}$ y la verosimilitud de los datos es $L(\mu|\mathcal{D})=\prod_{i=1}^n \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(x_i-\mu)^2}$, sustituyendo este tenemos:
+De lo anterior sabemos que la priori conjugada es $\pi(\mu|\xi,\lambda) = e^{\mu\xi-\lambda\frac{\mu^2}{2}}$ y la verosimilitud de los datos es $L(\mu|\mathcal{D})=\prod_{i=1}^n \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(x_i-\mu)^2}$, sustituyendo:
 $$
 \begin{array}{rl}
 \pi(\mu|\xi,\lambda,\mathcal{D}) & \propto L(\mu|\mathcal{D})\pi(\mu|\xi,\lambda)\\
@@ -420,7 +419,7 @@ $$
 
 $$\pi(\sigma^2)=\frac{\left(\frac{\alpha}{2}\right)^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)}\frac{e^{-\frac{\alpha}{2\sigma^2}}}{{\sigma^2}^{\lambda_\sigma+1}}$$
 
-Asi tenemos:
+Así tenemos:
 $$
 \begin{array}{rl}
 \pi(\theta|\mathcal{D}) & =  \left( \frac{1}{\sqrt{2\pi}\sigma}\right)^ne^{-\frac{1}{2\sigma^2}[n(\mu-\bar x)^2 + S_x]}\frac{\sqrt{\lambda_\mu}}{\sqrt{2\pi \sigma^2}}e^{-\frac{\lambda_\mu}{2\sigma^2}(\mu-\xi)^2}\frac{\left(\frac{\alpha}{2}\right)^{\lambda_\sigma}}{\Gamma(\lambda_\sigma)}\frac{e^{-\frac{\alpha}{2\sigma^2}}}{{\sigma^2}^{\lambda_\sigma+1}}\\
@@ -470,7 +469,7 @@ $$
 Notemos que:
 $$\beta\gamma\ln(x)-x^\gamma\alpha=[\beta, \alpha]\begin{bmatrix} \gamma\ln(x) \\ -x^\gamma \end{bmatrix}$$
 
-Entonces tenemos que $\theta=[\beta, \alpha]$, $R(x)=[\gamma\ln(x), -x^\gamma]^t$
+Entonces $\theta=[\beta, \alpha]$, $R(x)=[\gamma\ln(x), -x^\gamma]^t$
 $$
 \begin{array}{rl}
 f_\theta(x) & = e^{\theta R(x)-\psi(\theta)+(\gamma-1)\ln(x)} \\
@@ -503,7 +502,7 @@ $$
 
 ### Ejercicio 2.13
 
-**Muestre que cuando la priori de $\theta=(\mu, \sigma^2)$ es $\mathcal{N}(\xi,\frac{\sigma^2}{\lambda_\mu})\times \mathcal{IG}(\lambda_s,\alpha)$, la marginal de $\mu$ es una distribuci?n *t-Student* $\mathcal{T}(1\lambda_s,\xi,2\alpha)$. Dar la correspondiente marginal a priori de $\sigma^2$. Para una muestra simple iid $\mathcal{D}=(x_1,...x_n)$ de $\mathcal{N}(\mu,\sigma^2)$**
+**Muestre que cuando la priori de $\theta=(\mu, \sigma^2)$ es $\mathcal{N}(\xi,\frac{\sigma^2}{\lambda_\mu})\times \mathcal{IG}(\lambda_s,\alpha)$, la marginal de $\mu$ es una distribución *t-Student* $\mathcal{T}(1\lambda_s,\xi,2\alpha)$. Dar la correspondiente marginal a priori de $\sigma^2$. Para una muestra simple iid $\mathcal{D}=(x_1,...x_n)$ de $\mathcal{N}(\mu,\sigma^2)$**
 
 La priori de $\theta$ es:
 $$
@@ -514,7 +513,7 @@ $$
 \end{array}
 $$
 
-Entonces tenemos que la priori de $\mu$ es:
+La priori de $\mu$ es:
 $$
 \begin{array}{rl}
 \pi(\mu) & =\displaystyle \int \pi(\theta)d\sigma^2\\
@@ -544,7 +543,7 @@ $$
 \end{array}
 $$
 
-Ya que $u^{(A-1)-1}e^{-uB} \frac{A^{B-1}}{\Gamma(B-1)}$ es la funci?n de densidad de una distribuci?n Gamma con par?metros $A-1$ y $B$
+Ya que $u^{(A-1)-1}e^{-uB} \frac{A^{B-1}}{\Gamma(B-1)}$ es la función de densidad de una distribución Gamma con parámetros $A-1$ y $B$
 $$
 \begin{array}{rl}
 \pi(\mu) & \propto B^{-(A-1)} \\
@@ -1286,19 +1285,133 @@ Para tomar ventaja de la estructura de este modelo, podemos asumir que $\sigma^2
 $$
 B_{10}^\pi=\frac{\int l(\mu_x,\mu_y,\sigma|\mathcal{D})\pi(\mu_x,\mu_y)\pi_\sigma(\sigma^2)d\sigma^2d\mu_x d\mu_y}{\int l(\mu,\sigma|\mathcal{D})\pi_\mu(\mu)\pi_\sigma(\sigma^2)d\sigma^2d\mu}
 $$
-no depende de la constante de normalización utilizada para $\pi_\sigma(\sigma^2)$ y por tanto todavía podemos utilizar *a priori* imprópios como $\pi_\sigma(\sigma^2)=1/\sigma^2$ en este caso. Adicionalmente, podemos reescribir $\mu_x$ y $\mu_y$ como $\mu_x=\mu-\xi$ y $\mu_y=\mu+\xi$ respectivamente y utilizar un *a priori* de la forma $\pi(\mu,\xi)=\pi_\mu(\mu)\pi_\xi(\xi)$ en la nueva parametrización, así, de nuevo, el mismo *a priori* $\pi_\mu$ se puede utilizar bajo ambas $H_0$ y su alternativa. La misma cancelación de la constante de normalización ocurre para $\pi_\mu$ y la selección del *a priori* $\pi_\mu(\mu)=1$ y $\xi\sim\mathcal{N}(0,1)$ nos da
+no depende de la constante de normalización utilizada para $\pi_\sigma(\sigma^2)$ y por tanto todavía podemos utilizar *a priori* imprópios como $\pi_\sigma(\sigma^2)=1/\sigma^2$ en este caso. Adicionalmente, podemos reescribir $\mu_x$ y $\mu_y$ como $\mu_x=\mu-\xi$ y $\mu_y=\mu+\xi$ respectivamente y utilizar un *a priori* de la forma $\pi(\mu,\xi)=\pi_\mu(\mu)\pi_\xi(\xi)$ en la nueva parametrización, así, de nuevo, el mismo *a priori* $\pi_\mu$ se puede utilizar bajo ambas $H_0$ y su alternativa. La misma cancelación de la constante de normalización ocurre para $\pi_\mu$ y la selección del *a priori* $\pi_\mu(\mu)=1$ y $\xi\sim\mathcal{N}(0,1)$, es decir:
 $$
 \begin{array}{rl}
-B_{10}^\pi=&\frac{\displaystyle \int\exp-\frac{n}{2\sigma^2}[(\mu-\xi-\bar{x})^2+(\mu+\xi-\bar{y})^2+S^2]\sigma^{-2n-2}e^{-\xi^2/2}/\sqrt{2\pi}\ d\sigma^2\ d\mu \ d\xi}
-{\displaystyle \int\exp-\frac{n}{2\sigma^2}[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]\sigma^{-2n-2}\ d\sigma^2\ d\mu}\\
-=&\frac{\displaystyle \int[(\mu-\xi-\bar{x})^2+(\mu+\xi-\bar{y})^2+S^2]^{-n}e^{-\xi^2/2}/\sqrt{2\pi}\ d\mu \ d\xi}
-{\displaystyle \int[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]^{-n}\ d\mu}
+& \pi_\sigma(\sigma^2)  = \frac{1}{\sigma^2}\\
+& \mu_x  = \mu-\epsilon\\
+& \mu_y  = \mu+\epsilon\\
+& \pi(\mu,\xi) = \pi_\mu(\mu)\pi_\xi(\xi)\\
+&\pi_\mu(\mu)=1\\
+& \xi \sim N(0,1)\implies \pi_\xi(\xi)=\frac{1}{\sqrt{2\pi}1}e^{-\frac{1}{2}\frac{(\xi-0)^2}{1^2}}=\frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}}
 \end{array}
 $$
 
-donde $S$ denota la media
+Así
 $$
-S=\frac{1}{n}\sum_{i=1}^{n}(x_i-\bar{x})^2+\frac{1}{n}\sum_{i=1}^{n}(y_i-\bar{y})^2
+\begin{array}{rl}
+l(\mu_x,\mu_y,\sigma|\mathcal{D}) & = \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x_i-\mu_x)^2}{2\sigma^2}} \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y_i-\mu_y)^2}{2\sigma^2}}\\
+l(\mu_x,\mu_y,\sigma|\mathcal{D}) & = \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{\sum_{i=1}^n(x_i-\mu_x)^2}{2\sigma^2}}\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^n e^{-\frac{\sum_{i=1}^n(y_i-\mu_y)^2}{2\sigma^2}}\\
+l(\mu_x,\mu_y,\sigma|\mathcal{D}) & =\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{\sum_{i=1}^n(x_i-\mu_x)^2}{2\sigma^2} -\frac{\sum_{i=1}^n(y_i-\mu_y)^2}{2\sigma^2}}\\
+l(\mu_x,\mu_y,\sigma|\mathcal{D}) & =\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} (\sum_{i=1}^n(x_i-\mu_x)^2 +\sum_{i=1}^n(y_i-\mu_y)^2 ) }\\
+\end{array}
+$$
+
+Sustituyendo $\mu_x  = \mu-\epsilon$ y $\mu_y  = \mu+\epsilon$
+$$
+\begin{array}{rl}
+& \sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 \\
+& = \sum_{i=1}^n (x_i-(\mu-\epsilon))^2 +\sum_{i=1}^n (y_i-(\mu+\epsilon))^2\\
+& = \sum_{i=1}^n (x_i^2-2x_i(\mu-\epsilon)+(\mu-\epsilon)^2) +\sum_{i=1}^n (y_i^2-2y_i(\mu+\epsilon)+(\mu+\epsilon)^2)\\
+& = \sum_{i=1}^n x_i^2-2n\bar{x}(\mu-\epsilon)+n(\mu-\epsilon)^2 +\sum_{i=1}^n y_i^2-2n\bar{y}(\mu+\epsilon)+n(\mu+\epsilon)^2\\
+& = \sum_{i=1}^n x_i^2-2n\bar{x}(\mu-\epsilon)+n\bar{x}^2-n\bar{x}^2+ n(\mu-\epsilon)^2 +\sum_{i=1}^n y_i^2-2n\bar{y}(\mu+\epsilon)\\
+& \ \ \ +n\bar{y}^2-n\bar{y}^2+n(\mu+\epsilon)^2\\
+& = \sum_{i=1}^n x_i^2-n\bar{x}^2 + n(\bar{x}-(\mu-\epsilon))^2 +\sum_{i=1}^n y_i^2-n\bar{y}^2 +n(\bar{y}-(\mu+\epsilon))^2
+\end{array}
+$$
+Donde:
+$$
+\begin{array}{rl}
+\sum_{i=1}^n x_i^2-n\bar{x}^2 & = \sum_{i=1}^n x_i^2-2n\bar{x}^2+n\bar{x}^2\\
+\sum_{i=1}^n x_i^2-n\bar{x}^2 & = \sum_{i=1}^n x_i^2-2\bar{x}n\bar{x}+n\bar{x}^2\\
+\sum_{i=1}^n x_i^2-n\bar{x}^2 & = \sum_{i=1}^n x_i^2-2\bar{x}n\frac{\sum_{i=1}^n x_i}{n}+n\bar{x}^2\\
+\sum_{i=1}^n x_i^2-n\bar{x}^2 & = \sum_{i=1}^n x_i^2-2\bar{x}\sum_{i=1}^n x_i+n\bar{x}^2\\
+\sum_{i=1}^n x_i^2-n\bar{x}^2 & = \sum_{i=1}^n x_i^2-2\bar{x} x_i+\bar{x}^2\\
+\sum_{i=1}^n x_i^2-n\bar{x}^2 & = \sum_{i=1}^n (x_i-\bar{x})^2
+\end{array}
+$$
+
+Obteniendo un resultado similar para $y_i$, es decir, $\sum_{i=1}^n y_i^2-n\bar{y}^2 = \sum_{i=1}^n (y_i-\bar{y})^2$. Sustituyendolos:
+$$
+\begin{array}{rl}
+\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = \sum_{i=1}^n (x_i-\bar{x})^2 + n(\bar{x}-(\mu-\epsilon))^2 +\sum_{i=1}^n (y_i-\bar{y})^2 +n(\bar{y}-(\mu+\epsilon))^2\\
+\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = \frac{n\sum_{i=1}^n (x_i-\bar{x})^2}{n} + n(\bar{x}-(\mu-\epsilon))^2 +\frac{n\sum_{i=1}^n (y_i-\bar{y})^2}{n} +n(\bar{y}-(\mu+\epsilon))^2\\
+\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = n \left[ \frac{\sum_{i=1}^n (x_i-\bar{x})^2}{n}  +\frac{\sum_{i=1}^n (y_i-\bar{y})^2}{n} + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]\\
+\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]\\
+\end{array}
+$$
+
+Donde $S^2= \frac{\sum_{i=1}^n (x_i-\bar{x})^2}{n}  +\frac{\sum_{i=1}^n (y_i-\bar{y})^2}{n}$. Así tenemos:
+$$
+\begin{array}{rl}
+l(\mu_x,\mu_y,\sigma|\mathcal{D}) & =\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}
+\end{array}
+$$
+
+Con este resultado y las prioris supuestas tenemos:
+$$
+\begin{array}{rl}
+B_{10}^\pi=&\frac{\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} \pi(\mu,\xi)\pi_\sigma(\sigma^2) d\sigma^2 d\mu \ d\xi}
+{\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}\pi_\mu(\mu) \pi_\sigma(\sigma^2) d\sigma^2\ d\mu}\\
+B_{10}^\pi=&\frac{\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} \pi(\mu)\pi(\xi)\pi_\sigma(\sigma^2) d\sigma^2 d\mu \ d\xi}
+{\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}\pi_\mu(\mu) \pi_\sigma(\sigma^2) d\sigma^2\ d\mu}\\
+B_{10}^\pi=&\frac{\displaystyle \int \frac{1}{\sigma^{2n}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} 1 \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}}\frac{1}{\sigma^2}d\sigma^2 d\mu \ d\xi}
+{\displaystyle \int \frac{1}{\sigma^{2n}} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}1 \frac{1}{\sigma^2} d\sigma^2\ d\mu}\\
+B_{10}^\pi=&\frac{\displaystyle \int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2 d\mu \ d\xi}
+{\displaystyle \int \frac{1}{\sigma^{2(n+1)}} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} d\sigma^2\ d\mu}
+\end{array}
+$$
+
+Resolviendo ambas integrales con respecto a $\sigma^2$:
+$$
+\begin{array}{rl}
+&\displaystyle \int\int\int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2 d\mu \ d\xi\\
+& = \displaystyle \int\int B\int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{\sigma^2} A} d\sigma^2 d\mu \ d\xi
+\end{array}
+$$
+Donde $A=\frac{n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}{2}$ y $B=\frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2$
+
+Haciendo el cambio de variable $u=\frac{1}{\sigma^2}\implies du=-\frac{1}{(\sigma^2)^2}d\sigma^2$
+$$
+\begin{array}{rl}
+& = \displaystyle \int\int B\int \left( \frac{1}{\sigma^{2}}\right)^{n+1}e^{-\frac{1}{\sigma^2} A} d\sigma^2 d\mu \ d\xi\\
+& = \displaystyle \int\int B\int \left( \frac{1}{\sigma^{2}}\right)^{n+1-2}e^{-\frac{1}{\sigma^2} A} \left( \frac{1}{\sigma^{2}}\right)^{2} d\sigma^2 d\mu \ d\xi\\
+& = \displaystyle \int\int B\int \left( \frac{1}{\sigma^{2}}\right)^{n-1}e^{-\frac{1}{\sigma^2} A} \left( \frac{1}{\sigma^{2}}\right)^{2} d\sigma^2 d\mu \ d\xi\\
+& = \displaystyle \int\int B\int u^{n-1}e^{-uA} d\sigma^2 d\mu \ d\xi\\
+& = \displaystyle \int\int B\int u^{n-1}e^{-uA}\frac{A^{n}}{\Gamma(n)}\frac{\Gamma(n)}{A^{n}} d\sigma^2 d\mu \ d\xi\\
+& = \displaystyle \int\int B\frac{\Gamma(n)}{A^{n}}\int u^{n-1}e^{-uA}\frac{A^{n}}{\Gamma(n)} d\sigma^2 d\mu \ d\xi\\
+& = \displaystyle \int\int B\frac{\Gamma(n)}{A^{n}} d\mu \ d\xi\\
+& = \displaystyle \int\int \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} \frac{\Gamma(n)}{\left(\frac{n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}{2}\right)^{n}} d\mu \ d\xi\\
+& = \displaystyle \Gamma(n)2^{n} \int \frac{e^{-\frac{\xi^2}{2}}}{{\sqrt{2\pi}}} \frac{1}{\left(n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right] \right)^{n}} d\mu \ d\xi\\
+& = \displaystyle \Gamma(n)2^{n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right] \right)^{-n} d\mu \ d\xi\\
+& = \displaystyle \Gamma(n)2^{n}n^{-n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n} d\mu \ d\xi
+\end{array}
+$$
+
+En la otra integral tenemos:
+$$
+\begin{array}{rl}
+& \displaystyle \int \frac{1}{\sigma^{2(n+1)}} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} d\sigma^2\ d\mu\\
+& = \displaystyle \int \int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{\sigma^2} A} d\sigma^2 d\mu\\
+& = \displaystyle \int\int u^{n-1}e^{-uA}\frac{A^{n}}{\Gamma(n)}\frac{\Gamma(n)}{A^{n}} d\sigma^2 d\mu\\
+& = \displaystyle \int\frac{\Gamma(n)}{A^{n}}\int u^{n-1}e^{-uA}\frac{A^{n}}{\Gamma(n)} d\sigma^2 d\mu\\
+& = \displaystyle \int \Gamma(n)A^{-n}d\mu\\ 
+& = \displaystyle \int \Gamma(n)\left(\frac{n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}{2}\right)^{-n}d\mu\\
+& = \Gamma(n) n^{-n}2^n\displaystyle \int \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n}d\mu\\
+\end{array}
+$$
+
+Sustituyendo el resultados de las integrales en el factor de Bayes nos queda:
+$$
+\begin{array}{rl}
+B_{10}^\pi = & \frac{\displaystyle \Gamma(n)2^{n}n^{-n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n} d\mu \ d\xi}{\Gamma(n) n^{-n}2^n\displaystyle \int \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n}d\mu}\\ 
+B_{10}^\pi = & \frac{\displaystyle  \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n} d\mu \ d\xi}{\displaystyle \int \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n}d\mu} 
+\end{array}
+$$
+
+Donde $S^2$ denota la media
+$$
+S^2=\frac{1}{n}\sum_{i=1}^{n}(x_i-\bar{x})^2+\frac{1}{n}\sum_{i=1}^{n}(y_i-\bar{y})^2
 $$
 
 Mientras que el denominador se puede integrar, el numerador no. Una aproximación numérica de $B_{10}^\pi$ es necesaria. Este asunto será tratado en la Sección 2.4.
@@ -1331,7 +1444,8 @@ $$
 (\mu-\bar{x})^2+(\mu-\bar{y})^2=&2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{(\bar{x}-\bar{y})^2}{2}
 \end{array}
 $$
-sustituyendo esta expresión en el denominador de la integral anterior, tenemos
+
+Sustituyendo esta expresión en el denominador de la integral anterior, tenemos
 $$
 \begin{array}{rl}
 \displaystyle \int[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]^{-n}d\mu=&\displaystyle \int \Bigg(2[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{(\bar{x}-\bar{y})^2}{2}+S^2\Bigg)^{-n}d\mu\\
@@ -1339,40 +1453,67 @@ $$
 =&2^{-n}\displaystyle \int\bigg( [\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}\bigg)^{-n}d\mu
 \end{array}
 $$
-si $\nu=2n-1$ entonces $n=(\nu+1)/2$, sustituyendo
+Si $\nu=2n-1$ entonces $n=(\nu+1)/2$, sustituyendo
 $$
 \begin{array}{rl}
 \displaystyle \int[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]^{-n}d\mu=&2^{-(\nu+1)/2}\displaystyle \int\bigg( [\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2+\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}\bigg)^{-(\nu+1)/2}d\mu
 \end{array}
 $$
 
-si $\sigma^2=\frac{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}{\nu}$ queda
+Si $\sigma^2=\frac{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}{\nu}$ queda
 $$
 \begin{array}{rl}
-& \displaystyle \int[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]^{-n}d\mu=2^{-(\nu+1)/2}\displaystyle \int\left( [\mu- \left(\frac{\bar{x}+\bar{y}}{2}\right)]^2+\sigma^2\nu\right)^{-(\nu+1)/2}d\mu\\
+& \displaystyle \int[(\mu-\bar{x})^2+(\mu-\bar{y})^2+S^2]^{-n}d\mu\\
+=& 2^{-(\nu+1)/2}\displaystyle \int\left( [\mu- \left(\frac{\bar{x}+\bar{y}}{2}\right)]^2+\sigma^2\nu\right)^{-(\nu+1)/2}d\mu\\
 =&2^{-(\nu+1)/2}\displaystyle \int\bigg( \sigma^2\nu\bigg[ \frac{[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2}{\sigma^2\nu}+1\bigg]\bigg)^{-(\nu+1)/2}d\mu\\
 =&(2\sigma^2)^{-(\nu+1)/2}\displaystyle \int\nu^{-(\nu+1)/2}\bigg( \frac{[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2}{\sigma^2\nu}+1\bigg)^{-(\nu+1)/2}d\mu\\
 =&(2\sigma^2)^{-(\nu+1)/2}\frac{\sigma\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{\Gamma\bigg(\frac{\nu+1}{2}\bigg)} \displaystyle \int \frac{\Gamma\bigg(\frac{\nu+1}{2}\bigg)}{\sigma\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}\nu^{-(\nu+1)/2}\bigg( \frac{[\mu- \big(\frac{\bar{x}+\bar{y}}{2}\big)]^2}{\sigma^2\nu}+1\bigg)^{-(\nu+1)/2}d\mu\\
-=&(2\sigma^2)^{-(\nu+1)/2}\frac{\sigma\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{\Gamma\bigg(\frac{\nu+1}{2}\bigg)} \\
+=&(2\sigma^2)^{-(\nu+1)/2}\frac{\sigma\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{\Gamma\bigg(\frac{\nu+1}{2}\bigg)}\\
 =&(2\sigma^2)^{-n}\frac{\sigma\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{\Gamma\bigg(\frac{\nu+1}{2}\bigg)} \\
 =&2^{-n}\sigma^{-2n+1}\frac{\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{\Gamma\bigg(\frac{\nu+1}{2}\bigg)} \\
-=&\displaystyle\frac{\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{2^{n}\sigma^{2n-1}\Gamma\bigg(\frac{\nu+1}{2}\bigg)} \\
+\end{array}
+$$
+
+$$
+\begin{array}{rl}
+=&\displaystyle\frac{\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{2^{n}\sigma^{2n-1}\Gamma\bigg(\frac{\nu+1}{2}\bigg)}\\
 =&\displaystyle\frac{\sqrt{\nu\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{2^{n}\Bigg\{\sqrt{\frac{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}{\nu}}   \Bigg\}^{2n-1}\Gamma\bigg(\frac{\nu+1}{2}\bigg)} \\
 =&\displaystyle \frac{\nu^n \sqrt{\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{2^{n}\Bigg\{\sqrt{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}   \Bigg\}^{2n-1}\Gamma\bigg(\frac{\nu+1}{2}\bigg)} 
 \end{array}
 $$
 
-
 -----
 
+# 2.4 Método de Monte Carlos
 
+Como se pudo observar en la sección anterior, el factor de Bayes y la probabilidad posterior son las únicas cantidades usadas en la evaluación de las hipótesis sobre el modelo, aunque su obtención analítica no siempre es posible. Ya que la misma requiere de la integración del parámetro ó sobre el conjunto $\Theta_0$ o su complemento $\Theta_0^c$, sobre las respectivas prioris $\pi_0$ y $\pi_1$. Sin embargo, existen técnicas numéricas especiales para calcular el factor de Bayes, las cuales se basan en razones de integrales.
 
+Entre las técnicas más usadas para la aproximación de integrales, se encuentra el método de Monte Carlo, el cual se basa en la simulación de variables aleatorias para producir una aproximación de las integrales, cuyo valor converge a medida que el número de simulaciones aumenta. Su justificación se encuentra en la Ley de los grandes números, la cual establece que, dada un conjunto de variables aleatorias $x_1,...,x_n$ iid distribuidas según $g$, entonces el promedio empírico
+$\hat{J} = \frac{(h(x_1) +... + h(x_n))}{n}$ converge (casi seguramente) a la integral
+$$J = Eg [h(X)] = \int h(x)g(x)dx.$$
 
+El algoritmo básico de este método se presenta acontinuación,
 
+-Para $i = 1,...,n$
 
+ Simular $x_i \sim g(x)$
 
+-Calcular
 
+ $\hat{J_n} = \frac{h(x_1) +...+ h(x_n)}{n}$
 
+-Para aproximar el valor de $J$
+
+Siempre y cuando la generación de los valores pseudo-aleatorios de $g$ sea factible, así como los valores de $h(x_i)$ sean calculables. Cuando la simulación mediante $g$ ocasiona problemas, ya sea porque dicha función es no estandar, las técnicas usuales como algoritmo de aceptación y rechazo son díciles de aplicar. Por tal razón otras técnicas más avanzadas son requeridas, tal es el caso de las Cadenas de Markov mediante el método de Monte Carlo (MCMC).
+Por otra parte cuando la dícultad se centra en la intratabilidad de la función $h$, la solución usualmente es expandir las variables aleatorias $x_i$ en $(x_i,y_i)$, donde $y_i$ es una variable auxiliar.
+
+Como se calculó en el ejercicio 2.21, el factor de Bayes $B_{01}^\pi = \frac{1}{B_{10}^\pi}$ se puede simplificar a la siguiente expresión:
+$$
+B_{01}^\pi = \frac{\displaystyle \int \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n}d\mu}{\displaystyle  \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n} d\mu \ d\xi} 
+$$
+$OJOOOOO-NO- PUEDO- LLEGAR -A -LA -INTEGRAL- DEL- LIBRO$
+
+Así considerando la integral en el denominador de la expresión anterior, podemos usar el método de Monte Carlo para selecionar las funciones $g$ y $h$, la primera está asociada con una distribución normal estandar, es decir $g \sim N(0, 1)$.
 
 
 

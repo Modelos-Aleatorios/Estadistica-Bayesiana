@@ -1,0 +1,112 @@
+\documentclass{beamer}
+
+\usetheme{Montpellier}
+\usecolortheme{seagull}
+% Rather be using my own color
+\definecolor{LightGrey}{rgb}{0.84,0.83,0.83}
+\definecolor{LightYell}{rgb}{0.90,0.83,0.70}
+\definecolor{StroYell}{rgb}{0.95,0.88,0.72}
+\definecolor{myem}{rgb}{0.797,0.598,0.598}
+\definecolor{lightred}{rgb}{0.75,0.033,0}
+\definecolor{shadecolor1}{rgb}{0.90,0.83,0.70}
+
+\setbeamercolor{structure}{fg=myem!120}
+%\setbeamercolor{example}{bg=LightYell,fg=StroYell}
+\setbeamercolor{alerted text}{fg=lightred}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{footline}[page number]
+
+\usefonttheme[onlymath]{serif}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\useinnertheme{rounded}
+
+% Compatibility with zbook
+\usepackage{ifthen}
+\newboolean{sv_used}
+\setboolean{sv_used}{false}
+\input{hmm.tex}
+\input{cmacros}
+\input colordvi
+
+% Compatibility with seminar
+\newenvironment{slide}%
+ {\begin{frame}}%
+ {\end{frame}}
+\newcommand{\slidetitle}{\frametitle}
+
+\usepackage{graphicx,picins,stmaryrd,lastpage}
+
+\usepackage{verbatim}
+
+%\def\path{/home/xian/Books/MCSM2/figures}
+\newcommand{\btheta}{\mbox{\boldmath{$\theta$}}}
+\newcommand{\covrm}{\mathrm{cov}}
+\newcommand{\emfarite}[1]{\rightline{\RedViolet{\sf [#1]}}\hglue 3.2truecm}
+
+\def\baro{\medskip \hfill \hrule height.5pt \vskip .3truecm}
+\def\barba{\vskip -.3truecm\hfill \hrule height.5pt \vskip .8truecm}
+
+\newcommand\debut{\begin{example}}
+\newcommand\fin{\end{example}}
+
+% Lines in tables
+\newcommand\laligne{
+\noalign{\vskip .3em}
+\noalign{\hrule}
+\noalign{\vskip .3em}
+}
+\newcommand\labelenumi{\theenumi}
+
+% les k_n'ries a mimi!
+\newcommand{\vs}{\vspace{0.5cm}}
+\newcommand{\tee}{\mathrm{T}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand\bp{\mathbf{p}}
+\newcommand\bz{{\bf z}}
+% & celles a j'rom
+\newcommand\sos{{{\phi}_t(r)}}
+\newcommand\ps{{p_t(r)}}
+\newcommand\qs{{q_t(r,s)}}
+\newcommand\xs{x_{(i,t)}}
+\newcommand\zs{z_{(i,t)}}
+\newcommand\zsa{z_{(i,t+1)}}
+% & les miennes
+\newcommand\GoM{\mathfrak{M}}
+\newcommand\GoK{\mathfrak{K}}
+
+%Warning, refs only
+\includeonly{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Bayesian Core:\\A Practical Approach to
+Computational Bayesian Statistics}
+\author{Jean-Michel Marin \&\ Christian P. Robert}
+\date{QUT, Brisbane, August 4--8 2008}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+  \titlepage
+  \centerline{\includegraphics[height=5truecm]{BCS.ps}}
+\end{slide}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+  \slidetitle{Outline}
+  {\small
+  \tableofcontents[subsectionstyle=hide]
+  }
+\end{slide}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Bnorm.tex}
+\input{Breg.tex}
+\input{Bglm.tex}
+\input{Bcap.tex}
+\input{Bmix.tex}
+\input{Bdyn.tex}
+\input{Bimg.tex}
+
+\end{document}

@@ -7,3 +7,4 @@
 *.tex
 Capitulo2-Teoria.tex
 !/Material/Bayesian Core - Files/*
+/Material/Bayesian Core - Files/.DS_Store

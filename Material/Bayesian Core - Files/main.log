@@ -1,0 +1,5873 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  1 FEB 2017 17:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamer.cls
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasercs.sty
+Package: beamerbasercs 2013/12/25 (rcs-revision 31cc758a62ae)
+)
+Document Class: beamer 2013/12/02 3.33 A class for typesetting presentations (r
+cs-revision 332bfd3ce558)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
+Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
+\beamer@tempbox=\box26
+\beamer@tempcount=\count79
+\c@beamerpauses=\count80
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
+\beamer@slideinframe=\count81
+\beamer@minimum=\count82
+)
+\beamer@commentbox=\box27
+\beamer@modecount=\count83
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+\headheight=\dimen102
+\headdp=\dimen103
+\footheight=\dimen104
+\sidebarheight=\dimen105
+\beamer@tempdim=\dimen106
+\beamer@finalheight=\dimen107
+\beamer@animht=\dimen108
+\beamer@animdp=\dimen109
+\beamer@animwd=\dimen110
+\beamer@leftmargin=\dimen111
+\beamer@rightmargin=\dimen112
+\beamer@leftsidebar=\dimen113
+\beamer@rightsidebar=\dimen114
+\beamer@boxsize=\dimen115
+\beamer@vboxoffset=\dimen116
+\beamer@descdefault=\dimen117
+\beamer@descriptionwidth=\dimen118
+\beamer@lastskip=\skip41
+\beamer@areabox=\box28
+\beamer@animcurrent=\box29
+\beamer@animshowbox=\box30
+\beamer@sectionbox=\box31
+\beamer@logobox=\box32
+\beamer@linebox=\box33
+\beamer@sectioncount=\count84
+\beamer@subsubsectionmax=\count85
+\beamer@subsectionmax=\count86
+\beamer@sectionmax=\count87
+\beamer@totalheads=\count88
+\beamer@headcounter=\count89
+\beamer@partstartpage=\count90
+\beamer@sectionstartpage=\count91
+\beamer@subsectionstartpage=\count92
+\beamer@animationtempa=\count93
+\beamer@animationtempb=\count94
+\beamer@xpos=\count95
+\beamer@ypos=\count96
+\beamer@showpartnumber=\count97
+\beamer@currentsubsection=\count98
+\beamer@coveringdepth=\count99
+\beamer@sectionadjust=\count100
+\beamer@tocsectionnumber=\count101
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+\beamer@paperwidth=\skip42
+\beamer@paperheight=\skip43
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen129
+\pgfutil@tempdimb=\dimen130
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box34
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen131
+\pgf@y=\dimen132
+\pgf@xa=\dimen133
+\pgf@ya=\dimen134
+\pgf@xb=\dimen135
+\pgf@yb=\dimen136
+\pgf@xc=\dimen137
+\pgf@yc=\dimen138
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count106
+\c@pgf@countb=\count107
+\c@pgf@countc=\count108
+\c@pgf@countd=\count109
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count110
+\pgfsyssoftpath@bigbuffer@items=\count111
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen139
+\pgfmath@count=\count112
+\pgfmath@box=\box35
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count113
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen140
+\pgf@picmaxx=\dimen141
+\pgf@picminy=\dimen142
+\pgf@picmaxy=\dimen143
+\pgf@pathminx=\dimen144
+\pgf@pathmaxx=\dimen145
+\pgf@pathminy=\dimen146
+\pgf@pathmaxy=\dimen147
+\pgf@xx=\dimen148
+\pgf@xy=\dimen149
+\pgf@yx=\dimen150
+\pgf@yy=\dimen151
+\pgf@zx=\dimen152
+\pgf@zy=\dimen153
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen154
+\pgf@path@lasty=\dimen155
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen156
+\pgf@shorten@start@additional=\dimen157
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box36
+\pgf@hbox=\box37
+\pgf@layerbox@main=\box38
+\pgf@picture@serial@count=\count114
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen158
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen159
+\pgf@pt@y=\dimen160
+\pgf@pt@temp=\dimen161
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen162
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen163
+\pgf@sys@shading@range@num=\count115
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box39
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count116
+\XC@countmixins=\count117
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen164
+\Hy@linkcounter=\count118
+\Hy@pagecounter=\count119
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count120
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4319.
+Package hyperref Info: Option `implicit' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count121
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen165
+\Fld@menulength=\count122
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count123
+
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
+Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasecompatibility.st
+y
+Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+Package: beamerbasefont 2013/10/18  (rcs-revision 72f39e01808a)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks26
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+Package: sansmathaccent 2013/03/28
+(/usr/local/texlive/2014/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
+Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-lang
+uage-mappings.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasemisc.sty
+Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty
+Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+Package: beamerbaseoverlay 2013/12/25  (rcs-revision f6bd5e3805da)
+\beamer@argscount=\count126
+\beamer@lastskipcover=\skip44
+\beamer@trivlistdepth=\count127
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetitle.sty
+Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
+\c@lecture=\count128
+\c@part=\count129
+\c@section=\count130
+\c@subsection=\count131
+\c@subsubsection=\count132
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+Package: beamerbaseframe 2013/10/02  (rcs-revision cdc8e9a3aaac)
+\beamer@framebox=\box40
+\beamer@frametitlebox=\box41
+\beamer@zoombox=\box42
+\beamer@zoomcount=\count133
+\beamer@zoomframecount=\count134
+\beamer@frametextheight=\dimen168
+\c@subsectionslide=\count135
+\beamer@frametopskip=\skip45
+\beamer@framebottomskip=\skip46
+\beamer@frametopskipautobreak=\skip47
+\beamer@framebottomskipautobreak=\skip48
+\beamer@envbody=\toks27
+\framewidth=\dimen169
+\c@framenumber=\count136
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
+\beamer@verbatimfileout=\write4
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
+\beamer@splitbox=\box43
+\beamer@autobreakcount=\count137
+\beamer@autobreaklastheight=\dimen170
+\beamer@frametitletoks=\toks28
+\beamer@framesubtitletoks=\toks29
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.
+sty
+Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
+\beamer@footins=\box44
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasecolor.sty
+Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
+\beamer@frameboxcopy=\box45
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetoc.sty
+Package: beamerbasetoc 2013/05/23  (rcs-revision 0fdf5bc43be8)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
+\beamer@sbttoks=\toks30
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
+Package: beamerbaseauxtemplates 2013/09/04  (rcs-revision 4ac715c499d0)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
+\bmb@box=\box46
+\bmb@colorbox=\box47
+\bmb@boxshadow=\box48
+\bmb@boxshadowball=\box49
+\bmb@boxshadowballlarge=\box50
+\bmb@temp=\dimen171
+\bmb@dima=\dimen172
+\bmb@dimb=\dimen173
+\bmb@prevheight=\dimen174
+)
+\beamer@blockheadheight=\dimen175
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.s
+ty
+Package: beamerbaselocalstructure 2013/09/04  (rcs-revision 4ac715c499d0)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks31
+)
+\c@figure=\count138
+\c@table=\count139
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+Package: beamerbasenavigation 2013/10/05  (rcs-revision 62be157fe783)
+\beamer@section@min@dim=\dimen176
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
+Package: beamerbasetheorems 2010/06/06  (rcs-revision 7e7cc5e53e9d)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks32
+\ex@=\dimen177
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen178
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count140
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count141
+\leftroot@=\count142
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count143
+\DOTSCASE@=\count144
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen179
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count145
+\c@MaxMatrixCols=\count146
+\dotsspace@=\muskip11
+\c@parentequation=\count147
+\dspbrk@lvl=\count148
+\tag@help=\toks33
+\row@=\count149
+\column@=\count150
+\maxfields@=\count151
+\andhelp@=\toks34
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
+\@envbody=\toks35
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks37
+\thm@bodyfont=\toks38
+\thm@headfont=\toks39
+\thm@notefont=\toks40
+\thm@headpunct=\toks41
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks42
+)
+\c@theorem=\count152
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasethemes.sty
+Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/theme/beamerthemede
+fault.sty
+Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/font/beamerfontthem
+edefault.sty
+Package: beamerfontthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorth
+emedefault.sty
+Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerth
+emedefault.sty
+Package: beamerinnerthemedefault 2013/10/15  (rcs-revision 65cb471f9634)
+\beamer@dima=\dimen186
+\beamer@dimb=\dimen187
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/outer/beamerouterth
+emedefault.sty
+Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeMo
+ntpellier.sty
+Package: beamerthemeMontpellier 2010/06/17  (rcs-revision d02a7cf4d8ae)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/outer/beamerouterth
+emetree.sty
+Package: beamerouterthemetree 2010/06/17  (rcs-revision d02a7cf4d8ae)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorth
+emeseagull.sty
+Package: beamercolorthemeseagull 2012/02/23  (rcs-revision 406bcaf3a3c7)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/font/beamerfontthem
+eserif.sty
+Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerth
+emerounded.sty
+Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(./hmm.tex
+\c@thm=\count153
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip57
+\bibsep=\skip58
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count154
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
+\c@tracingmulticols=\count155
+\mult@box=\box53
+\multicol@leftmargin=\dimen188
+\c@unbalance=\count156
+\c@collectmore=\count157
+\doublecol@number=\count158
+\multicoltolerance=\count159
+\multicolpretolerance=\count160
+\full@width=\dimen189
+\page@free=\dimen190
+\premulticols=\dimen191
+\postmulticols=\dimen192
+\multicolsep=\skip59
+\multicolbaselineskip=\skip60
+\partial@page=\box54
+\last@line=\box55
+\maxbalancingoverflow=\dimen193
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@gfirstbox=\box58
+\mult@firstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\c@columnbadness=\count161
+\c@finalcolumnbadness=\count162
+\last@try=\dimen194
+\multicolovershoot=\dimen195
+\multicolundershoot=\dimen196
+\mult@nat@firstbox=\box77
+\colbreak@box=\box78
+\mc@col@check@num=\count163
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks43
+\footnotemargin=\dimen197
+\c@pp@next@reset=\count164
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/changebar/changebar.sty
+Package: changebar 2005/09/18 v3.5c Indicate changes with marginal bars
+\cb@nextpoint=\count165
+\cb@topleft=\count166
+\cb@topright=\count167
+\cb@botleft=\count168
+\cb@botright=\count169
+\cb@cnta=\count170
+\cb@cntb=\count171
+\cb@dima=\dimen198
+\cb@curbarwd=\dimen199
+\cb@page=\count172
+\cb@pagecount=\count173
+\cb@odd@left=\dimen200
+\cb@odd@right=\dimen201
+\cb@even@left=\dimen202
+\cb@even@right=\dimen203
+\cb@writexy=\write5
+\cb@readxy=\read2
+\openout5 = `main.cb2'.
+
+\changebarwidth=\skip61
+\deletebarwidth=\skip62
+\changebarsep=\skip63
+\c@changebargrey=\count174
+\cb@write=\write6
+\cb@read=\read3
+\openout6 = `main.cb'.
+
+)
+(./framed.sty
+Package: framed 2003/07/21 v 0.8a: framed or shaded text with page breaks
+\FrameRule=\dimen204
+\FrameSep=\dimen205
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/dvips/colordvi.sty)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip64
+\f@ncyO@elh=\skip65
+\f@ncyO@erh=\skip66
+\f@ncyO@olh=\skip67
+\f@ncyO@orh=\skip68
+\f@ncyO@elf=\skip69
+\f@ncyO@erf=\skip70
+\f@ncyO@olf=\skip71
+\f@ncyO@orf=\skip72
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrtime.sty
+Package: scrtime 2011/03/31 v3.08b KOMA-Script package (time of LaTeX run)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
+
+Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/filehook/filehook-scrlfile.sty
+Package: filehook-scrlfile 2011/01/03 v0.1 filehook patch for scrlfile package
+Package filehook Info: Package 'scrlfile' detected and compensated for on input
+ line 102.
+)))) (./picins.sty Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
+\@BILD=\box79
+\@TEXT=\box80
+\d@breite=\dimen206
+\d@hoehe=\dimen207
+\d@xoff=\dimen208
+\d@yoff=\dimen209
+\d@shad=\dimen210
+\d@dash=\dimen211
+\d@boxl=\dimen212
+\d@pichskip=\dimen213
+\d@tmp=\dimen214
+\d@tmpa=\dimen215
+\d@bskip=\dimen216
+\hsiz@=\dimen217
+\p@getot@l=\dimen218
+\c@breite=\count175
+\c@hoehe=\count176
+\c@xoff=\count177
+\c@yoff=\count178
+\c@pos=\count179
+\c@shad=\count180
+\c@dash=\count181
+\c@boxl=\count182
+\c@zeilen=\count183
+\@changemode=\count184
+\c@piccaption=\count185
+\c@piccaptionpos=\count186
+\c@picpos=\count187
+\c@whole=\count188
+\c@half=\count189
+\c@tmp=\count190
+\c@tmpa=\count191
+\c@tmpb=\count192
+\c@tmpc=\count193
+\c@tmpd=\count194
+\d@leftskip=\skip73
+\ptoti=\dimen219
+\ptotii=\dimen220
+\env@box=\box81
+\d@envdp=\dimen221
+\c@hsize=\count195
+\c@envdp=\count196
+\d@envb=\dimen222
+))
+(./cmacros
+\c@allo=\count197
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/dvips/colordvi.tex) (/usr/loc
+al/texlive/2014/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks44
+\verbatim@line=\toks45
+\verbatim@in@stream=\read4
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=307.28987pt
+* \textheight=244.6939pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count198
+\scratchdimen=\dimen223
+\scratchbox=\box82
+\nofMPsegments=\count199
+\nofMParguments=\count200
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count201
+\MPscratchDim=\dimen224
+\MPnumerator=\count202
+\makeMPintoPDFobject=\count203
+\everyMPtoPDFconversion=\toks47
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box83
+Package hyperref Info: Link coloring OFF on input line 88.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count204
+)
+LaTeX Info: Redefining \ref on input line 88.
+LaTeX Info: Redefining \pageref on input line 88.
+LaTeX Info: Redefining \nameref on input line 88.
+
+(./main.out) (./main.out)
+\@outlinefile=\write7
+\openout7 = `main.out'.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-basic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-bibliography-dictionary/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-environment-dictionary/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-months-dictionary/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-numbers-dictionary/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-theorem-dictionary/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+LaTeX Info: Redefining \includegraphics on input line 88.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 88.
+ (./main.nav)
+
+! LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 \end{slide}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 93.
+
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+(./main.toc) [2
+
+] (./Bnorm.tex (./main.toc) [3
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 15.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+stmry on input line 15.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+
+! LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \end{slide}
+                \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4
+
+] [5
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [6
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [7
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/normdataplus.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 10166 bytes
+(epstopdf)             Output file: <figures/normdataplus-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-02-01 17:08:33
+(epstopdf)                    size: 7089 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/normdataplus-eps-c
+onverted-to.pdf figures/normdataplus.eps>
+(epstopdf)             \includegraphics on input line 40.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/normdataplus-eps-converted-to.pdf, id=437, 505.89pt x 505.89pt>
+File: figures/normdataplus-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/normdataplus-eps-converted-to.pdf>
+Package pdftex.def Info: figures/normdataplus-eps-converted-to.pdf used on inpu
+t line 40.
+(pdftex.def)             Requested size: 150.80325pt x 142.26576pt.
+
+Overfull \hbox (12.52376pt too wide) in paragraph at lines 40--40
+[][]  
+ []
+
+[8
+
+
+Non-PDF special ignored!
+Non-PDF special ignored! <./figures/normdataplus-eps-converted-to.pdf>]
+
+! LaTeX Error: File `figures/CMBcolow' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \end{slide}
+                
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[9
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/CMBnor.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 14331 bytes
+(epstopdf)             Output file: <figures/CMBnor-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:36
+(epstopdf)                    size: 8648 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CMBnor-eps-convert
+ed-to.pdf figures/CMBnor.eps>
+(epstopdf)             \includegraphics on input line 60.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/CMBnor-eps-converted-to.pdf, id=507, 561.09625pt x 809.0225pt>
+File: figures/CMBnor-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/CMBnor-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CMBnor-eps-converted-to.pdf used on input line
+ 60.
+(pdftex.def)             Requested size: 142.26001pt x 142.26001pt.
+ [10
+
+
+Non-PDF special ignored!
+Non-PDF special ignored! <./figures/CMBnor-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/CMBnor.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 14331 bytes
+(epstopdf)             Output file: <figures/CMBnor-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:36
+(epstopdf)                    size: 8648 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CMBnor-eps-convert
+ed-to.pdf figures/CMBnor.eps>
+(epstopdf)             \includegraphics on input line 66.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CMBnor-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/CMBnor-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CMBnor-eps-converted-to.pdf used on input line
+ 66.
+(pdftex.def)             Requested size: 142.26001pt x 142.26001pt.
+ [11
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 82.
+
+[12
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [13
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/TBayes.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 59899 bytes
+(epstopdf)             Output file: <figures/TBayes-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:39
+(epstopdf)                    size: 12117 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/TBayes-eps-convert
+ed-to.pdf figures/TBayes.eps>
+(epstopdf)             \includegraphics on input line 102.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/TBayes-eps-converted-to.pdf, id=635, 116.435pt x 131.49126pt>
+File: figures/TBayes-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/TBayes-eps-converted-to.pdf>
+Package pdftex.def Info: figures/TBayes-eps-converted-to.pdf used on input line
+ 102.
+(pdftex.def)             Requested size: 100.78416pt x 113.81102pt.
+ [14
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored! <./figures/TBayes-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/TBayes.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 59899 bytes
+(epstopdf)             Output file: <figures/TBayes-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:39
+(epstopdf)                    size: 12117 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/TBayes-eps-convert
+ed-to.pdf figures/TBayes.eps>
+(epstopdf)             \includegraphics on input line 102.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/TBayes-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/TBayes-eps-converted-to.pdf>
+Package pdftex.def Info: figures/TBayes-eps-converted-to.pdf used on input line
+ 102.
+(pdftex.def)             Requested size: 100.78416pt x 113.81102pt.
+ [15
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [16
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [17
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [18
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [19
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [20
+
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [25
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+! LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 \end{slide}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[26
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [27
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [28
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [29
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [30
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [31
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [32
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [33
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [34
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [35
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [36
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [37
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [38
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [39
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [46
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [47
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [48
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [49
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [50
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [51
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [52
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [53
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [54
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [55
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [56
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [57
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (8.14757pt too wide) in paragraph at lines 424--424
+[][] 
+ []
+
+[58
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [59
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [60
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [61
+
+] [62
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [63
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+! LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.476 \end{slide}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[64
+
+] [65
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [66
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [67
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [68
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [69
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [70
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [71
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/TBayes.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 59899 bytes
+(epstopdf)             Output file: <figures/TBayes-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:39
+(epstopdf)                    size: 12117 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/TBayes-eps-convert
+ed-to.pdf figures/TBayes.eps>
+(epstopdf)             \includegraphics on input line 529.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/TBayes-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/TBayes-eps-converted-to.pdf>
+Package pdftex.def Info: figures/TBayes-eps-converted-to.pdf used on input line
+ 529.
+(pdftex.def)             Requested size: 75.58768pt x 85.35826pt.
+ [72
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [73
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [74
+
+] [75
+
+] [76
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [77
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [78
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [79
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [80
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/Laplace.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 164925 bytes
+(epstopdf)             Output file: <figures/Laplace-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:47
+(epstopdf)                    size: 19245 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/Laplace-eps-conver
+ted-to.pdf figures/Laplace.eps>
+(epstopdf)             \includegraphics on input line 621.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/Laplace-eps-converted-to.pdf, id=2689, 136.51pt x 181.67876pt>
+File: figures/Laplace-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/Laplace-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Laplace-eps-converted-to.pdf used on input lin
+e 621.
+(pdftex.def)             Requested size: 64.13678pt x 85.35826pt.
+ [81
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored! <./figures/Laplace-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/Laplace.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 164925 bytes
+(epstopdf)             Output file: <figures/Laplace-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:47
+(epstopdf)                    size: 19245 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/Laplace-eps-conver
+ted-to.pdf figures/Laplace.eps>
+(epstopdf)             \includegraphics on input line 621.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/Laplace-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/Laplace-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Laplace-eps-converted-to.pdf used on input lin
+e 621.
+(pdftex.def)             Requested size: 64.13678pt x 85.35826pt.
+ [82
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [83
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [84
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/RonSmoke.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 132541 bytes
+(epstopdf)             Output file: <figures/RonSmoke-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:50
+(epstopdf)                    size: 20659 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/RonSmoke-eps-conve
+rted-to.pdf figures/RonSmoke.eps>
+(epstopdf)             \includegraphics on input line 672.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/RonSmoke-eps-converted-to.pdf, id=2815, 182.6825pt x 187.70125pt>
+File: figures/RonSmoke-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/RonSmoke-eps-converted-to.pdf>
+Package pdftex.def Info: figures/RonSmoke-eps-converted-to.pdf used on input li
+ne 672.
+(pdftex.def)             Requested size: 83.07605pt x 85.35826pt.
+ [85
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored! <./figures/RonSmoke-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/RonSmoke.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 132541 bytes
+(epstopdf)             Output file: <figures/RonSmoke-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:50
+(epstopdf)                    size: 20659 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/RonSmoke-eps-conve
+rted-to.pdf figures/RonSmoke.eps>
+(epstopdf)             \includegraphics on input line 672.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/RonSmoke-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/RonSmoke-eps-converted-to.pdf>
+Package pdftex.def Info: figures/RonSmoke-eps-converted-to.pdf used on input li
+ne 672.
+(pdftex.def)             Requested size: 83.07605pt x 85.35826pt.
+ [86
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+! LaTeX Error: File `figures/Jeffreys' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.687 \end{slide}
+                 \begin{slide}
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[87
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+! LaTeX Error: File `figures/Jeffreys' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.687 \end{slide}
+                 \begin{slide}
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[88
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [89
+
+] [90
+
+] [91
+
+] [92
+
+] [93
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [94
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [95
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [96
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [97
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [98
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [99
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/Laplace.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 164925 bytes
+(epstopdf)             Output file: <figures/Laplace-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:47
+(epstopdf)                    size: 19245 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/Laplace-eps-conver
+ted-to.pdf figures/Laplace.eps>
+(epstopdf)             \includegraphics on input line 821.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/Laplace-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/Laplace-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Laplace-eps-converted-to.pdf used on input lin
+e 821.
+(pdftex.def)             Requested size: 64.13678pt x 85.35826pt.
+ [100
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/Laplace.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 164925 bytes
+(epstopdf)             Output file: <figures/Laplace-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:47
+(epstopdf)                    size: 19245 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/Laplace-eps-conver
+ted-to.pdf figures/Laplace.eps>
+(epstopdf)             \includegraphics on input line 821.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/Laplace-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/Laplace-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Laplace-eps-converted-to.pdf used on input lin
+e 821.
+(pdftex.def)             Requested size: 64.13678pt x 85.35826pt.
+ [101
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [102
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [103
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [104
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [105
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [106
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [107
+
+] [108
+
+] [109
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [110
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/2cau.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 23228 bytes
+(epstopdf)             Output file: <figures/2cau-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:54
+(epstopdf)                    size: 7681 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/2cau-eps-converted
+-to.pdf figures/2cau.eps>
+(epstopdf)             \includegraphics on input line 915.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/2cau-eps-converted-to.pdf, id=3609, 505.89pt x 505.89pt>
+File: figures/2cau-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/2cau-eps-converted-to.pdf>
+Package pdftex.def Info: figures/2cau-eps-converted-to.pdf used on input line 9
+15.
+(pdftex.def)             Requested size: 113.80489pt x 113.80489pt.
+ [111
+
+ <./figures/2cau-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/2cau.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 23228 bytes
+(epstopdf)             Output file: <figures/2cau-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:54
+(epstopdf)                    size: 7681 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/2cau-eps-converted
+-to.pdf figures/2cau.eps>
+(epstopdf)             \includegraphics on input line 915.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/2cau-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/2cau-eps-converted-to.pdf>
+Package pdftex.def Info: figures/2cau-eps-converted-to.pdf used on input line 9
+15.
+(pdftex.def)             Requested size: 113.80489pt x 113.80489pt.
+ [112
+
+] [113
+
+] [114
+
+]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 956.
+
+
+Overfull \hbox (10.97952pt too wide) in alignment at lines 956--956
+ [][][] []
+ []
+
+[115
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 956.
+
+
+Overfull \hbox (10.97952pt too wide) in alignment at lines 956--956
+ [][][] []
+ []
+
+[116
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [117
+
+] [118
+
+] [119
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [120
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [121
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [122
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [123
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [124
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [125
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [126
+
+] [127
+
+] [128
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [129
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [130
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [131
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+! LaTeX Error: File `figures/Jeffreys' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1108 \end{slide}
+                  \begin{slide}
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[132
+
+] [133
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [134
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [135
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [136
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [137
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [138
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [139
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [140
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [141
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [142
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [143
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [144
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [145
+
+] [146
+
+] [147
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [148
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [149
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [150
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+LaTeX Font Info:    Try loading font information for U+euf on input line 1317.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [151
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [152
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [153
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [154
+
+] [155
+
+]
+Package epstopdf Info: Source file: <figures/compbf.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 5856 bytes
+(epstopdf)             Output file: <figures/compbf-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:59
+(epstopdf)                    size: 5154 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/compbf-eps-convert
+ed-to.pdf figures/compbf.eps>
+(epstopdf)             \includegraphics on input line 1387.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/compbf-eps-converted-to.pdf, id=4994, 505.89pt x 505.89pt>
+File: figures/compbf-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/compbf-eps-converted-to.pdf>
+Package pdftex.def Info: figures/compbf-eps-converted-to.pdf used on input line
+ 1387.
+(pdftex.def)             Requested size: 85.35173pt x 85.35826pt.
+
+Overfull \vbox (4.5914pt too high) detected at line 1387
+ []
+
+[156
+
+
+Non-PDF special ignored!
+Non-PDF special ignored! <./figures/compbf-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/compbf.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 5856 bytes
+(epstopdf)             Output file: <figures/compbf-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:59
+(epstopdf)                    size: 5154 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/compbf-eps-convert
+ed-to.pdf figures/compbf.eps>
+(epstopdf)             \includegraphics on input line 1387.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/compbf-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/compbf-eps-converted-to.pdf>
+Package pdftex.def Info: figures/compbf-eps-converted-to.pdf used on input line
+ 1387.
+(pdftex.def)             Requested size: 85.35173pt x 85.35826pt.
+
+Overfull \vbox (4.5914pt too high) detected at line 1387
+ []
+
+[157
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [158
+
+]
+
+! LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1423 \end{slide}
+                  \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[159
+
+]
+
+! LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1423 \end{slide}
+                  \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[160
+
+] [161
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [162
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [163
+
+] [164
+
+] [165
+
+] [166
+
+] [167
+
+] [168
+
+] [169
+
+] [170
+
+]
+
+! LaTeX Error: File `figures/impinf' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1526 \end{slide}
+                  
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[171
+
+] [172
+
+] [173
+
+] [174
+
+]
+
+! LaTeX Error: Unknown graphics extension: .range.eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1579 \end{slide}
+                  \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[175
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [176
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [177
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+! LaTeX Error: Unknown graphics extension: .best.eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1610 \end{slide}
+                  \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[178
+
+]
+
+! LaTeX Error: Unknown graphics extension: .best.eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1610 \end{slide}
+                  \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[179
+
+] [180
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [181
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [182
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [183
+
+] [184
+
+]
+
+! LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1656 \end{slide}
+                  \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1656 \end{slide}
+                  \begin{slide}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[185
+
+] [186
+
+] [187
+
+] [188
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (2.27974pt too wide) detected at line 1712
+\U/rsfs/m/n/9 N [] \OMS/cmsy/m/n/9 ^^B [] []  \OML/cmm/m/it/9 ;
+ []
+
+[189
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (2.27974pt too wide) detected at line 1712
+\U/rsfs/m/n/9 N [] \OMS/cmsy/m/n/9 ^^B [] []  \OML/cmm/m/it/9 ;
+ []
+
+[190
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (10.13812pt too wide) in paragraph at lines 1733--1733
+[]  
+ []
+
+[191
+
+]
+Package epstopdf Info: Source file: <figures/predt.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 12396 bytes
+(epstopdf)             Output file: <figures/predt-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:06
+(epstopdf)                    size: 7795 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/predt-eps-converte
+d-to.pdf figures/predt.eps>
+(epstopdf)             \includegraphics on input line 1751.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/predt-eps-converted-to.pdf, id=6098, 561.09625pt x 809.0225pt>
+File: figures/predt-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/predt-eps-converted-to.pdf>
+Package pdftex.def Info: figures/predt-eps-converted-to.pdf used on input line 
+1751.
+(pdftex.def)             Requested size: 113.81102pt x 164.09775pt.
+
+Overfull \hbox (10.45282pt too wide) in paragraph at lines 1751--1751
+[][]  
+ []
+
+[192
+
+ <./figures/predt-eps-converted-to.pdf>]) (./Breg.tex (./main.toc) [193
+
+]
+[194
+
+]
+Package epstopdf Info: Source file: <figures/caterpibreizh.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 3025175 bytes
+(epstopdf)             Output file: <figures/caterpibreizh-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2017-02-01 17:09:11
+(epstopdf)                    size: 514034 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/caterpibreizh-eps-
+converted-to.pdf figures/caterpibreizh.eps>
+(epstopdf)             \includegraphics on input line 36.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/caterpibreizh-eps-converted-to.pdf, id=6208, 1028.84375pt x 771.88374p
+t>
+File: figures/caterpibreizh-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/caterpibreizh-eps-converted-to.pdf>
+Package pdftex.def Info: figures/caterpibreizh-eps-converted-to.pdf used on inp
+ut line 36.
+(pdftex.def)             Requested size: 142.26378pt x 106.73207pt.
+
+Overfull \hbox (3.98428pt too wide) in paragraph at lines 36--36
+[][][]  
+ []
+
+[195
+
+ <./figures/caterpibreizh-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/caterpibreizh.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 3025175 bytes
+(epstopdf)             Output file: <figures/caterpibreizh-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2017-02-01 17:09:11
+(epstopdf)                    size: 514034 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/caterpibreizh-eps-
+converted-to.pdf figures/caterpibreizh.eps>
+(epstopdf)             \includegraphics on input line 36.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/caterpibreizh-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/caterpibreizh-eps-converted-to.pdf>
+Package pdftex.def Info: figures/caterpibreizh-eps-converted-to.pdf used on inp
+ut line 36.
+(pdftex.def)             Requested size: 142.26378pt x 106.73207pt.
+
+Overfull \hbox (3.98428pt too wide) in paragraph at lines 36--36
+[][][][]  
+ []
+
+[196
+
+]
+Package epstopdf Info: Source file: <figures/caterpibreizh.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 3025175 bytes
+(epstopdf)             Output file: <figures/caterpibreizh-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2017-02-01 17:09:11
+(epstopdf)                    size: 514034 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/caterpibreizh-eps-
+converted-to.pdf figures/caterpibreizh.eps>
+(epstopdf)             \includegraphics on input line 36.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/caterpibreizh-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/caterpibreizh-eps-converted-to.pdf>
+Package pdftex.def Info: figures/caterpibreizh-eps-converted-to.pdf used on inp
+ut line 36.
+(pdftex.def)             Requested size: 142.26378pt x 106.73207pt.
+
+Overfull \hbox (3.98428pt too wide) in paragraph at lines 36--36
+[][][][]  
+ []
+
+Package epstopdf Info: Source file: <figures/processimpl.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 12979 bytes
+(epstopdf)             Output file: <figures/processimpl-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:14
+(epstopdf)                    size: 23111 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/processimpl-eps-co
+nverted-to.pdf figures/processimpl.eps>
+(epstopdf)             \includegraphics on input line 36.
+Package epstopdf Info: Output file is already uptodate.
+<figures/processimpl-eps-converted-to.pdf, id=6274, 505.89pt x 505.89pt>
+File: figures/processimpl-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/processimpl-eps-converted-to.pdf>
+Package pdftex.def Info: figures/processimpl-eps-converted-to.pdf used on input
+ line 36.
+(pdftex.def)             Requested size: 142.26378pt x 142.26576pt.
+
+Overfull \hbox (3.98428pt too wide) in paragraph at lines 36--36
+[]  
+ []
+
+[197
+
+ <./figures/processimpl-eps-converted-to.pdf>] [198
+
+] [199
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [200
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [201
+
+] [202
+
+] [203
+
+] [204
+
+] [205
+
+] [206
+
+] [207
+
+] [208
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [209
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [210
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [211
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [212
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [213
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [214
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [215
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [216
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+Overfull \vbox (0.72676pt too high) detected at line 217
+ []
+
+[217
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 218.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 218.
+
+
+Overfull \hbox (11.68317pt too wide) detected at line 245
+\OML/cmm/m/it/10 ^^L\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^[[]; \OT1/cmr/bx/n/10 
+y\OML/cmm/m/it/10 ; X \OMS/cmsy/m/n/10 ^^X \U/rsfs/m/n/10 N[] []
+ []
+
+
+Overfull \hbox (18.31691pt too wide) detected at line 245
+\OML/cmm/m/it/10 ^^[[]\OMS/cmsy/m/n/10 j\OT1/cmr/bx/n/10 y\OML/cmm/m/it/10 ; X 
+\OMS/cmsy/m/n/10 ^^X [] []
+ []
+
+[218
+
+]
+Overfull \hbox (11.68317pt too wide) detected at line 245
+\OML/cmm/m/it/10 ^^L\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ^^[[]; \OT1/cmr/bx/n/10 
+y\OML/cmm/m/it/10 ; X \OMS/cmsy/m/n/10 ^^X \U/rsfs/m/n/10 N[] []
+ []
+
+
+Overfull \hbox (18.31691pt too wide) detected at line 245
+\OML/cmm/m/it/10 ^^[[]\OMS/cmsy/m/n/10 j\OT1/cmr/bx/n/10 y\OML/cmm/m/it/10 ; X 
+\OMS/cmsy/m/n/10 ^^X [] []
+ []
+
+[219
+
+] [220
+
+] [221
+
+] [222
+
+] [223
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [224
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [225
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [226
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [227
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [228
+
+] [229
+
+] [230
+
+] [231
+
+] [232
+
+] [233
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [234
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [235
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [236
+
+] [237
+
+] [238
+
+] [239
+
+] [240
+
+] [241
+
+] [242
+
+] [243
+
+]
+[244
+
+] [245
+
+]
+Overfull \hbox (11.50673pt too wide) in alignment at lines 549--549
+ [][][] []
+ []
+
+[246
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [247
+
+] [248
+
+] [249
+
+] [250
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 592.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 592.
+
+[251
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [252
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (2.67006pt too wide) detected at line 623
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 y\OMS/cmsy/m/n/10.
+95 j\OML/cmm/m/it/10.95 X; c\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 / \OT1/cmr
+/m/n/10.95 (\OML/cmm/m/it/10.95 c \OT1/cmr/m/n/10.95 + 1)[] [][] \OML/cmm/m/it/
+10.95 :
+ []
+
+[253
+
+]
+Overfull \hbox (2.67006pt too wide) detected at line 623
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 y\OMS/cmsy/m/n/10.
+95 j\OML/cmm/m/it/10.95 X; c\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 / \OT1/cmr
+/m/n/10.95 (\OML/cmm/m/it/10.95 c \OT1/cmr/m/n/10.95 + 1)[] [][] \OML/cmm/m/it/
+10.95 :
+ []
+
+[254
+
+] [255
+
+] [256
+
+]
+Overfull \hbox (18.94347pt too wide) in alignment at lines 666--666
+ [][][] []
+ []
+
+[257
+
+] [258
+
+] [259
+
+] [260
+
+]
+Overfull \hbox (25.32547pt too wide) detected at line 704
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OMS/cmsy/m/n/10 j\OML/cmm
+/m/it/10 X[]; H[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 / []\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 c \OT1/cmr/m/n/10 + 1)[] [][]  \OML/cmm/m/it/10 :
+ []
+
+[261
+
+]
+Overfull \hbox (25.32547pt too wide) detected at line 704
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OMS/cmsy/m/n/10 j\OML/cmm
+/m/it/10 X[]; H[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 / []\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 c \OT1/cmr/m/n/10 + 1)[] [][]  \OML/cmm/m/it/10 :
+ []
+
+[262
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+
+LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 23.
+
+)
+Overfull \vbox (10.549pt too high) detected at line 729
+ []
+
+[263
+
+] (./main.vrb
+
+LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 23.
+
+)
+Overfull \vbox (10.549pt too high) detected at line 729
+ []
+
+[264
+
+] [265
+
+] [266
+
+] [267
+
+]
+Package epstopdf Info: Source file: <figures/Markov.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 52696 bytes
+(epstopdf)             Output file: <figures/Markov-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:21
+(epstopdf)                    size: 11119 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/Markov-eps-convert
+ed-to.pdf figures/Markov.eps>
+(epstopdf)             \includegraphics on input line 759.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/Markov-eps-converted-to.pdf, id=8439, 49.18375pt x 63.23625pt>
+File: figures/Markov-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/Markov-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Markov-eps-converted-to.pdf used on input line
+ 759.
+(pdftex.def)             Requested size: 85.35826pt x 109.7542pt.
+ [268
+
+ <./figures/Markov-eps-converted-to.pdf>] [269
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [270
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [271
+
+] [272
+
+] [273
+
+] [274
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [275
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [276
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/WGibbs.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 62646 bytes
+(epstopdf)             Output file: <figures/WGibbs-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:24
+(epstopdf)                    size: 14770 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/WGibbs-eps-convert
+ed-to.pdf figures/WGibbs.eps>
+(epstopdf)             \includegraphics on input line 866.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/WGibbs-eps-converted-to.pdf, id=8717, 201.75375pt x 244.915pt>
+File: figures/WGibbs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/WGibbs-eps-converted-to.pdf>
+Package pdftex.def Info: figures/WGibbs-eps-converted-to.pdf used on input line
+ 866.
+(pdftex.def)             Requested size: 85.35826pt x 103.61848pt.
+ [277
+
+
+Non-PDF special ignored!
+Non-PDF special ignored! <./figures/WGibbs-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/WGibbs.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 62646 bytes
+(epstopdf)             Output file: <figures/WGibbs-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:24
+(epstopdf)                    size: 14770 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/WGibbs-eps-convert
+ed-to.pdf figures/WGibbs.eps>
+(epstopdf)             \includegraphics on input line 866.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/WGibbs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/WGibbs-eps-converted-to.pdf>
+Package pdftex.def Info: figures/WGibbs-eps-converted-to.pdf used on input line
+ 866.
+(pdftex.def)             Requested size: 85.35826pt x 103.61848pt.
+ [278
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [279
+
+] [280
+
+] [281
+
+] [282
+
+]
+
+LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
+(Font)              using `U/stmry/m/n' instead on input line 923.
+
+[283
+
+] [284
+
+]
+Package epstopdf Info: Source file: <figures/simplegibbs.eps>
+(epstopdf)                    date: 2009-06-23 11:36:04
+(epstopdf)                    size: 34332 bytes
+(epstopdf)             Output file: <figures/simplegibbs-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:27
+(epstopdf)                    size: 16806 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/simplegibbs-eps-co
+nverted-to.pdf figures/simplegibbs.eps>
+(epstopdf)             \includegraphics on input line 928.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/simplegibbs-eps-converted-to.pdf, id=8966, 505.89pt x 505.89pt>
+File: figures/simplegibbs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/simplegibbs-eps-converted-to.pdf>
+Package pdftex.def Info: figures/simplegibbs-eps-converted-to.pdf used on input
+ line 928.
+(pdftex.def)             Requested size: 213.39566pt x 213.39865pt.
+
+Overfull \vbox (5.12541pt too high) detected at line 928
+ []
+
+[285
+
+ <./figures/simplegibbs-eps-converted-to.pdf>] [286
+
+] [287
+
+] [288
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [289
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [290
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [291
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [292
+
+] [293
+
+] [294
+
+] [295
+
+] [296
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (10.37694pt too wide) detected at line 1064
+\OML/cmm/m/it/10.95 ^^L\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 ^^[[]; X \OMS/c
+msy/m/n/10.95 ^^X \U/rsfs/m/n/10.95 N[]\OT1/cmr/m/n/10.95 ([]\OML/cmm/m/it/10.9
+5 ; c^^[[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X[]X\OT1/cmr/m/n/10.95 )[]) [
+] \OML/cmm/m/it/10.95 ^^[[] \OMS/cmsy/m/n/10.95 ^^X \OML/cmm/m/it/10.95 ^^Y\OT1
+/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^[[]\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.
+95 X\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 ^^[[]
+ []
+
+[297
+
+] [298
+
+] [299
+
+]
+Overfull \hbox (30.37521pt too wide) in alignment at lines 1109--1109
+ [][][] []
+ []
+
+
+Overfull \hbox (13.41551pt too wide) in alignment at lines 1109--1109
+ [][][] []
+ []
+
+[300
+
+]
+Overfull \vbox (2.12675pt too high) detected at line 1136
+ []
+
+[301
+
+] [302
+
+] [303
+
+] [304
+
+] [305
+
+] [306
+
+] [307
+
+] [308
+
+] [309
+
+] [310
+
+] [311
+
+] [312
+
+])
+(./Bglm.tex (./main.toc) [313
+
+] [314
+
+] [315
+
+] [316
+
+] [317
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 58.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 58.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/bx/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 58.
+
+[318
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [319
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [320
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [321
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [322
+
+] [323
+
+] [324
+
+] [325
+
+] [326
+
+] [327
+
+] [328
+
+] [329
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [330
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 175.
+
+[331
+
+] [332
+
+] [333
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \vbox (2.87842pt too high) detected at line 229
+ []
+
+[334
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \vbox (2.87842pt too high) detected at line 229
+ []
+
+[335
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [336
+
+] [337
+
+]
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 260.
+
+[338
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [339
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [340
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [341
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [342
+
+] [343
+
+] [344
+
+] [345
+
+] [346
+
+] [347
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [348
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [349
+
+] [350
+
+] [351
+
+] [352
+
+] [353
+
+] [354
+
+] [355
+
+] [356
+
+]
+[357
+
+] [358
+
+] [359
+
+] [360
+
+] [361
+
+] [362
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [363
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [364
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [365
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [366
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [367
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [368
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [369
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [370
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [371
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [372
+
+] [373
+
+] [374
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+
+LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 9.
+
+) [375
+
+] [376
+
+]
+Package epstopdf Info: Source file: <figures/hmflatprobit.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 563787 bytes
+(epstopdf)             Output file: <figures/hmflatprobit-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-02-01 17:09:37
+(epstopdf)                    size: 140440 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/hmflatprobit-eps-c
+onverted-to.pdf figures/hmflatprobit.eps>
+(epstopdf)             \includegraphics on input line 563.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/hmflatprobit-eps-converted-to.pdf, id=11813, 505.89pt x 505.89pt>
+File: figures/hmflatprobit-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/hmflatprobit-eps-converted-to.pdf>
+Package pdftex.def Info: figures/hmflatprobit-eps-converted-to.pdf used on inpu
+t line 563.
+(pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
+ [377
+
+ <./figures/hmflatprobit-eps-converted-to.pdf>] [378
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [379
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [380
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [381
+
+] [382
+
+] [383
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [384
+
+]
+Overfull \hbox (8.89096pt too wide) detected at line 660
+\OML/cmm/m/it/10.95 ^^L[]\OMS/cmss/m/n/10.95 j\OML/cmm/m/it/10.95 ^^[[]; X[] \O
+MS/cmss/m/n/10.95 ^^X \U/rsfs/m/n/10.95 N[] []   [] \OML/cmm/m/it/10.95 ^^Y\OT1
+/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^[[]\OMS/cmss/m/n/10.95 j\OML/cmm/m/it/10.
+95 X[]\OT1/cmr/m/n/10.95 ) \OMS/cmss/m/n/10.95 / \OML/cmm/m/it/10.95 ^^[[] ;
+ []
+
+
+Overfull \hbox (9.80878pt too wide) in alignment at lines 660--660
+ [][][] []
+ []
+
+[385
+
+]
+Overfull \hbox (8.89096pt too wide) detected at line 660
+\OML/cmm/m/it/10.95 ^^L[]\OMS/cmss/m/n/10.95 j\OML/cmm/m/it/10.95 ^^[[]; X[] \O
+MS/cmss/m/n/10.95 ^^X \U/rsfs/m/n/10.95 N[] []   [] \OML/cmm/m/it/10.95 ^^Y\OT1
+/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^[[]\OMS/cmss/m/n/10.95 j\OML/cmm/m/it/10.
+95 X[]\OT1/cmr/m/n/10.95 ) \OMS/cmss/m/n/10.95 / \OML/cmm/m/it/10.95 ^^[[] ;
+ []
+
+
+Overfull \hbox (9.80878pt too wide) in alignment at lines 660--660
+ [][][] []
+ []
+
+[386
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [387
+
+] [388
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [389
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [390
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [391
+
+] [392
+
+] [393
+
+]
+Overfull \hbox (10.05547pt too wide) detected at line 761
+\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^L\OMS/cmss/m/n
+/10.95 j\OT1/cmr/bx/n/10.95 y\OML/cmm/m/it/10.95 ; X\OT1/cmr/m/n/10.95 ) \OMS/c
+mss/m/n/10.95 / [] [][] [][]
+ []
+
+[394
+
+]
+Overfull \hbox (10.05547pt too wide) detected at line 761
+\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^L\OMS/cmss/m/n
+/10.95 j\OT1/cmr/bx/n/10.95 y\OML/cmm/m/it/10.95 ; X\OT1/cmr/m/n/10.95 ) \OMS/c
+mss/m/n/10.95 / [] [][] [][]
+ []
+
+[395
+
+]
+Overfull \hbox (10.05547pt too wide) detected at line 761
+\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^L\OMS/cmss/m/n
+/10.95 j\OT1/cmr/bx/n/10.95 y\OML/cmm/m/it/10.95 ; X\OT1/cmr/m/n/10.95 ) \OMS/c
+mss/m/n/10.95 / [] [][] [][]
+ []
+
+[396
+
+]
+Package epstopdf Info: Source file: <figures/hmflatlogit.eps>
+(epstopdf)                    date: 2009-06-23 11:36:05
+(epstopdf)                    size: 565237 bytes
+(epstopdf)             Output file: <figures/hmflatlogit-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:41
+(epstopdf)                    size: 142455 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/hmflatlogit-eps-co
+nverted-to.pdf figures/hmflatlogit.eps>
+(epstopdf)             \includegraphics on input line 777.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/hmflatlogit-eps-converted-to.pdf, id=12430, 505.89pt x 505.89pt>
+File: figures/hmflatlogit-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/hmflatlogit-eps-converted-to.pdf>
+Package pdftex.def Info: figures/hmflatlogit-eps-converted-to.pdf used on input
+ line 777.
+(pdftex.def)             Requested size: 170.71892pt x 142.26576pt.
+ [397
+
+ <./figures/hmflatlogit-eps-converted-to.pdf>]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [398
+
+]
+\openout4 = `main.223.vrb'.
+
+ (./main.223.vrb) [399
+
+] [400
+
+] [401
+
+]
+[402
+
+] [403
+
+] [404
+
+] [405
+
+] [406
+
+] [407
+
+] [408
+
+] [409
+
+] [410
+
+] [411
+
+] [412
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+[413
+
+] (./main.vrb) [414
+
+] [415
+
+]
+Package epstopdf Info: Source file: <figures/trajflatloglin.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 1413917 bytes
+(epstopdf)             Output file: <figures/trajflatloglin-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2017-02-01 17:09:47
+(epstopdf)                    size: 286402 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/trajflatloglin-eps
+-converted-to.pdf figures/trajflatloglin.eps>
+(epstopdf)             \includegraphics on input line 1016.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/trajflatloglin-eps-converted-to.pdf, id=13017, 505.89pt x 505.89pt>
+File: figures/trajflatloglin-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/trajflatloglin-eps-converted-to.pdf>
+Package pdftex.def Info: figures/trajflatloglin-eps-converted-to.pdf used on in
+put line 1016.
+(pdftex.def)             Requested size: 142.26576pt x 170.71892pt.
+ [416
+
+ <./figures/trajflatloglin-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/trajflatloglin.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 1413917 bytes
+(epstopdf)             Output file: <figures/trajflatloglin-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2017-02-01 17:09:47
+(epstopdf)                    size: 286402 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/trajflatloglin-eps
+-converted-to.pdf figures/trajflatloglin.eps>
+(epstopdf)             \includegraphics on input line 1016.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/trajflatloglin-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/trajflatloglin-eps-converted-to.pdf>
+Package pdftex.def Info: figures/trajflatloglin-eps-converted-to.pdf used on in
+put line 1016.
+(pdftex.def)             Requested size: 142.26576pt x 170.71892pt.
+Package epstopdf Info: Source file: <figures/histflatloglin.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 30542 bytes
+(epstopdf)             Output file: <figures/histflatloglin-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2017-02-01 17:09:49
+(epstopdf)                    size: 10597 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/histflatloglin-eps
+-converted-to.pdf figures/histflatloglin.eps>
+(epstopdf)             \includegraphics on input line 1016.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/histflatloglin-eps-converted-to.pdf, id=13055, 505.89pt x 505.89pt>
+File: figures/histflatloglin-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/histflatloglin-eps-converted-to.pdf>
+Package pdftex.def Info: figures/histflatloglin-eps-converted-to.pdf used on in
+put line 1016.
+(pdftex.def)             Requested size: 142.26576pt x 170.71892pt.
+ [417
+
+ <./figures/histflatloglin-eps-converted-to.pdf>] [418
+
+] [419
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [420
+
+] (./main.vrb) [421
+
+])
+(./Bcap.tex (./main.toc) [422
+
+] [423
+
+] [424
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [425
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [426
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [427
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [428
+
+] [429
+
+] [430
+
+] [431
+
+] [432
+
+] [433
+
+]
+Package epstopdf Info: Source file: <figures/Dipper.eps>
+(epstopdf)                    date: 2009-06-23 11:36:04
+(epstopdf)                    size: 166667 bytes
+(epstopdf)             Output file: <figures/Dipper-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:53
+(epstopdf)                    size: 28389 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/Dipper-eps-convert
+ed-to.pdf figures/Dipper.eps>
+(epstopdf)             \includegraphics on input line 107.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/Dipper-eps-converted-to.pdf, id=13589, 231.86626pt x 189.70876pt>
+File: figures/Dipper-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/Dipper-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Dipper-eps-converted-to.pdf used on input line
+ 107.
+(pdftex.def)             Requested size: 85.35753pt x 85.35945pt.
+ [434
+
+ <./figures/Dipper-eps-converted-to.pdf>]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [435
+
+] (./main.vrb) [436
+
+] [437
+
+] [438
+
+] [439
+
+]
+Overfull \hbox (2.87231pt too wide) in paragraph at lines 167--167
+[]  
+ []
+
+[440
+
+] [441
+
+] [442
+
+] [443
+
+] [444
+
+] [445
+
+]
+Overfull \hbox (11.73447pt too wide) detected at line 251
+\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 N\OMS/cmss/m/n/1
+0.95 j\OML/cmm/m/it/10.95 m[]\OT1/cmr/m/n/10.95 ) \OMS/cmss/m/n/10.95 / \OT1/cm
+r/m/n/10.95 (\OML/cmm/m/it/10.95 n \OMS/cmss/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 
+n[]\OT1/cmr/m/n/10.95 )!(\OML/cmm/m/it/10.95 N \OMS/cmss/m/n/10.95 ^^@ \OML/cmm
+/m/it/10.95 n[]\OT1/cmr/m/n/10.95 )![]\OMS/cmss/m/n/10.95 f\OT1/cmr/m/n/10.95 (
+\OML/cmm/m/it/10.95 n \OMS/cmss/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 n[] \OMS/cmss
+/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 n[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95
+ m[]\OT1/cmr/m/n/10.95 )!\OML/cmm/m/it/10.95 N\OT1/cmr/m/n/10.95 !\OMS/cmss/m/n
+/10.95 g \U/msb/m/n/10.95 I[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 N\OT1/cmr/
+m/n/10.95 ) \OML/cmm/m/it/10.95 ;
+ []
+
+[446
+
+]
+Overfull \hbox (11.73447pt too wide) detected at line 251
+\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 N\OMS/cmss/m/n/1
+0.95 j\OML/cmm/m/it/10.95 m[]\OT1/cmr/m/n/10.95 ) \OMS/cmss/m/n/10.95 / \OT1/cm
+r/m/n/10.95 (\OML/cmm/m/it/10.95 n \OMS/cmss/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 
+n[]\OT1/cmr/m/n/10.95 )!(\OML/cmm/m/it/10.95 N \OMS/cmss/m/n/10.95 ^^@ \OML/cmm
+/m/it/10.95 n[]\OT1/cmr/m/n/10.95 )![]\OMS/cmss/m/n/10.95 f\OT1/cmr/m/n/10.95 (
+\OML/cmm/m/it/10.95 n \OMS/cmss/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 n[] \OMS/cmss
+/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 n[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95
+ m[]\OT1/cmr/m/n/10.95 )!\OML/cmm/m/it/10.95 N\OT1/cmr/m/n/10.95 !\OMS/cmss/m/n
+/10.95 g \U/msb/m/n/10.95 I[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 N\OT1/cmr/
+m/n/10.95 ) \OML/cmm/m/it/10.95 ;
+ []
+
+[447
+
+] [448
+
+] [449
+
+] [450
+
+] [451
+
+] [452
+
+] [453
+
+] [454
+
+] [455
+
+] [456
+
+] [457
+
+]
+Overfull \hbox (7.37115pt too wide) in alignment at lines 376--376
+ [][][] []
+ []
+
+[458
+
+]
+Overfull \hbox (7.37115pt too wide) in alignment at lines 376--376
+ [][][] []
+ []
+
+[459
+
+] [460
+
+] [461
+
+] [462
+
+] [463
+
+]
+Overfull \hbox (7.60287pt too wide) in paragraph at lines 420--420
+[]  
+ []
+
+[464
+
+]
+Overfull \vbox (5.08568pt too high) detected at line 440
+ []
+
+[465
+
+] [466
+
+] [467
+
+]
+Package epstopdf Info: Source file: <figures/g2.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 55084 bytes
+(epstopdf)             Output file: <figures/g2-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:09:58
+(epstopdf)                    size: 18709 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/g2-eps-converted-t
+o.pdf figures/g2.eps>
+(epstopdf)             \includegraphics on input line 472.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/g2-eps-converted-to.pdf, id=14625, 504.88625pt x 504.88625pt>
+File: figures/g2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/g2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/g2-eps-converted-to.pdf used on input line 472
+.
+(pdftex.def)             Requested size: 113.81021pt x 170.71916pt.
+ [468
+
+ <./figures/g2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/jit.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 823519 bytes
+(epstopdf)             Output file: <figures/jit-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:06
+(epstopdf)                    size: 693120 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/jit-eps-converted-
+to.pdf figures/jit.eps>
+(epstopdf)             \includegraphics on input line 488.
+Package epstopdf Info: Output file is already uptodate.
+<figures/jit-eps-converted-to.pdf, id=14660, 1277.77374pt x 972.63374pt>
+File: figures/jit-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/jit-eps-converted-to.pdf>
+Package pdftex.def Info: figures/jit-eps-converted-to.pdf used on input line 48
+8.
+(pdftex.def)             Requested size: 113.80534pt x 170.7032pt.
+ [469
+
+ <./figures/jit-eps-converted-to.pdf>] [470
+
+] [471
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [472
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/uniform.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 119934 bytes
+(epstopdf)             Output file: <figures/uniform-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:11
+(epstopdf)                    size: 29612 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/uniform-eps-conver
+ted-to.pdf figures/uniform.eps>
+(epstopdf)             \includegraphics on input line 544.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/uniform-eps-converted-to.pdf, id=14789, 518.93875pt x 403.5075pt>
+File: figures/uniform-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/uniform-eps-converted-to.pdf>
+Package pdftex.def Info: figures/uniform-eps-converted-to.pdf used on input lin
+e 544.
+(pdftex.def)             Requested size: 85.35826pt x 66.36652pt.
+ [473
+
+ <./figures/uniform-eps-converted-to.pdf>] [474
+
+] [475
+
+] [476
+
+] [477
+
+] [478
+
+] [479
+
+]
+Package epstopdf Info: Source file: <figures/titlcap.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 4832 bytes
+(epstopdf)             Output file: <figures/titlcap-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:15
+(epstopdf)                    size: 4383 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/titlcap-eps-conver
+ted-to.pdf figures/titlcap.eps>
+(epstopdf)             \includegraphics on input line 615.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/titlcap-eps-converted-to.pdf, id=15007, 561.09625pt x 809.0225pt>
+File: figures/titlcap-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/titlcap-eps-converted-to.pdf>
+Package pdftex.def Info: figures/titlcap-eps-converted-to.pdf used on input lin
+e 615.
+(pdftex.def)             Requested size: 85.35826pt x 123.06404pt.
+ [480
+
+ <./figures/titlcap-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/titlcap.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 4832 bytes
+(epstopdf)             Output file: <figures/titlcap-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:15
+(epstopdf)                    size: 4383 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/titlcap-eps-conver
+ted-to.pdf figures/titlcap.eps>
+(epstopdf)             \includegraphics on input line 615.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/titlcap-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/titlcap-eps-converted-to.pdf>
+Package pdftex.def Info: figures/titlcap-eps-converted-to.pdf used on input lin
+e 615.
+(pdftex.def)             Requested size: 85.35826pt x 123.06404pt.
+ [481
+
+] [482
+
+] [483
+
+]
+[484
+
+] [485
+
+] [486
+
+] [487
+
+]
+Overfull \hbox (8.69983pt too wide) detected at line 689
+[] \OT1/cmr/m/n/10 = \U/msb/m/n/10 P []  \OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 2 
+\U/euf/m/n/10 K\OML/cmm/m/it/10 ; s \OMS/cmsy/m/n/10 2 \U/euf/m/n/10 K \OMS/cms
+y/m/n/10 [ f[]g\OML/cmm/m/it/10 ;  q[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []\
+OT1/cmr/m/n/10 ) = 1
+ []
+
+[488
+
+] [489
+
+] [490
+
+] [491
+
+] [492
+
+] [493
+
+] [494
+
+]
+Overfull \hbox (10.37395pt too wide) in paragraph at lines 761--761
+[][]  
+ []
+
+[495
+
+]
+Overfull \hbox (3.6656pt too wide) in paragraph at lines 785--785
+[][]  
+ []
+
+
+Overfull \hbox (10.0445pt too wide) in paragraph at lines 785--785
+[][]  
+ []
+
+[496
+
+]
+Overfull \hbox (3.6656pt too wide) in paragraph at lines 785--785
+[][]  
+ []
+
+
+Overfull \hbox (10.0445pt too wide) in paragraph at lines 785--785
+[][]  
+ []
+
+[497
+
+] [498
+
+] [499
+
+] [500
+
+] [501
+
+] [502
+
+] [503
+
+] [504
+
+] [505
+
+] [506
+
+] [507
+
+]
+Package epstopdf Info: Source file: <figures/g3.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 38691 bytes
+(epstopdf)             Output file: <figures/g3-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:21
+(epstopdf)                    size: 18620 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/g3-eps-converted-t
+o.pdf figures/g3.eps>
+(epstopdf)             \includegraphics on input line 920.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/g3-eps-converted-to.pdf, id=15863, 504.88625pt x 504.88625pt>
+File: figures/g3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/g3-eps-converted-to.pdf>
+Package pdftex.def Info: figures/g3-eps-converted-to.pdf used on input line de}
+                \begin{slide}\slidetitle{Likelihood}
+? s
+OK, entering \scrollmode...
+[517
+
+ <./figures/plate-eps-converted-to.pdf>] [518
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [519
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/lvraisd1.eps>
+(epstopdf)                    date: 2009-06-23 11:36:04
+(epstopdf)                    size: 197763 bytes
+(epstopdf)             Output file: <figures/lvraisd1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:29
+(epstopdf)                    size: 40910 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/lvraisd1-eps-conve
+rted-to.pdf figures/lvraisd1.eps>
+(epstopdf)             \includegraphics on input line 98.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/lvraisd1-eps-converted-to.pdf, id=16050, 504.88625pt x 505.89pt>
+File: figures/lvraisd1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/lvraisd1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/lvraisd1-eps-converted-to.pdf used on input li
+ne 98.
+(pdftex.def)             Requested size: 115.22772pt x 92.85484pt.
+ [520
+
+ <./figures/lvraisd1-eps-converted-to.pdf>] [521
+
+] [522
+
+] [523
+
+] [524
+
+] [525
+
+] [526
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [527
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [528
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [529
+
+] [530
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [531
+
+] [532
+
+]
+Overfull \hbox (0.72655pt too wide) detected at line 285
+\U/msb/m/n/10 P [] \OT1/cmr/m/n/10 = 1 \OMS/cmss/m/n/10 ^^@ \U/msb/m/n/10 P [] 
+\OMS/cmss/m/n/10 / \OML/cmm/m/it/10 p [] []
+ []
+
+[533
+
+]
+Package epstopdf Info: Source file: <figures/g2n2d1.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 538444 bytes
+(epstopdf)             Output file: <figures/g2n2d1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:38
+(epstopdf)                    size: 601765 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/g2n2d1-eps-convert
+ed-to.pdf figures/g2n2d1.eps>
+(epstopdf)             \includegraphics on input line 296.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/g2n2d1-eps-converted-to.pdf, id=16489, 939.51pt x 505.89pt>
+File: figures/g2n2d1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/g2n2d1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/g2n2d1-eps-converted-to.pdf used on input line
+ 296.
+(pdftex.def)             Requested size: 153.63623pt x 170.71892pt.
+ [534
+
+ <./figures/g2n2d1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/g2n2d1.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 538444 bytes
+(epstopdf)             Output file: <figures/g2n2d1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:38
+(epstopdf)                    size: 601765 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/g2n2d1-eps-convert
+ed-to.pdf figures/g2n2d1.eps>
+(epstopdf)             \includegraphics on input line 296.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/g2n2d1-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/g2n2d1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/g2n2d1-eps-converted-to.pdf used on input line
+ 296.
+(pdftex.def)             Requested size: 153.63623pt x 170.71892pt.
+Package epstopdf Info: Source file: <figures/g1n2d1.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 538395 bytes
+(epstopdf)             Output file: <figures/g1n2d1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:46
+(epstopdf)                    size: 603180 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/g1n2d1-eps-convert
+ed-to.pdf figures/g1n2d1.eps>
+(epstopdf)             \includegraphics on input line 296.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/g1n2d1-eps-converted-to.pdf, id=16530, 939.51pt x 505.89pt>
+File: figures/g1n2d1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/g1n2d1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/g1n2d1-eps-converted-to.pdf used on input line
+ 296.
+(pdftex.def)             Requested size: 153.63623pt x 170.71892pt.
+ [535
+
+ <./figures/g1n2d1-eps-converted-to.pdf>]
+
+./Bmix.tex:310: LaTeX Error: Unknown graphics extension: .est.eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 \end{slide}
+                 \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[536
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+./Bmix.tex:310: LaTeX Error: Unknown graphics extension: .est.eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 \end{slide}
+                 \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[537
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [538
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [539
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/hmn2d1.eps>
+(epstopdf)                    date: 2009-06-23 11:36:05
+(epstopdf)                    size: 512396 bytes
+(epstopdf)             Output file: <figures/hmn2d1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:54
+(epstopdf)                    size: 77356 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/hmn2d1-eps-convert
+ed-to.pdf figures/hmn2d1.eps>
+(epstopdf)             \includegraphics on input line 345.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/hmn2d1-eps-converted-to.pdf, id=16694, 504.88625pt x 505.89pt>
+File: figures/hmn2d1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/hmn2d1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/hmn2d1-eps-converted-to.pdf used on input line
+ 345.
+(pdftex.def)             Requested size: 113.81021pt x 113.80489pt.
+ [540
+
+ <./figures/hmn2d1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/hmn2d1.eps>
+(epstopdf)                    date: 2009-06-23 11:36:05
+(epstopdf)                    size: 512396 bytes
+(epstopdf)             Output file: <figures/hmn2d1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:10:54
+(epstopdf)                    size: 77356 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/hmn2d1-eps-convert
+ed-to.pdf figures/hmn2d1.eps>
+(epstopdf)             \includegraphics on input line 345.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/hmn2d1-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/hmn2d1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/hmn2d1-eps-converted-to.pdf used on input line
+ 345.
+(pdftex.def)             Requested size: 113.81021pt x 113.80489pt.
+ [541
+
+] [542
+
+] [543
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [544
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 406.
+
+[545
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [546
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [547
+
+] [548
+
+]
+
+./Bmix.tex:429: LaTeX Error: Unknown graphics extension: .noX.eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.429 \end{slide}
+                 \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[549
+
+] [550
+
+] [551
+
+] [552
+
+] [553
+
+] [554
+
+] [555
+
+] [556
+
+] [557
+
+] [558
+
+] [559
+
+] [560
+
+]
+[561
+
+]
+Package epstopdf Info: Source file: <figures/tempix.eps>
+(epstopdf)                    date: 2009-06-23 11:36:04
+(epstopdf)                    size: 1332121 bytes
+(epstopdf)             Output file: <figures/tempix-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:05
+(epstopdf)                    size: 585841 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/tempix-eps-convert
+ed-to.pdf figures/tempix.eps>
+(epstopdf)             \includegraphics on input line 527.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/tempix-eps-converted-to.pdf, id=17376, 561.09625pt x 809.0225pt>
+File: figures/tempix-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/tempix-eps-converted-to.pdf>
+Package pdftex.def Info: figures/tempix-eps-converted-to.pdf used on input line
+ 527.
+(pdftex.def)             Requested size: 312.97888pt x 142.26001pt.
+
+Overfull \hbox (5.68901pt too wide) in paragraph at lines 527--527
+[][]  
+ []
+
+[562
+
+ <./figures/tempix-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/peterG.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 1543153 bytes
+(epstopdf)             Output file: <figures/peterG-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:10
+(epstopdf)                    size: 157869 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/peterG-eps-convert
+ed-to.pdf figures/peterG.eps>
+(epstopdf)             \includegraphics on input line 550.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/peterG-eps-converted-to.pdf, id=17413, 611.28375pt x 669.50125pt>
+File: figures/peterG-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/peterG-eps-converted-to.pdf>
+Package pdftex.def Info: figures/peterG-eps-converted-to.pdf used on input line
+ 550.
+(pdftex.def)             Requested size: 85.35826pt x 93.48436pt.
+ [563
+
+ <./figures/peterG-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/peterG.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 1543153 bytes
+(epstopdf)             Output file: <figures/peterG-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:10
+(epstopdf)                    size: 157869 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/peterG-eps-convert
+ed-to.pdf figures/peterG.eps>
+(epstopdf)             \includegraphics on input line 550.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/peterG-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/peterG-eps-converted-to.pdf>
+Package pdftex.def Info: figures/peterG-eps-converted-to.pdf used on input line
+ 550.
+(pdftex.def)             Requested size: 85.35826pt x 93.48436pt.
+ [564
+
+] [565
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [566
+
+] [567
+
+] [568
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [569
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [570
+
+] [571
+
+] [572
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [573
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [574
+
+] [575
+
+] [576
+
+] [577
+
+] [578
+
+] [579
+
+] [580
+
+] [581
+
+]
+Overfull \hbox (4.44046pt too wide) detected at line 752
+\OML/cmm/m/it/10.95 ^^R[] \OMS/cmss/m/n/10.95 ^^X N\OT1/cmr/m/n/10.95 (	[](\OML
+/cmm/m/it/10.95 ^^R[]; v[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; "\OT1/cmr/m
+/n/10.95 ) [] 	[](\OML/cmm/m/it/10.95 ^^R[]; v[]\OT1/cmr/m/n/10.95 ) \OMS/cmss/
+m/n/10.95 ^^X N\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R[]; "\OT1/cmr/m/n/10.
+95 )
+ []
+
+[582
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (4.44046pt too wide) detected at line 752
+\OML/cmm/m/it/10.95 ^^R[] \OMS/cmss/m/n/10.95 ^^X N\OT1/cmr/m/n/10.95 (	[](\OML
+/cmm/m/it/10.95 ^^R[]; v[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; "\OT1/cmr/m
+/n/10.95 ) [] 	[](\OML/cmm/m/it/10.95 ^^R[]; v[]\OT1/cmr/m/n/10.95 ) \OMS/cmss/
+m/n/10.95 ^^X N\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^R[]; "\OT1/cmr/m/n/10.
+95 )
+ []
+
+[583
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [584
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [585
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [586
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 804.
+
+
+[587
+
+] [588
+
+] [589
+
+] [590
+
+] [591
+
+] [592
+
+] [593
+
+]
+
+./Bmix.tex:864: LaTeX Error: Unknown graphics extension: .rj.eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.864 \end{slide}
+                 \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[594
+
+]
+
+./Bmix.tex:864: LaTeX Error: Unknown graphics extension: .rj.est.eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.864 \end{slide}
+                 \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[595
+
+] [596
+
+]
+Package epstopdf Info: Source file: <figures/birthandeath.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 112486 bytes
+(epstopdf)             Output file: <figures/birthandeath-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-02-01 17:11:15
+(epstopdf)                    size: 34306 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/birthandeath-eps-c
+onverted-to.pdf figures/birthandeath.eps>
+(epstopdf)             \includegraphics on input line 897.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/birthandeath-eps-converted-to.pdf, id=18453, 505.89pt x 505.89pt>
+File: figures/birthandeath-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/birthandeath-eps-converted-to.pdf>
+Package pdftex.def Info: figures/birthandeath-eps-converted-to.pdf used on inpu
+t line 897.
+(pdftex.def)             Requested size: 142.26576pt x 113.80489pt.
+ [597
+
+
+Non-PDF special ignored!
+Non-PDF special ignored! <./figures/birthandeath-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/birthandeath.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 112486 bytes
+(epstopdf)             Output file: <figures/birthandeath-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-02-01 17:11:15
+(epstopdf)                    size: 34306 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/birthandeath-eps-c
+onverted-to.pdf figures/birthandeath.eps>
+(epstopdf)             \includegraphics on input line 897.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/birthandeath-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/birthandeath-eps-converted-to.pdf>
+Package pdftex.def Info: figures/birthandeath-eps-converted-to.pdf used on inpu
+t line 897.
+(pdftex.def)             Requested size: 142.26576pt x 113.80489pt.
+ [598
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [599
+
+]
+Overfull \hbox (9.22366pt too wide) detected at line 934
+[] [] \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 ^^[[]
+ []
+
+[600
+
+] [601
+
+] [602
+
+] [603
+
+]) (./Bdyn.tex (./main.toc) [604
+
+] [605
+
+] [606
+
+]
+Package epstopdf Info: Source file: <figures/Euro.eps>
+(epstopdf)                    date: 2009-06-23 11:36:04
+(epstopdf)                    size: 80918 bytes
+(epstopdf)             Output file: <figures/Euro-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:19
+(epstopdf)                    size: 40229 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/Euro-eps-converted
+-to.pdf figures/Euro.eps>
+(epstopdf)             \includegraphics on input line 24.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/Euro-eps-converted-to.pdf, id=18778, 561.09625pt x 809.0225pt>
+File: figures/Euro-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/Euro-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Euro-eps-converted-to.pdf used on input line 2
+4.
+(pdftex.def)             Requested size: 197.33696pt x 284.52756pt.
+ [607
+
+ <./figures/Euro-eps-converted-to.pdf>] [608
+
+] [609
+
+] [610
+
+] [611
+
+] [612
+
+] [613
+
+] [614
+
+] [615
+
+] [616
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 92.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 92.
+
+[617
+
+] [618
+
+] [619
+
+] [620
+
+] [621
+
+] [622
+
+] [623
+
+] [624
+
+] [625
+
+] [626
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [627
+
+] [628
+
+]
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 199.
+
+
+[629
+
+] [630
+
+] [631
+
+] [632
+
+] [633
+
+] [634
+
+] [635
+
+] [636
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [637
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [638
+
+] [639
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+./Bdyn.tex:295: LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.295 \end{slide}
+                 \begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[640
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [641
+
+] [642
+
+] [643
+
+] [644
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [645
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [646
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [647
+
+] [648
+
+] [649
+
+]
+Package epstopdf Info: Source file: <figures/checkin.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 4625 bytes
+(epstopdf)             Output file: <figures/checkin-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:25
+(epstopdf)                    size: 4520 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/checkin-eps-conver
+ted-to.pdf figures/checkin.eps>
+(epstopdf)             \includegraphics on input line 393.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/checkin-eps-converted-to.pdf, id=20107, 561.09625pt x 809.0225pt>
+File: figures/checkin-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/checkin-eps-converted-to.pdf>
+Package pdftex.def Info: figures/checkin-eps-converted-to.pdf used on input lin
+e 393.
+(pdftex.def)             Requested size: 39.46054pt x 56.9055pt.
+ [650
+
+ <./figures/checkin-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/chicken.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 243636 bytes
+(epstopdf)             Output file: <figures/chicken-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:29
+(epstopdf)                    size: 572980 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/chicken-eps-conver
+ted-to.pdf figures/chicken.eps>
+(epstopdf)             \includegraphics on input line 400.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/chicken-eps-converted-to.pdf, id=20143, 561.09625pt x 809.0225pt>
+File: figures/chicken-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/chicken-eps-converted-to.pdf>
+Package pdftex.def Info: figures/chicken-eps-converted-to.pdf used on input lin
+e 400.
+(pdftex.def)             Requested size: 39.46054pt x 56.9055pt.
+ [651
+
+ <./figures/chicken-eps-converted-to.pdf>] [652
+
+] [653
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+./Bdyn.tex:436: LaTeX Error: Unknown graphics extension: .ps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.436 \end{slide}
+                 \subsection{The MA$(q)$ model}\begin{slide}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[654
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 436.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 436.
+
+[655
+
+] [656
+
+] [657
+
+] [658
+
+] [659
+
+] [660
+
+] [661
+
+]
+
+LaTeX Warning: Reference `eq:staspa.obs' on page 662 undefined on input line 55
+4.
+
+
+LaTeX Warning: Reference `eq:staspa.stat' on page 662 undefined on input line 5
+54.
+
+[662
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+LaTeX Warning: Reference `eq:staspa.obs' on page 663 undefined on input line 55
+4.
+
+
+LaTeX Warning: Reference `eq:staspa.stat' on page 663 undefined on input line 5
+54.
+
+[663
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [664
+
+] [665
+
+] [666
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [667
+
+] [668
+
+] [669
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [670
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [671
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [672
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [673
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [674
+
+] [675
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/dna.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 123312 bytes
+(epstopdf)             Output file: <figures/dna-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:35
+(epstopdf)                    size: 33261 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/dna-eps-converted-
+to.pdf figures/dna.eps>
+(epstopdf)             \includegraphics on input line 738.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/dna-eps-converted-to.pdf, id=20925, 505.89pt x 505.89pt>
+File: figures/dna-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/dna-eps-converted-to.pdf>
+Package pdftex.def Info: figures/dna-eps-converted-to.pdf used on input line 73
+8.
+(pdftex.def)             Requested size: 307.29561pt x 85.35173pt.
+ [676
+
+ <./figures/dna-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/dna.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 123312 bytes
+(epstopdf)             Output file: <figures/dna-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:35
+(epstopdf)                    size: 33261 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/dna-eps-converted-
+to.pdf figures/dna.eps>
+(epstopdf)             \includegraphics on input line 738.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/dna-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/dna-eps-converted-to.pdf>
+Package pdftex.def Info: figures/dna-eps-converted-to.pdf used on input line 73
+8.
+(pdftex.def)             Requested size: 307.29561pt x 85.35173pt.
+ [677
+
+] [678
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [679
+
+] [680
+
+] [681
+
+] [682
+
+] [683
+
+] [684
+
+]
+Package epstopdf Info: Source file: <figures/GigHmHi.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 114044 bytes
+(epstopdf)             Output file: <figures/GigHmHi-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:39
+(epstopdf)                    size: 54127 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/GigHmHi-eps-conver
+ted-to.pdf figures/GigHmHi.eps>
+(epstopdf)             \includegraphics on input line 845.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/GigHmHi-eps-converted-to.pdf, id=21202, 1339.0025pt x 980.66376pt>
+File: figures/GigHmHi-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/GigHmHi-eps-converted-to.pdf>
+Package pdftex.def Info: figures/GigHmHi-eps-converted-to.pdf used on input lin
+e 845.
+(pdftex.def)             Requested size: 312.96982pt x 199.1669pt.
+ [685
+
+ <./figures/GigHmHi-eps-converted-to.pdf>] [686
+
+] [687
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [688
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [689
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [690
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [691
+
+] [692
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [693
+
+] [694
+
+] [695
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [696
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [697
+
+] [698
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [699
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [700
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [701
+
+]
+Package epstopdf Info: Source file: <figures/TBayes.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 59899 bytes
+(epstopdf)             Output file: <figures/TBayes-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:39
+(epstopdf)                    size: 12117 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/TBayes-eps-convert
+ed-to.pdf figures/TBayes.eps>
+(epstopdf)             \includegraphics on input line 1064.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/TBayes-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/TBayes-eps-converted-to.pdf>
+Package pdftex.def Info: figures/TBayes-eps-converted-to.pdf used on input line
+ 1064.
+(pdftex.def)             Requested size: 62.98944pt x 71.13188pt.
+
+[702
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/TBayes.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 59899 bytes
+(epstopdf)             Output file: <figures/TBayes-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:08:39
+(epstopdf)                    size: 12117 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/TBayes-eps-convert
+ed-to.pdf figures/TBayes.eps>
+(epstopdf)             \includegraphics on input line 1064.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/TBayes-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/TBayes-eps-converted-to.pdf>
+Package pdftex.def Info: figures/TBayes-eps-converted-to.pdf used on input line
+ 1064.
+(pdftex.def)             Requested size: 62.98944pt x 71.13188pt.
+ [703
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [704
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [705
+
+]) (./Bimg.tex (./main.toc) [706
+
+] [707
+
+] [708
+
+]
+[709
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [710
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [711
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [712
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [713
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [714
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [715
+
+] [716
+
+]
+Package epstopdf Info: Source file: <figures/moto.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 698075 bytes
+(epstopdf)             Output file: <figures/moto-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:47
+(epstopdf)                    size: 104587 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/moto-eps-converted
+-to.pdf figures/moto.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/moto-eps-converted-to.pdf, id=22190, 251.94125pt x 188.705pt>
+File: figures/moto-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/moto-eps-converted-to.pdf>
+Package pdftex.def Info: figures/moto-eps-converted-to.pdf used on input line 5
+7.
+(pdftex.def)             Requested size: 113.81076pt x 71.12987pt.
+Package epstopdf Info: Source file: <figures/bike.eps>
+(epstopdf)                    date: 2009-06-23 11:36:04
+(epstopdf)                    size: 724346 bytes
+(epstopdf)             Output file: <figures/bike-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:50
+(epstopdf)                    size: 137929 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/bike-eps-converted
+-to.pdf figures/bike.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/bike-eps-converted-to.pdf, id=22191, 486.81876pt x 365.365pt>
+File: figures/bike-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/bike-eps-converted-to.pdf>
+Package pdftex.def Info: figures/bike-eps-converted-to.pdf used on input line 5
+7.
+(pdftex.def)             Requested size: 113.80815pt x 71.13159pt.
+Package epstopdf Info: Source file: <figures/people.eps>
+(epstopdf)                    date: 2009-06-23 11:36:05
+(epstopdf)                    size: 719735 bytes
+(epstopdf)             Output file: <figures/people-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:54
+(epstopdf)                    size: 74701 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/people-eps-convert
+ed-to.pdf figures/people.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/people-eps-converted-to.pdf, id=22192, 486.81876pt x 365.365pt>
+File: figures/people-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/people-eps-converted-to.pdf>
+Package pdftex.def Info: figures/people-eps-converted-to.pdf used on input line
+ 57.
+(pdftex.def)             Requested size: 113.80815pt x 71.13159pt.
+Package epstopdf Info: Source file: <figures/car.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 718473 bytes
+(epstopdf)             Output file: <figures/car-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:11:58
+(epstopdf)                    size: 63441 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/car-eps-converted-
+to.pdf figures/car.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/car-eps-converted-to.pdf, id=22193, 486.81876pt x 365.365pt>
+File: figures/car-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/car-eps-converted-to.pdf>
+Package pdftex.def Info: figures/car-eps-converted-to.pdf used on input line 57
+.
+(pdftex.def)             Requested size: 113.80815pt x 71.13159pt.
+ [717
+
+ <./figures/moto-eps-converted-to.pdf> <./figures/bike-eps-converted-to.pdf> <.
+/figures/people-eps-converted-to.pdf> <./figures/car-eps-converted-to.pdf>] [71
+8
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [719
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [720
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/neighbR.eps>
+(epstopdf)                    date: 2009-06-23 11:36:06
+(epstopdf)                    size: 5132 bytes
+(epstopdf)             Output file: <figures/neighbR-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:02
+(epstopdf)                    size: 5146 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/neighbR-eps-conver
+ted-to.pdf figures/neighbR.eps>
+(epstopdf)             \includegraphics on input line 75.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/neighbR-eps-converted-to.pdf, id=22328, 505.89pt x 505.89pt>
+File: figures/neighbR-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/neighbR-eps-converted-to.pdf>
+Package pdftex.def Info: figures/neighbR-eps-converted-to.pdf used on input lin
+e 75.
+(pdftex.def)             Requested size: 215.10196pt x 215.1046pt.
+
+Overfull \vbox (18.83136pt too high) detected at line 75
+ []
+
+[721
+
+ <./figures/neighbR-eps-converted-to.pdf>] [722
+
+] [723
+
+] [724
+
+] [725
+
+] [726
+
+]
+Overfull \hbox (21.90898pt too wide) in paragraph at lines 115--115
+[]  
+ []
+
+[727
+
+] [728
+
+] [729
+
+] [730
+
+] [731
+
+] [732
+
+] [733
+
+] [734
+
+] [735
+
+] [736
+
+] [737
+
+]
+Package epstopdf Info: Source file: <figures/res2.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 50824 bytes
+(epstopdf)             Output file: <figures/res2-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:10
+(epstopdf)                    size: 12155 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/res2-eps-converted
+-to.pdf figures/res2.eps>
+(epstopdf)             \includegraphics on input line 180.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/res2-eps-converted-to.pdf, id=22848, 1222.5675pt x 911.405pt>
+File: figures/res2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/res2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/res2-eps-converted-to.pdf used on input line 1
+80.
+(pdftex.def)             Requested size: 284.52382pt x 128.02693pt.
+ [738
+
+ <./figures/res2-eps-converted-to.pdf>] [739
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [740
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [741
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [742
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [743
+
+] [744
+
+]
+Package epstopdf Info: Source file: <figures/menteith.eps>
+(epstopdf)                    date: 2009-06-23 11:36:04
+(epstopdf)                    size: 574927 bytes
+(epstopdf)             Output file: <figures/menteith-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:17
+(epstopdf)                    size: 58709 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/menteith-eps-conve
+rted-to.pdf figures/menteith.eps>
+(epstopdf)             \includegraphics on input line 213.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/menteith-eps-converted-to.pdf, id=23071, 504.88625pt x 504.88625pt>
+File: figures/menteith-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/menteith-eps-converted-to.pdf>
+Package pdftex.def Info: figures/menteith-eps-converted-to.pdf used on input li
+ne 213.
+(pdftex.def)             Requested size: 170.71916pt x 170.71916pt.
+ [745
+
+ <./figures/menteith-eps-converted-to.pdf>] [746
+
+] [747
+
+] [748
+
+] [749
+
+] [750
+
+] [751
+
+] [752
+
+] [753
+
+] [754
+
+] [755
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [756
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [757
+
+]
+Package epstopdf Info: Source file: <figures/gising.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 3280230 bytes
+(epstopdf)             Output file: <figures/gising-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:24
+(epstopdf)                    size: 374121 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/gising-eps-convert
+ed-to.pdf figures/gising.eps>
+(epstopdf)             \includegraphics on input line 299.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/gising-eps-converted-to.pdf, id=23474, 504.88625pt x 504.88625pt>
+File: figures/gising-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/gising-eps-converted-to.pdf>
+Package pdftex.def Info: figures/gising-eps-converted-to.pdf used on input line
+ 299.
+(pdftex.def)             Requested size: 142.26083pt x 284.52937pt.
+ [758
+
+ <./figures/gising-eps-converted-to.pdf>] [759
+
+] [760
+
+] [761
+
+]
+Package epstopdf Info: Source file: <figures/hmpotts.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 4153494 bytes
+(epstopdf)             Output file: <figures/hmpotts-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:31
+(epstopdf)                    size: 424392 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/hmpotts-eps-conver
+ted-to.pdf figures/hmpotts.eps>
+(epstopdf)             \includegraphics on input line 361.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/hmpotts-eps-converted-to.pdf, id=23601, 504.88625pt x 504.88625pt>
+File: figures/hmpotts-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/hmpotts-eps-converted-to.pdf>
+Package pdftex.def Info: figures/hmpotts-eps-converted-to.pdf used on input lin
+e 361.
+(pdftex.def)             Requested size: 142.26083pt x 284.52937pt.
+ [762
+
+ <./figures/hmpotts-eps-converted-to.pdf>] [763
+
+] [764
+
+] [765
+
+] [766
+
+] [767
+
+] [768
+
+] [769
+
+] [770
+
+] [771
+
+] [772
+
+] [773
+
+]
+[774
+
+] [775
+
+] [776
+
+]
+Package epstopdf Info: Source file: <figures/pathsampling.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 5246 bytes
+(epstopdf)             Output file: <figures/pathsampling-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-02-01 17:12:35
+(epstopdf)                    size: 6123 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/pathsampling-eps-c
+onverted-to.pdf figures/pathsampling.eps>
+(epstopdf)             \includegraphics on input line 470.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/pathsampling-eps-converted-to.pdf, id=24064, 504.88625pt x 504.88625pt
+>
+File: figures/pathsampling-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/pathsampling-eps-converted-to.pdf>
+Package pdftex.def Info: figures/pathsampling-eps-converted-to.pdf used on inpu
+t line 470.
+(pdftex.def)             Requested size: 227.62042pt x 170.71916pt.
+
+Overfull \vbox (7.44592pt too high) detected at line 470
+ []
+
+[777
+
+ <./figures/pathsampling-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/mut.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 159056 bytes
+(epstopdf)             Output file: <figures/mut-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:37
+(epstopdf)                    size: 67653 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/mut-eps-converted-
+to.pdf figures/mut.eps>
+(epstopdf)             \includegraphics on input line 481.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/mut-eps-converted-to.pdf, id=24100, 504.88625pt x 504.88625pt>
+File: figures/mut-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/mut-eps-converted-to.pdf>
+Package pdftex.def Info: figures/mut-eps-converted-to.pdf used on input line 48
+1.
+(pdftex.def)             Requested size: 284.52937pt x 142.26083pt.
+ [778
+
+ <./figures/mut-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/muh.eps>
+(epstopdf)                    date: 2009-06-23 11:36:04
+(epstopdf)                    size: 27790 bytes
+(epstopdf)             Output file: <figures/muh-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:39
+(epstopdf)                    size: 9787 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/muh-eps-converted-
+to.pdf figures/muh.eps>
+(epstopdf)             \includegraphics on input line 491.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/muh-eps-converted-to.pdf, id=24137, 504.88625pt x 504.88625pt>
+File: figures/muh-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/muh-eps-converted-to.pdf>
+Package pdftex.def Info: figures/muh-eps-converted-to.pdf used on input line 49
+1.
+(pdftex.def)             Requested size: 170.71916pt x 142.26083pt.
+ [779
+
+ <./figures/muh-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/betesig.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 53572 bytes
+(epstopdf)             Output file: <figures/betesig-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:42
+(epstopdf)                    size: 19192 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/betesig-eps-conver
+ted-to.pdf figures/betesig.eps>
+(epstopdf)             \includegraphics on input line 502.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/betesig-eps-converted-to.pdf, id=24173, 504.88625pt x 504.88625pt>
+File: figures/betesig-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/betesig-eps-converted-to.pdf>
+Package pdftex.def Info: figures/betesig-eps-converted-to.pdf used on input lin
+e 502.
+(pdftex.def)             Requested size: 170.71916pt x 142.26083pt.
+ [780
+
+ <./figures/betesig-eps-converted-to.pdf>] [781
+
+] [782
+
+] [783
+
+] [784
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Package epstopdf Info: Source file: <figures/recons.eps>
+(epstopdf)                    date: 2009-06-23 11:36:03
+(epstopdf)                    size: 914746 bytes
+(epstopdf)             Output file: <figures/recons-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-01 17:12:47
+(epstopdf)                    size: 89988 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/recons-eps-convert
+ed-to.pdf figures/recons.eps>
+(epstopdf)             \includegraphics on input line 544.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/recons-eps-converted-to.pdf, id=24331, 465.74pt x 821.0675pt>
+File: figures/recons-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/recons-eps-converted-to.pdf>
+Package pdftex.def Info: figures/recons-eps-converted-to.pdf used on input line
+ 544.
+(pdftex.def)             Requested size: 142.26013pt x 170.71286pt.
+ [785
+
+ <./figures/recons-eps-converted-to.pdf>])
+\tf@nav=\write8
+\openout8 = `main.nav'.
+
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+\tf@snm=\write10
+\openout10 = `main.snm'.
+
+
+
+Package lastpage Warning: Rerun to get the references right on input line 112.
+
+
+AED: lastpage setting LastPage
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+./main.tex:112: I can't find file `main.aux'.
+\enddocument ...keatletter \@@input \jobname .aux 
+                                                  \fi \Call@AtVeryEndDocumen...
+l.112 \end{document}
+                    
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: s
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/s.tex File ignored
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  <no file>.
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
+ ) 
+Here is how much of TeX's memory you used:
+ 21237 strings out of 493117
+ 387847 string characters out of 6135433
+ 469077 words of memory out of 5000000
+ 22388 multiletter control sequences out of 15000+600000
+ 31993 words of font info for 125 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,17n,70p,384b,1131s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on main.pdf (785 pages, 8631579 bytes).
+PDF statistics:
+ 24874 PDF objects out of 26593 (max. 8388607)
+ 22143 compressed objects within 222 object streams
+ 1647 named destinations out of 1728 (max. 500000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+

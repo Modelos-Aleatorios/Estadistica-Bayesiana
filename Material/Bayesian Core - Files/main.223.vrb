@@ -1,0 +1,22 @@
+\frametitle{Loglinear models}
+
+\hyperlink{LLintro}{\beamerreturnbutton{Introduction to loglinear models}}
+\begin{example}[{\sf airquality}]
+Benchmark in {\sf R}\small\\
+\verb&   > air=data(airquality)&\\
+\normalsize
+Repeated measurements over $111$ consecutive days of
+ozone $u$ (in parts per billion) and maximum daily temperature $v$
+discretized into dichotomous variables
+\footnotesize \begin{verbatim}
+            month  5  6  7  8  9
+ ozone    temp
+ [1,31]   [57,79] 17  4  2  5 18
+          (79,97]  0  2  3  3  2
+ (31,168] [57,79]  6  1  0  3  1
+          (79,97]  1  2 21 12  8
+\end{verbatim}
+\normalsize
+Contingency table with $5\times 2\times 2=20$ entries
+\end{example}
+

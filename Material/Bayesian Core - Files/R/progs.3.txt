@@ -1,0 +1,258 @@
+# CHAPTER 3: R COMMANDS
+# 19/12/2006
+
+################################################################################
+
+# caterpillar DATASET IMPLEMENTATION
+
+source("#3.R")
+processio=read.table("caterpillar")
+y=log(processio$V11)
+X=as.matrix(cbind(rep(1,33),processio[,1:10]))
+n=length(y)
+k=dim(X)[2]
+
+################################################################################
+
+# caterpillar DATASET: ORDINARY LEAST SQUARE ESTIMATION OF beta
+
+betahat=inv(t(X)%*%X,tol=10e-20)%*%t(X)%*%y
+betahat
+
+################################################################################
+
+# caterpillar DATASET: UNBIASED ESTIMATION OF sigma2
+
+S2=t(y-X%*%betahat)%*%(y-X%*%betahat)
+sigma2hat=S2/(n-k)
+sigma2hat
+
+################################################################################
+
+# caterpillar DATASET: ESTIMATION OF THE VARIANCE OF betahat
+
+diag(as.real(sigma2hat)*inv(t(X)%*%X))
+
+################################################################################
+
+# CONJUGATE PRIOR ANALYSIS
+
+a=2.1
+b=2
+
+# PRIOR MEAN OF sigma2
+
+2/(2.1-1)
+
+# PRIOR VARIANCE OF sigma2
+
+2^2/((2.1-1)^2*(2.1-2))
+
+# caterpillar DATASET: POSTERIOR MEANS OF sigma2 FOR DIFFERENT c
+
+# c=0.1
+
+M=10*diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)
+
+# c=1
+
+M=diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)
+
+# c=10
+
+M=0.1*diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)
+
+# c=100
+
+M=0.01*diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)
+
+# c=1000
+
+M=0.001*diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)
+
+# caterpillar DATASET: POSTERIOR MEANS OF beta FOR DIFFERENT c
+
+# c=0.1
+
+M=10*diag(11)
+b1beta=inv(M+t(X)%*%X)%*%t(X)%*%y
+b1beta[1]
+
+# c=1
+
+M=diag(11)
+b2beta=inv(M+t(X)%*%X)%*%t(X)%*%y
+b2beta[1]
+
+# c=10
+
+M=0.1*diag(11)
+b3beta=inv(M+t(X)%*%X)%*%t(X)%*%y
+b3beta[1]
+
+# c=100
+
+M=0.01*diag(11)
+b4beta=inv(M+t(X)%*%X)%*%t(X)%*%y
+b4beta[1]
+
+# c=1000
+
+M=0.001*diag(11)
+b5beta=inv(M+t(X)%*%X)%*%t(X)%*%y
+b5beta[1]
+
+# caterpillar DATASET: POSTERIOR VARIANCES OF THE FIRST COMPONENT OF beta 
+# FOR DIFFERENT c
+
+# c=0.1
+
+M=10*diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+E=as.real(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)*inv(M+t(X)%*%X)
+E[1,1]
+
+# c=1
+
+M=diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+E=as.real(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)*inv(M+t(X)%*%X)
+E[1,1]
+
+# c=10
+
+M=0.1*diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+E=as.real(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)*inv(M+t(X)%*%X)
+E[1,1]
+
+# c=100
+
+M=0.01*diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+E=as.real(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)*inv(M+t(X)%*%X)
+E[1,1]
+
+# c=1000
+
+M=0.001*diag(11)
+T=inv(inv(M)+inv(t(X)%*%X))
+E=as.real(2*b+S2+t(betahat)%*%T%*%betahat)/(n+2*a-2)*inv(M+t(X)%*%X)
+E[1,1]
+
+################################################################################
+
+# NON-INFORMATIVE PRIOR ANALYSIS
+
+# caterpillar DATASET: 0.95 HPD LOWER BOUND OF beta
+
+betahat-qt(0.95,22)*sqrt(diag(as.real(sigma2hat)*inv(t(X)%*%X)))
+
+# caterpillar DATASET: 0.95 HPD UPPER BOUND OF beta
+
+betahat+qt(0.95,22)*sqrt(diag(as.real(sigma2hat)*inv(t(X)%*%X)))
+
+################################################################################
+
+# ZELLNER INFORMATIVE G-PRIOR ANALYSIS
+
+# caterpillar DATASET: POSTERIOR MEAN OF beta FOR c=100
+
+100/101*betahat
+
+# caterpillar DATASET: POSTERIOR VARIANCE OF beta FOR c=100
+
+diag(100/(33*101)*as.real(S2+t(betahat)%*%t(X)%*%X%*%betahat/101)*inv(t(X)%*%X))
+
+# BAYES FACTOR
+
+X0=X[,-c(8,9)]
+P0=X0%*%inv(t(X0)%*%X0)%*%t(X0)
+lulu0=101^(-9/2)*(t(y)%*%y-100/101*t(y)%*%P0%*%y)^(-33/2)
+
+P=X%*%inv(t(X)%*%X)%*%t(X)
+lulu=101^(-11/2)*(t(y)%*%y-100/101*t(y)%*%P%*%y)^(-33/2)
+
+log10(lulu0/lulu)
+
+################################################################################
+
+# caterpillar DATASET: ZELLNER NON-INFORMATIVE G-PRIOR ANALYSIS
+
+cc=1:100000
+sum(cc/(cc+1)*betahat[1]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[2]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[3]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[4]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[5]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[6]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[7]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[8]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[9]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[10]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+sum(cc/(cc+1)*betahat[11]*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+
+sum((S2+t(betahat)%*%t(X)%*%X%*%betahat/(cc+1))/(n-2)*cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))/sum(cc^(-1)*(cc+1)^(-11/2)*(t(y)%*%y-cc/(cc+1)*t(y)%*%P%*%y)^(-33/2))
+
+################################################################################
+
+# VARIABLE SELECTION
+
+library(combinat)
+GAMPRO=matrix(0,1024,10)
+qq=cumsum(c(choose(10,0:10)))
+for (k in 1:10)
+{
+tab=t(combn(10,k))
+GAMPRO[(qq[k]+1):qq[k+1],]=t(apply(tab,1,invt1,p=10))
+}
+rm(qq,tab)
+
+# caterpillar DATASET: CACULATION OF THE MODEL POSTERIOR PROBABILITIES 
+# UNDER ZELLNER NON-INFORMATIVE G-PRIOR
+
+yp=y
+Xp=as.matrix(X[,2:11])
+
+PRO1NIP=rep(0,1024)
+for (k in 1:1024) {PRO1NIP[k]=lpostwnoinf(GAMPRO[k,],yp,Xp); print(k)}
+PRO1NIP=exp(PRO1NIP-max(PRO1NIP))
+PRO1NIP=PRO1NIP/sum(PRO1NIP)
+MONIP=order(PRO1NIP)[1024:1005]
+TOPPRO1NIP=cbind(apply(GAMPRO[MONIP,],1,newt1),PRO1NIP[MONIP])
+rm(MONIP)
+
+# caterpillar DATASET: GIBBS SAMPLING UNDER ZELLNER NON-INFORMATIVE G-PRIOR
+
+GIBBSPRO1NIP=gibbsNIP2(20000,yp,Xp,PRO1NIP)
+RGIBBSPRO1NIP=apply(GIBBSPRO1NIP[10001:20000,],1,newt1)
+RGIBBSPRO1NIP=summary(as.factor(RGIBBSPRO1NIP))/10000
+
+# caterpillar DATASET: CACULATION OF THE MODEL POSTERIOR PROBABILITIES 
+# UNDER ZELLNER INFORMATIVE G-PRIOR
+
+PRO1IP2=rep(0,1024)
+for (k in 1:1024) {PRO1IP2[k]=lpostw(GAMPRO[k,],yp,Xp,rep(0,11),100); print(k)}
+PRO1IP2=exp(PRO1IP2-max(PRO1IP2))
+PRO1IP2=PRO1IP2/sum(PRO1IP2)
+MOIP2=order(PRO1IP2)[1024:1005]
+TOPPRO1IP2=cbind(apply(GAMPRO[MOIP2,],1,newt1),PRO1IP2[MOIP2])
+rm(MOIP2)
+
+# caterpillar DATASET: GIBBS SAMPLING UNDER ZELLNER INFORMATIVE G-PRIOR
+
+GIBBSPRO1IP2=gibbsIP(20000,yp,Xp,rep(0,11),100)
+RGIBBSPRO1IP2=apply(GIBBSPRO1IP2[10001:20000,],1,newt1)
+RGIBBSPRO1IP2=summary(as.factor(RGIBBSPRO1IP2))/10000
+
+################################################################################

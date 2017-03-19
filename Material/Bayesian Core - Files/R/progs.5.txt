@@ -1,0 +1,134 @@
+# CHAPTER 5: R COMMANDS
+# 21/12/2006
+
+################################################################################
+
+# EuroDipper AND eurodipabc DATASETS IMPLEMENTATION
+
+eurodip=read.table(file="EuroDipper")
+eurodipabc=read.table(file="eurodipabc")
+attach(eurodip)
+n1=sum(V1)
+n2=sum(V2)
+n3=sum(V3)
+n4=sum(V4)
+n5=sum(V5)
+n6=sum(V6)
+n7=sum(V7)
+detach(eurodip)
+m1=0
+m2=11
+m3=26
+m4=35
+m5=47
+m6=52
+m7=54
+nplus=n1+n2-m2+n3-m3+n4-m4+n5-m5+n6-m6+n7-m7
+nc=n1+n2+n3+n4+n5+n6+n7
+
+c2=m2
+c3=6
+
+source("#5.R")
+
+################################################################################
+
+# EuroDipper DATASET: BINOMIAL CAPTURE MODEL
+
+# POSTERIOR PROBABILITIES OF N UNDER UNIFORM PRIOR
+
+sum(pbino(22)*1:400)
+
+################################################################################
+
+# EuroDipper DATASET: DARROCH MODEL
+
+# POSTERIOR PROBABILITIES OF N UNDER UNIFORM PRIOR
+
+for (i in 5:15) print(sum(pdarroch(n1,n2,i)*1:400))
+
+################################################################################
+
+# EuroDipper DATASET: 2-STAGE CAPTURE-RECAPTURE MODEL
+
+# POSTERIOR PROBABILITIES OF N UNDER UNIFORM PRIOR
+
+sum(1:400*pcapture(2,n1+n2-m2,n1+n2))
+
+################################################################################
+
+# EuroDipper DATASET: 7-STAGE CAPTURE-RECAPTURE MODEL
+
+# POSTERIOR PROBABILITIES OF N UNDER UNIFORM PRIOR
+
+sum(1:400*pcapture(7,nplus,nc))
+
+# GIBBS SAMPLING UNDER POISSON PRIOR 
+
+g1=gibbs1(10000,7,nplus,nc,200)
+mean(g1$N)
+mean(g1$p)
+sq=seq(1,10000,by=20)
+par(mfrow=c(2,2))
+plot(sq,g1$N[sq],ylab="N",xlab="",type="l",ylim=c(300,360))
+plot(sq,g1$p[sq],ylab="p",xlab="",type="l",ylim=c(0.18,0.27))
+hist(g1$N,nclass=100,xlim=c(300,360),prob=T,main="",xlab="N")
+hist(g1$p,nclass=100,xlim=c(0.18,0.27),prob=T,main="",xlab="p")
+dev.copy2eps(file="g1.eps")
+
+################################################################################
+
+# EuroDipper DATASET: 2-STAGE OPEN POPULATION MODEL
+
+# GIBBS SAMPLING
+
+g2=gibbs2(10000,n1,c2,c3,200,10,5)
+mean(g2$N)
+mean(g2$p)
+sq=seq(1,10000,by=20)
+par(mfrow=c(5,2),mar=c(2,4,1,1))
+plot(sq,g2$p[sq],ylab="p",xlab="",type="l")
+hist(g2$p,nclass=100,prob=T,main="",ylab="")
+plot(sq,g2$q[sq],ylab="q",xlab="",type="l")
+hist(g2$q,nclass=100,prob=T,main="",ylab="")
+plot(sq,g2$N[sq],ylab="N",xlab="",type="l")
+hist(g2$N,nclass=100,prob=T,main="",ylab="")
+plot(sq,g2$r1[sq],ylab=expression(r[1]),xlab="",type="l")
+hist(g2$r1,nclass=100,prob=T,main="",ylab="")
+plot(sq,g2$r2[sq],ylab=expression(r[2]),xlab="",type="l")
+hist(g2$r2,nclass=100,prob=T,main="",ylab="")
+dev.copy2eps(file="g2.eps")
+plot(jitter(g2$r1,factor=2),jitter(g2$r2,factor=2),cex=0.5,
+xlab=expression(r[1]),ylab=expression(r[2]),xlim=c(-0.5,5),ylim=c(-0.5,6),col=heat.colors(200))
+dev.copy2eps(file="jit.eps")
+
+# ACCEPT-REJECT ALGORITHM
+
+mean(seuil(0:11,n1,c2,c3,1,0.1))
+ar1=ardipper(10000,n1,c2,c3,1,0.1)
+ar1=factor(ar1)
+barplot(summary(ar1)/10000,main="",xlab=expression(r[1]))
+dev.copy2eps(file="ar.eps")
+
+################################################################################
+
+# EuroDipper DATASET: ARNASON-SCHWARZ CAPTURE-RECAPTURE MODEL
+
+# GIBBS SAMPLING
+
+g3=gibbs3(10000,eurodip,eurodipabc)
+apply(g3$p,2,mean)
+apply(g3$phi,2,mean)
+mean(g3$psi[3,3,])
+mean(g3$psi[1,2,])
+sq=seq(20,10000,by=20)
+par(mfrow=c(3,2),mar=c(2,4,1,1))
+plot(sq,g3$p[sq,1],ylab="p(1)",xlab="",type="l")
+hist(g3$p[20:10000,1],nclass=100,prob=T,main="",ylab="")
+plot(sq,g3$phi[sq,2],ylab=expression(phi(2)),xlab="",type="l")
+hist(g3$phi[20:10000,2],nclass=100,prob=T,main="",ylab="")
+plot(sq,g3$psi[3,3,sq],ylab=expression(psi(3,3)),xlab="",type="l")
+hist(g3$psi[3,3,20:10000],nclass=100,prob=T,main="",ylab="")
+dev.copy2eps(file="g3.eps")
+
+################################################################################

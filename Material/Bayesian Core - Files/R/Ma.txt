@@ -1,0 +1,44 @@
+#Subsampling function
+sube=function(x,n){
+ y=x
+ if (is.matrix(x)){
+   t=dim(x)
+   if (t[1]>1000)
+    y=y[seq(1,t[1],length=1000),]
+   if (t[2]>1000) 
+    y=y[,seq(1,t[2],length=1000)]
+ }
+ else
+   y=y[seq(1,length(x),length=1000)]
+ y
+}
+
+source("Ma.R")
+
+start=1000
+
+# Graphic representation of the output
+T=length(x)
+par(mfrow=c(3,3),mar=c(4,4,2,1))
+if (p>3){
+   hist(ncomp,main="",xlab="p",ylab="",col="gold4",breaks=seq(-1,p+1,2));par(new=T);
+   plot(sube(1:W),sube(ncomp),axes=F,cex=.3,xlab="",ylab="")
+   axis(side=4)
+   }
+if (p<4){
+	plot(sube(1:W),sube(ncomp),cex=.3,xlab="Iterations",ylab="Complex roots")
+	}
+plot(sube(start:W),sube(mus[start:W]),type="l",col="steelblue4",xlab="Iterations",ylab=expression(mu))
+plot(sube(start:W),sube(sigs[start:W]),type="l",col="steelblue4",xlab="Iterations",ylab=expression(sigma^2))
+for (i in 1:min(3)) plot(sube(start:W),sube(psis[start:W,i]),type="l",col="steelblue4",xlab="Iterations",ylab=expression(psi))
+plot(sube(start:W),sube(llik[start:W]),type="l",col="sienna4",xlab="Iterations",ylab="log-likelihood")
+
+pst=matrix(1,ncol=(p+1),nrow=W);pst[,2:(p+1)]=-psis
+lame=apply(pst,1,polyroot)
+plot(sube((1/lame)[Mod(lame)>1]),col="gold",cex=.3,xlab=expression(Re(lambda)),ylab=expression(Im(lambda)))
+lines(seq(-1,1,.01),sqrt(1-seq(-1,1,.01)^2),col="sienna",lty=2,lwd=2)
+lines(seq(-1,1,.01),-sqrt(1-seq(-1,1,.01)^2),col="sienna",lty=2,lwd=2)
+
+plot(sube(start:W),sube(epsrec[start:W,1]),ylim=range(epsrec[start:W,]),type="l",ylab=expression(epsilon),col="steelblue")
+for (i in 2:p)
+lines(sube(start:W),sube(epsrec[start:W,i]),col="steelblue")

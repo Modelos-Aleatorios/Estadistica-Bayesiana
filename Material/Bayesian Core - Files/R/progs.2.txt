@@ -1,0 +1,42 @@
+# CHAPTER 2: R COMMANDS
+# 19/12/2006
+
+################################################################################
+
+# normaldata DATASET IMPLEMENTATION AND GRAPHS
+
+normaldata=scan("normaldata")
+hist(normaldata,nclass=20,col="blue")
+
+################################################################################
+
+# CMBdata DATASET IMPLEMENTATION AND GRAPHS
+
+CMBdata=scan("CMBdata")
+CMBdatamat=matrix(CMBdata,800,800,byrow=TRUE)
+image(CMBdatamat,col=grey(1:1000/1000))
+hist(CMBdata,nclass=100,col="red",prob=TRUE)
+f=function(x){dnorm(x,mean(CMBdata),sd(CMBdata))}
+curve(f,-0.2,0.8,add=TRUE,col="blue")
+
+################################################################################
+
+# normaldata DATASET COMPUTATION OF EACH PREDICTIVE CDF
+
+n=length(normaldata)
+outl=rep(0,n)
+outf=outl
+for (i in 1:n)
+{
+outl[i]=pt((normaldata[i]-mean(normaldata[normaldata[]!=normaldata[i]]))/
+(sd(normaldata[normaldata[]!=normaldata[i]])*sqrt(91/90)),90)
+outf[i]=dt((normaldata[i]-mean(normaldata[normaldata[]!=normaldata[i]]))/
+(sd(normaldata[normaldata[]!=normaldata[i]])*sqrt(91/90)),90)/
+(sd(normaldata[normaldata[]!=normaldata[i]])*sqrt(91/90))
+}
+
+plot(c(0,1),c(0,1),lwd=2,ylab="Predictive",xlab="Uniform",type="l")
+points(seq(1/91,90/91,length=90),sort(outl),pch=19,col="steelblue3")
+points(seq(1/91,90/91,length=90),sort(runif(90)),pch=21,col="tomato")
+
+################################################################################

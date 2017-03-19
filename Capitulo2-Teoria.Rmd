@@ -1537,12 +1537,12 @@ $$
 
 $$
 \begin{array}{rl}
-= & 2\left( \mu -\frac{\bar{x}+\xi+\bar{y}+\xi}{2} \right)^2 -\frac{(\bar{x}+\xi)^2+2(\bar{x}+\xi)(\bar{y}+\xi)+(\bar{y}+\xi)^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
-= & 2\left( \mu -\frac{\bar{x}+\xi+\bar{y}+\xi}{2} \right)^2 -\frac{(\bar{x}+\xi)^2}{2}-2\frac{(\bar{x}+\xi)(\bar{y}+\xi)}{2}-\frac{(\bar{y}+\xi)^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
-= & 2\left( \mu -\frac{\bar{x}+\xi+\bar{y}+\xi}{2} \right)^2 +\frac{(\bar{x}+\xi)^2}{2}-(\bar{x}+\xi)(\bar{y}+\xi)+\frac{(\bar{y}+\xi)^2}{2}\\
-= & 2\left( \mu -\frac{\bar{x}+\xi+\bar{y}+\xi}{2} \right)^2 +\frac{1}{2}\left( (\bar{x}+\xi)^2-2(\bar{x}+\xi)(\bar{y}+\xi)+(\bar{y}+\xi)^2\right)\\
-= & 2\left( \mu -\frac{\bar{x}+\xi+\bar{y}+\xi}{2} \right)^2 +\frac{1}{2}\left( \bar{x}+\xi+\bar{y}+\xi\right)^2\\
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2 +\frac{1}{2}\left( \bar{x}+\bar{y}+2\xi\right)^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -\frac{(\bar{x}+\xi)^2+2(\bar{x}+\xi)(\bar{y}+\xi)+(\bar{y}+\xi)^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -\frac{(\bar{x}+\xi)^2}{2}-2\frac{(\bar{x}+\xi)(\bar{y}+\xi)}{2}-\frac{(\bar{y}+\xi)^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{(\bar{x}+\xi)^2}{2}-(\bar{x}+\xi)(\bar{y}+\xi)+\frac{(\bar{y}+\xi)^2}{2}\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( (\bar{x}+\xi)^2-2(\bar{x}+\xi)(\bar{y}+\xi)+(\bar{y}+\xi)^2\right)\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( \bar{x}+\xi+\bar{y}+\xi\right)^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( \bar{x}+\bar{y}+2\xi\right)^2\\
 \end{array}
 $$
 

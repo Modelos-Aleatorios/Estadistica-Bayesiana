@@ -1289,8 +1289,8 @@ no depende de la constante de normalización utilizada para $\pi_\sigma(\sigma^2
 $$
 \begin{array}{rl}
 & \pi_\sigma(\sigma^2)  = \frac{1}{\sigma^2}\\
-& \mu_x  = \mu-\epsilon\\
-& \mu_y  = \mu+\epsilon\\
+& \mu_x  = \mu-\xi \\
+& \mu_y  = \mu+\xi \\
 & \pi(\mu,\xi) = \pi_\mu(\mu)\pi_\xi(\xi)\\
 &\pi_\mu(\mu)=1\\
 & \xi \sim N(0,1)\implies \pi_\xi(\xi)=\frac{1}{\sqrt{2\pi}1}e^{-\frac{1}{2}\frac{(\xi-0)^2}{1^2}}=\frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}}
@@ -1307,16 +1307,16 @@ l(\mu_x,\mu_y,\sigma|\mathcal{D}) & =\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^
 \end{array}
 $$
 
-Sustituyendo $\mu_x  = \mu-\epsilon$ y $\mu_y  = \mu+\epsilon$
+Sustituyendo $\mu_x  = \mu-\xi$ y $\mu_y  = \mu+\xi$
 $$
 \begin{array}{rl}
 & \sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 \\
-& = \sum_{i=1}^n (x_i-(\mu-\epsilon))^2 +\sum_{i=1}^n (y_i-(\mu+\epsilon))^2\\
-& = \sum_{i=1}^n (x_i^2-2x_i(\mu-\epsilon)+(\mu-\epsilon)^2) +\sum_{i=1}^n (y_i^2-2y_i(\mu+\epsilon)+(\mu+\epsilon)^2)\\
-& = \sum_{i=1}^n x_i^2-2n\bar{x}(\mu-\epsilon)+n(\mu-\epsilon)^2 +\sum_{i=1}^n y_i^2-2n\bar{y}(\mu+\epsilon)+n(\mu+\epsilon)^2\\
-& = \sum_{i=1}^n x_i^2-2n\bar{x}(\mu-\epsilon)+n\bar{x}^2-n\bar{x}^2+ n(\mu-\epsilon)^2 +\sum_{i=1}^n y_i^2-2n\bar{y}(\mu+\epsilon)\\
-& \ \ \ +n\bar{y}^2-n\bar{y}^2+n(\mu+\epsilon)^2\\
-& = \sum_{i=1}^n x_i^2-n\bar{x}^2 + n(\bar{x}-(\mu-\epsilon))^2 +\sum_{i=1}^n y_i^2-n\bar{y}^2 +n(\bar{y}-(\mu+\epsilon))^2
+& = \sum_{i=1}^n (x_i-(\mu-\xi))^2 +\sum_{i=1}^n (y_i-(\mu+\xi))^2\\
+& = \sum_{i=1}^n (x_i^2-2x_i(\mu-\xi)+(\mu-\xi)^2) +\sum_{i=1}^n (y_i^2-2y_i(\mu+\xi)+(\mu+\xi)^2)\\
+& = \sum_{i=1}^n x_i^2-2n\bar{x}(\mu-\xi)+n(\mu-\xi)^2 +\sum_{i=1}^n y_i^2-2n\bar{y}(\mu+\xi)+n(\mu+\xi)^2\\
+& = \sum_{i=1}^n x_i^2-2n\bar{x}(\mu-\xi)+n\bar{x}^2-n\bar{x}^2+ n(\mu-\xi)^2 +\sum_{i=1}^n y_i^2-2n\bar{y}(\mu+\xi)\\
+& \ \ \ +n\bar{y}^2-n\bar{y}^2+n(\mu+\xi)^2\\
+& = \sum_{i=1}^n x_i^2-n\bar{x}^2 + n(\bar{x}-(\mu-\xi))^2 +\sum_{i=1}^n y_i^2-n\bar{y}^2 +n(\bar{y}-(\mu+\xi))^2
 \end{array}
 $$
 Donde:
@@ -1334,30 +1334,30 @@ $$
 Obteniendo un resultado similar para $y_i$, es decir, $\sum_{i=1}^n y_i^2-n\bar{y}^2 = \sum_{i=1}^n (y_i-\bar{y})^2$. Sustituyendolos:
 $$
 \begin{array}{rl}
-\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = \sum_{i=1}^n (x_i-\bar{x})^2 + n(\bar{x}-(\mu-\epsilon))^2 +\sum_{i=1}^n (y_i-\bar{y})^2 +n(\bar{y}-(\mu+\epsilon))^2\\
-\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = \frac{n\sum_{i=1}^n (x_i-\bar{x})^2}{n} + n(\bar{x}-(\mu-\epsilon))^2 +\frac{n\sum_{i=1}^n (y_i-\bar{y})^2}{n} +n(\bar{y}-(\mu+\epsilon))^2\\
-\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = n \left[ \frac{\sum_{i=1}^n (x_i-\bar{x})^2}{n}  +\frac{\sum_{i=1}^n (y_i-\bar{y})^2}{n} + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]\\
-\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]\\
+\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = \sum_{i=1}^n (x_i-\bar{x})^2 + n(\bar{x}-(\mu-\xi))^2 +\sum_{i=1}^n (y_i-\bar{y})^2 +n(\bar{y}-(\mu+\xi))^2\\
+\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = \frac{n\sum_{i=1}^n (x_i-\bar{x})^2}{n} + n(\bar{x}-(\mu-\xi))^2 +\frac{n\sum_{i=1}^n (y_i-\bar{y})^2}{n} +n(\bar{y}-(\mu+\xi))^2\\
+\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = n \left[ \frac{\sum_{i=1}^n (x_i-\bar{x})^2}{n}  +\frac{\sum_{i=1}^n (y_i-\bar{y})^2}{n} + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]\\
+\sum_{i=1}^n (x_i-\mu_x)^2 +\sum_{i=1}^n (y_i-\mu_y)^2 & = n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]\\
 \end{array}
 $$
 
 Donde $S^2= \frac{\sum_{i=1}^n (x_i-\bar{x})^2}{n}  +\frac{\sum_{i=1}^n (y_i-\bar{y})^2}{n}$. Así tenemos:
 $$
 \begin{array}{rl}
-l(\mu_x,\mu_y,\sigma|\mathcal{D}) & =\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}
+l(\mu_x,\mu_y,\sigma|\mathcal{D}) & =\left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]}
 \end{array}
 $$
 
 Con este resultado y las prioris supuestas tenemos:
 $$
 \begin{array}{rl}
-B_{10}^\pi=&\frac{\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} \pi(\mu,\xi)\pi_\sigma(\sigma^2) d\sigma^2 d\mu \ d\xi}
+B_{10}^\pi=&\frac{\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]} \pi(\mu,\xi)\pi_\sigma(\sigma^2) d\sigma^2 d\mu \ d\xi}
 {\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\mu-\bar{x})^2 +(\mu-\bar{y})^2\right]}\pi_\mu(\mu) \pi_\sigma(\sigma^2) d\sigma^2\ d\mu}\\
-B_{10}^\pi=&\frac{\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} \pi(\mu)\pi(\xi)\pi_\sigma(\sigma^2) d\sigma^2 d\mu \ d\xi}
+B_{10}^\pi=&\frac{\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]} \pi(\mu)\pi(\xi)\pi_\sigma(\sigma^2) d\sigma^2 d\mu \ d\xi}
 {\displaystyle \int \left( \frac{1}{\sqrt{2\pi}\sigma} \right)^{2n} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\mu-\bar{x})^2 +(\mu-\bar{y})^2\right]}\pi_\mu(\mu) \pi_\sigma(\sigma^2) d\sigma^2\ d\mu}\\
-B_{10}^\pi=&\frac{\displaystyle \int \frac{1}{\sigma^{2n}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} 1 \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}}\frac{1}{\sigma^2}d\sigma^2 d\mu \ d\xi}
+B_{10}^\pi=&\frac{\displaystyle \int \frac{1}{\sigma^{2n}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]} 1 \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}}\frac{1}{\sigma^2}d\sigma^2 d\mu \ d\xi}
 {\displaystyle \int \frac{1}{\sigma^{2n}} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\mu-\bar{x})^2 +(\mu-\bar{y})^2\right]}1 \frac{1}{\sigma^2} d\sigma^2\ d\mu}\\
-B_{10}^\pi=&\frac{\displaystyle \int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2 d\mu \ d\xi}
+B_{10}^\pi=&\frac{\displaystyle \int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]} \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2 d\mu \ d\xi}
 {\displaystyle \int \frac{1}{\sigma^{2(n+1)}} e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\mu-\bar{x})^2 +(\mu-\bar{y})^2\right]} d\sigma^2\ d\mu}
 \end{array}
 $$
@@ -1365,11 +1365,11 @@ $$
 Resolviendo ambas integrales con respecto a $\sigma^2$:
 $$
 \begin{array}{rl}
-&\displaystyle \int\int\int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]} \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2 d\mu \ d\xi\\
+&\displaystyle \int\int\int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{2\sigma^2} n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]} \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2 d\mu \ d\xi\\
 & = \displaystyle \int\int B\int \frac{1}{\sigma^{2(n+1)}}e^{-\frac{1}{\sigma^2} A} d\sigma^2 d\mu \ d\xi
 \end{array}
 $$
-Donde $A=\frac{n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}{2}$ y $B=\frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2$
+Donde $A=\frac{n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]}{2}$ y $B=\frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} d\sigma^2$
 
 Haciendo el cambio de variable $u=\frac{1}{\sigma^2}\implies du=-\frac{1}{(\sigma^2)^2}d\sigma^2$
 $$
@@ -1381,10 +1381,10 @@ $$
 & = \displaystyle \int\int B\int u^{n-1}e^{-uA}\frac{A^{n}}{\Gamma(n)}\frac{\Gamma(n)}{A^{n}} d\sigma^2 d\mu \ d\xi\\
 & = \displaystyle \int\int B\frac{\Gamma(n)}{A^{n}}\int u^{n-1}e^{-uA}\frac{A^{n}}{\Gamma(n)} d\sigma^2 d\mu \ d\xi\\
 & = \displaystyle \int\int B\frac{\Gamma(n)}{A^{n}} d\mu \ d\xi\\
-& = \displaystyle \int\int \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} \frac{\Gamma(n)}{\left(\frac{n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]}{2}\right)^{n}} d\mu \ d\xi\\
-& = \displaystyle \Gamma(n)2^{n} \int \frac{e^{-\frac{\xi^2}{2}}}{{\sqrt{2\pi}}} \frac{1}{\left(n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right] \right)^{n}} d\mu \ d\xi\\
-& = \displaystyle \Gamma(n)2^{n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(n \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right] \right)^{-n} d\mu \ d\xi\\
-& = \displaystyle \Gamma(n)2^{n}n^{-n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n} d\mu \ d\xi
+& = \displaystyle \int\int \frac{1}{\sqrt{2\pi}}e^{-\frac{\xi^2}{2}} \frac{\Gamma(n)}{\left(\frac{n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]}{2}\right)^{n}} d\mu \ d\xi\\
+& = \displaystyle \Gamma(n)2^{n} \int \frac{e^{-\frac{\xi^2}{2}}}{{\sqrt{2\pi}}} \frac{1}{\left(n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right] \right)^{n}} d\mu \ d\xi\\
+& = \displaystyle \Gamma(n)2^{n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(n \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right] \right)^{-n} d\mu \ d\xi\\
+& = \displaystyle \Gamma(n)2^{n}n^{-n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]^{-n} d\mu \ d\xi
 \end{array}
 $$
 
@@ -1404,8 +1404,8 @@ $$
 Sustituyendo el resultados de las integrales en el factor de Bayes nos queda:
 $$
 \begin{array}{rl}
-B_{10}^\pi = & \frac{\displaystyle \Gamma(n)2^{n}n^{-n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n} d\mu \ d\xi}{\Gamma(n) n^{-n}2^n\displaystyle \int \left[ S^2 + (\mu-\bar{x})^2 +(\mu-\bar{y})^2\right]^{-n}d\mu}\\ 
-B_{10}^\pi = & \frac{\displaystyle  \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\epsilon)^2 +(\bar{y}-\mu-\epsilon)^2\right]^{-n} d\mu \ d\xi}{\displaystyle \int \left[ S^2 + (\mu-\bar{x})^2 +(\mu-\bar{y})^2\right]^{-n}d\mu} 
+B_{10}^\pi = & \frac{\displaystyle \Gamma(n)2^{n}n^{-n} \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]^{-n} d\mu \ d\xi}{\Gamma(n) n^{-n}2^n\displaystyle \int \left[ S^2 + (\mu-\bar{x})^2 +(\mu-\bar{y})^2\right]^{-n}d\mu}\\ 
+B_{10}^\pi = & \frac{\displaystyle  \int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + (\bar{x}-\mu+\xi)^2 +(\bar{y}-\mu-\xi)^2\right]^{-n} d\mu \ d\xi}{\displaystyle \int \left[ S^2 + (\mu-\bar{x})^2 +(\mu-\bar{y})^2\right]^{-n}d\mu} 
 \end{array}
 $$
 
@@ -1492,17 +1492,11 @@ Entre las técnicas más usadas para la aproximación de integrales, se encuentr
 $\hat{J} = \frac{(h(x_1) +... + h(x_n))}{n}$ converge (casi seguramente) a la integral
 $$J = Eg [h(X)] = \int h(x)g(x)dx.$$
 
-El algoritmo básico de este método se presenta acontinuación,
+El algoritmo básico de este método se presenta a continuación,
 
--Para $i = 1,...,n$
-
- Simular $x_i \sim g(x)$
-
--Calcular
-
- $\hat{J_n} = \frac{h(x_1) +...+ h(x_n)}{n}$
-
--Para aproximar el valor de $J$
+> 1. Para $i = 1,...,n$
+> 2. Simular $x_i \sim g(x)$
+> 3. Calcular $\hat{J_n} = \frac{h(x_1) +...+ h(x_n)}{n}$, para aproximar el valor de $J$
 
 Siempre y cuando la generación de los valores pseudo-aleatorios de $g$ sea factible, así como los valores de $h(x_i)$ sean calculables. Cuando la simulación mediante $g$ ocasiona problemas, ya sea porque dicha función es no estandar, las técnicas usuales como algoritmo de aceptación y rechazo son díciles de aplicar. Por tal razón otras técnicas más avanzadas son requeridas, tal es el caso de las Cadenas de Markov mediante el método de Monte Carlo (MCMC).
 Por otra parte cuando la dícultad se centra en la intratabilidad de la función $h$, la solución usualmente es expandir las variables aleatorias $x_i$ en $(x_i,y_i)$, donde $y_i$ es una variable auxiliar.

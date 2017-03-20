@@ -1529,41 +1529,37 @@ $$
 = & 2\left( \mu^2-\mu(\bar{x}+\xi + \bar{y}-\xi)\right)+(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
 = & 2\left( \mu^2 - 2\mu\frac{\bar{x} + \bar{y}}{2} + \left(\frac{\bar{x} + \bar{y}}{2}\right)^2-\left(\frac{\bar{x} + \bar{y}}{2}\right)^2\right)+(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
 = & 2\left( \mu^2 - 2\mu\frac{\bar{x}+\bar{y}}{2} + \left(\frac{\bar{x}+ \bar{y}}{2} \right)^2\right)-2\left(\frac{\bar{x}+\bar{y}}{2}\right)^2 +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -2\frac{(\bar{x}+\xi+\bar{y}+\xi)^2}{4} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -2\frac{(\bar{x}+\bar{y})^2}{4} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
 = & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -\frac{(\bar{x}+\bar{y})^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -\frac{(\bar{x}+\bar{y})^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
-\end{array}
-$$
-
-$$
-\begin{array}{rl}
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -\frac{(\bar{x}+\xi)^2+2(\bar{x}+\xi)(\bar{y}+\xi)+(\bar{y}+\xi)^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -\frac{(\bar{x}+\xi)^2}{2}-2\frac{(\bar{x}+\xi)(\bar{y}+\xi)}{2}-\frac{(\bar{y}+\xi)^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{(\bar{x}+\xi)^2}{2}-(\bar{x}+\xi)(\bar{y}+\xi)+\frac{(\bar{y}+\xi)^2}{2}\\
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( (\bar{x}+\xi)^2-2(\bar{x}+\xi)(\bar{y}+\xi)+(\bar{y}+\xi)^2\right)\\
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( \bar{x}+\xi+\bar{y}+\xi\right)^2\\
-= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( \bar{x}+\bar{y}+2\xi\right)^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -\frac{\bar{x}^2+2\bar{x}\bar{y}+\bar{y}^2}{2} +(\bar{y}-\xi)^2+(\bar{x}+\xi)^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 -\frac{\bar{x}^2}{2}-2\frac{\bar{x}\bar{y}}{2}-\frac{\bar{y}^2}{2} +\bar{y}^2-2\bar{y}\xi+\xi^2+\bar{x}^2+2\bar{x}\xi+\xi^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{\bar{x}^2}{2}-2\frac{\bar{x}\bar{y}}{2}+\frac{\bar{y}^2}{2} -2\xi(\bar{y}-\bar{x})+2\xi^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( \bar{x}^2-2\bar{x}\bar{y}+\bar{y}^2\right) +2\left(\xi^2-\xi(\bar{y}-\bar{x})\right)\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( \bar{x}-\bar{y}\right)^2 +2\left(\xi^2-2\xi\frac{\bar{y}-\bar{x}}{2} +\left(\frac{\bar{y}-\bar{x}}{2}\right)^2-\left(\frac{\bar{y}-\bar{x}}{2}\right)^2\right)\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( \bar{x}-\bar{y}\right)^2 +2\left(\xi^2-2\xi\frac{\bar{y}-\bar{x}}{2} +\left(\frac{\bar{y}-\bar{x}}{2}\right)^2\right)-2\left(\frac{\bar{y}-\bar{x}}{2}\right)^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{2}\left( \bar{x}-\bar{y}\right)^2 +2\left(\xi-\frac{\bar{y}-\bar{x}}{2}\right)^2-\frac{1}{2}(\bar{y}-\bar{x})^2\\
+= & 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +2\left(\xi-\frac{\bar{y}-\bar{x}}{2}\right)^2
 \end{array}
 $$
 
 Sustituyendo ésto tenemos:
 $$
 \begin{array}{rl}
-& \displaystyle \int\int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + 2\left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2 +\frac{1}{2}\left( \bar{x}+\bar{y}+2\xi\right)^2 \right]^{-n} d\mu \ d\xi\\
-= & \displaystyle \int\int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ 2\left( \left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2 +\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)\right]^{-n} d\mu \ d\xi\\
-= & \displaystyle \int\int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \left( \left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2 +\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n} d\mu \ d\xi\\
-= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \int  \left( \left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2 +\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n} d\mu \ d\xi\\
+& \displaystyle \int\int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ S^2 + 2\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +2\left(\xi-\frac{\bar{y}-\bar{x}}{2}\right)^2 \right]^{-n} d\mu \ d\xi\\
+= & \displaystyle \int\int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left[ 2\left( \left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{4}\left( 2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)\right]^{-n} d\mu \ d\xi\\
+= & \displaystyle \int\int \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \left( \left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n} d\mu \ d\xi\\
+= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \int  \left( \left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n} d\mu \ d\xi\\
 \end{array}
 $$
 
-Haciendo $\nu=2n-1$ y $\sigma^2=\frac{\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}}{\nu}$
+Haciendo $\nu=2n-1$ y $\sigma^2=\frac{\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}}{\nu}$
 $$
 \begin{array}{rl}
-= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \int  \left( \left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2 +\sigma^2\nu\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
-= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \int  \left( \sigma^2\nu \left( \frac{\left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2}{\sigma^2\nu} +1\right)\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
-= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \int  (\sigma^2\nu)^{-\frac{\nu+1}{2}}  \left(\frac{\left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2}{\sigma^2\nu} +1\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
-= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n}{\sigma^2}^{-\frac{\nu+1}{2}} \int  \nu^{-\frac{\nu+1}{2}}  \left(\frac{\left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2}{\sigma^2\nu} +1\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
-= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n}{\sigma^2}^{-\frac{\nu+1}{2}}  \frac{\Gamma(\frac{\nu}{2})\sigma\sqrt{\nu\pi}}{\Gamma(\frac{\nu+1}{2})} \int \frac{\Gamma(\frac{\nu+1}{2})}{\Gamma(\frac{\nu}{2})\sigma\sqrt{\nu\pi}} \nu^{-\frac{\nu+1}{2}}  \left(\frac{\left( \mu -\frac{\bar{x}+\bar{y}+2\xi}{2} \right)^2}{\sigma^2\nu} +1\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
+= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \int  \left( \left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2 +\sigma^2\nu\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
+= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \int  \left( \sigma^2\nu \left( \frac{\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2}{\sigma^2\nu} +1\right)\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
+= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n} \int  (\sigma^2\nu)^{-\frac{\nu+1}{2}}  \left(\frac{\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2}{\sigma^2\nu} +1\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
+= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n}{\sigma^2}^{-\frac{\nu+1}{2}} \int  \nu^{-\frac{\nu+1}{2}}  \left(\frac{\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2}{\sigma^2\nu} +1\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
+= & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n}{\sigma^2}^{-\frac{\nu+1}{2}}  \frac{\Gamma(\frac{\nu}{2})\sigma\sqrt{\nu\pi}}{\Gamma(\frac{\nu+1}{2})} \int \frac{\Gamma(\frac{\nu+1}{2})}{\Gamma(\frac{\nu}{2})\sigma\sqrt{\nu\pi}} \nu^{-\frac{\nu+1}{2}}  \left(\frac{\left( \mu -\frac{\bar{x}+\bar{y}}{2} \right)^2}{\sigma^2\nu} +1\right)^{-\frac{\nu+1}{2}} d\mu \ d\xi\\
 = & \displaystyle \int\frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} 2^{-n}{\sigma^2}^{-\frac{\nu+1}{2}}  \frac{\Gamma(\frac{\nu}{2})\sigma\sqrt{\nu\pi}}{\Gamma(\frac{-\nu+1}{2})} d\xi\\
 = & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \sigma {\sigma^2}^{-\frac{\nu+1}{2}} d\xi\\
 = & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \sigma {\sigma}^{-\nu-1} d\xi\\
@@ -1572,37 +1568,137 @@ $$
 $$
 $$
 \begin{array}{rl}
-= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \sqrt{\frac{\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}}{\nu}}^{-\nu} d\xi\\
-= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}}{\nu}\right)^{-\frac{\nu}{2}} d\xi\\
-= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{\nu}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-\frac{\nu}{2}} d\xi\\
-= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{\nu}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{\frac{-2n+1}{2}} d\xi\\
-= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{\nu}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
-= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{\nu}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
-= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{2n-1}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
-= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-n+\frac{1}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
-= & \frac{\Gamma(\frac{\nu}{2})\nu^n\sqrt{\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \sqrt{\frac{\frac{1}{4}\left( 2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}}{\nu}}^{-\nu} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{\frac{1}{4}\left( 2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}}{\nu}\right)^{-\frac{\nu}{2}} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{\nu}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( 2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-\frac{\nu}{2}} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{\nu}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( 2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{\frac{-2n+1}{2}} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{\nu}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{\nu}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-\frac{2n-1}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\sqrt{\nu\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})\nu^{-n+\frac{1}{2}}} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
+= & \frac{\Gamma(\frac{\nu}{2})\nu^n\sqrt{\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi\\
 \end{array}
 $$
 
 Ahora usaremos el resultado obtenido en el ejercicio 2.21, sustituyendolo con el último resultado en el factor de bayes, tenemos:
 $$
 \begin{array}{rl}
-B_{01}^\pi & = \frac{\frac{\nu^{n} \sqrt{\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{2^{n}\Bigg\{\sqrt{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}   \Bigg\}^{2n-1}\Gamma\bigg(\frac{\nu+1}{2}\bigg)}}{\frac{\Gamma(\frac{\nu}{2})\nu^n\sqrt{\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi}\\ 
-B_{01}^\pi & = \frac{\frac{1}{\left(\sqrt{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}   \right)^{2n-1}}}{\displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi}\\ 
-B_{01}^\pi & = \frac{\left(\sqrt{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}} \right)^{-2n+1}}{\displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi}
+B_{01}^\pi & = \frac{\frac{\nu^{n} \sqrt{\pi}\ \Gamma\big(\frac{\nu}{2}\big)}{2^{n}\Bigg\{\sqrt{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}   \Bigg\}^{2n-1}\Gamma\bigg(\frac{\nu+1}{2}\bigg)}}{\frac{\Gamma(\frac{\nu}{2})\nu^n\sqrt{\pi}}{2^{n}\Gamma(\frac{\nu+1}{2})} \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( 2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi}\\ 
+B_{01}^\pi & = \frac{\frac{1}{\left(\sqrt{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}}   \right)^{2n-1}}}{\displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi}\\
+B_{01}^\pi & = \frac{\left(\sqrt{\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2}} \right)^{-2n+1}}{\displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi}
 \end{array}
 $$
 
 $$
 \begin{array}{rl}
-B_{01}^\pi & = \frac{\left(\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2} \right)^{-n+\frac{1}{2}}}{\displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left( \bar{x}+\bar{y}+2\xi\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi}\\
-B_{01}^\pi & = \frac{\left(\frac{1}{4}\right)^{-n+\frac{1}{2}} \left((\bar{x}-\bar{y})^2+2S^2 \right)^{-n+\frac{1}{2}}}{\displaystyle \left(\frac{1}{4}\right)^{-n+\frac{1}{2}} \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\left( \bar{x}+\bar{y}+2\xi\right)^2 +2S^2\right)^{-n+\frac{1}{2}} d\xi}\\ 
-B_{01}^\pi & = \displaystyle\frac{\left((\bar{x}-\bar{y})^2+2S^2 \right)^{-n+\frac{1}{2}}}{ \displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\left( \bar{x}+\bar{y}+2\xi\right)^2 +2S^2\right)^{-n+\frac{1}{2}} d\xi}
-\end{array} 
+B_{01}^\pi & = \frac{\left(\frac{(\bar{x}-\bar{y})^2}{4}+\frac{S^2}{2} \right)^{\frac{-2n+1}{2}}}{\displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4}\left(2\xi-\bar{y}+\bar{x}\right)^2 +\frac{S^2}{2}\right)^{-n+\frac{1}{2}} d\xi}\\
+B_{01}^\pi & =  \frac{\left(\frac{1}{4}\left( (\bar{x}-\bar{y})^2+2S^2\right) \right)^{\frac{-2n+1}{2}}}{\displaystyle \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left(\frac{1}{4} \left( \left(2\xi-\bar{y}+\bar{x}\right)^2 +2S^2\right) \right)^{-n+\frac{1}{2}} d\xi}\\
+B_{01}^\pi & = \frac{\frac{1}{4}^{\frac{-2n+1}{2}}\left((\bar{x}-\bar{y})^2+2S^2\right)^{\frac{-2n+1}{2}}}{\displaystyle \frac{1}{4}^{\frac{-2n+1}{2}} \int  \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} \left( \left(2\xi-\bar{y}+\bar{x}\right)^2 +2S^2 \right)^{-n+\frac{1}{2}} d\xi}\\
+B_{01}^\pi & = \frac{\left[(\bar{x}-\bar{y})^2+2S^2\right]^{\frac{-2n+1}{2}}}{\displaystyle \int   \left( \left(2\xi+\bar{x}-\bar{y}\right)^2 +2S^2 \right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi}\\
+\end{array}
 $$
 
 Así considerando la integral en el denominador de la expresión anterior, podemos usar el método de Monte Carlo para selecionar las funciones $g$ y $h$, la primera está asociada con una distribución normal estandar, es decir $g \sim N(0, 1)$.
 
+Mientras que $h$ viene dada mediante la siguiente expresión
+$$\left[ \left(2\xi+\bar{x}-\bar{y}\right)^2 +2S^2 \right]^{-n+\frac{1}{2}} $$
+Para dos submuestras seleccionadas del archivo `MBdata`, tenemos lo siguiente,
+$$\bar{x} = 0.0888 \ \ \bar{y} = 0.1078 \ \ S^2 = 0.00875$$
+
+Luego para obtener un estimador del factor $B_{01}^{\pi}$ simulamos una muestra de los $\xi_i$ , tal que $\xi_i \sim \mathcal{N}(0, 1)$, para $(i = 1,...,1000)$, así tenemos lo siguiente,
+
+$$\hat{B_{01}^\pi}=\frac{\left[(\bar{x}-\bar{y})^2+2S^2\right]^{\frac{-2n+1}{2}}}{\frac{1}{1000}\sum_{i=1}^{1000}
+\left( \left(2\xi_i+\bar{x}-\bar{y}\right)^2 +2S^2 \right)^{-n+\frac{1}{2}} }$$
+
+El resultado de esta aproximación arroja el valor de $24.6$.
+
+```{r}
+#NO me da el resultado del libro
+n<-1000
+xi <-rnorm(n)
+x_b <- 0.0888
+y_b <- 0.1078
+s_2 <- 0.00875
+
+numerador<-( (x_b-y_b)^2 + (2*s_2) )^(-n+(1/2))
+denominador<-( (2*xi +x_b-y_b)^2 + (2*s_2) )^(-n+(1/2))
+
+B_01 <- numerador/((1/n)*(sum(denominador)))
+
+B_01
+```
+
+Dicho valor nos dice que la hipótesis $H_0$ es mucho más probable que la hipótesis alternativa $H_1 :\mu_x \ne \mu_y$. Cabe destacar que si se usa una normal $\mathcal{N}(0, 0.01)$ en lugar de la priori utilizada, el valor aproximado es de $1.766$, lo cual reduce considerablemente el argumento en favor a $H_0$
+ 
+Obviamente el estimador de Monte Carlo de $J$ no es exacto, pero generando un número suficientemente grande de variables aleatorias se puede hacer que este error de aproximación sea arbitrariamente pequeño en un sentido probabilistico adecuado. De hecho es posible evaluar este error, si se cumple que,
+$$\int |h(x)|^2 g(x)dx < \infty$$
+
+El teorema central del límite muestra que $\sqrt{n}|\hat{J}-J|$ esta normalmente distribuido, y este hecho se puede usar para construir intervalos de confianza asintóticos para el estimador $\hat{J_n}$, estimando la varianza asintótica de los resultados simulados.
+
+Para la aproximación de $B_{01}^\pi$, la variación es ilustrada en la figura 1, como se puede observar, el valor de 24.6 obtenido antes se ubica en el centro del rango de los posibles valores. Sin embargo la desviación estandar observada 19.5, muestra que se podrían haber obtenido valores bastante diferentes, aunque todos en favor de la hipótesis nula. La forma del histograma nos indica que la normalidad prometida por el teorema central de Límite todavía no se ha alcanzado.
+
+HACER HISTOGRAMA.
+
+### Ejercicio 2.22
+
+**Aproxime el factor $B_{01}$ mediante el método de Monte Carlo donde $B_{01}^\pi$ se obtiene a partir de la simulación de una distribución t-Student de media $\frac{(\bar{x}+\bar{y})}{2}$ y varianza aproximada, y el intengrando es proporcional a $e^{-\frac{\xi^2}{2}}$. Comparar la precisión del estimador obtenido con la aproximación basada en la simulación normal.**
+$$
+\begin{array}{rl}
+& \displaystyle \int \left( \left(2\xi+\bar{x}-\bar{y}\right)^2 +2S^2 \right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi\\
+& = \displaystyle \int \left(2\left( \frac{\left(2\xi+\bar{x}-\bar{y}\right)^2}{2} +S^2\right) \right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi\\
+& = \displaystyle 2^{-n+\frac{1}{2}} \int  \left( \frac{\left(2 \left( \xi+\frac{\bar{x}-\bar{y}}{2}\right) \right)^2}{2} +S^2\right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi
+\end{array}
+$$
+
+La integral de interés es:
+$$
+\begin{array}{rl}
+& \displaystyle \int  \left( \frac{\left(2 \left( \xi+\frac{\bar{x}-\bar{y}}{2}\right) \right)^2}{2} +S^2\right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi\\
+& = \displaystyle \int \left( s^2 \left( \frac{4\left( \xi+\frac{\bar{x}-\bar{y}}{2}\right)^2}{2s^2} +1\right)\right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi\\
+& = \displaystyle \int (s^2)^{-n+\frac{1}{2}} \left( \frac{4\left( \xi+\frac{\bar{x}-\bar{y}}{2}\right)^2}{2s^2} +1\right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi\\
+& = \displaystyle  (s^2)^{-n+\frac{1}{2}} \int \left( \frac{4(n-1)\left( \xi+\frac{\bar{x}-\bar{y}}{2}\right)^2}{2(n-1)s^2} +1\right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi\\
+& = \displaystyle  (s^2)^{-n+\frac{1}{2}} \int \left( \frac{4(n-1)\left( \xi+\frac{\bar{x}-\bar{y}}{2}\right)^2}{(2n-2)s^2} +1\right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi\\
+& = \displaystyle  (s^2)^{-n+\frac{1}{2}} \int \left( \frac{\left( \xi+\frac{\bar{x}-\bar{y}}{2}\right)^2}{(2n-2)\frac{s^2}{4(n-1)}} +1\right)^{-n+\frac{1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi\\
+& = \displaystyle (s^2)^{-n+\frac{1}{2}}\frac{\Gamma(\frac{\nu}{2})\sigma\sqrt{\nu\pi}}{\Gamma(\frac{\nu+1}{2})}  \int \frac{\Gamma(\frac{\nu+1}{2})}{\Gamma(\frac{\nu}{2})\sigma\sqrt{\nu\pi}} \left( \frac{\left( \xi+\mu\right)^2}{\nu\sigma^2} +1\right)^{-\frac{\nu+ 1}{2}} \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi
+\end{array}
+$$
+
+Donde $\nu=2n-2$, $\mu=\frac{\bar{x}-\bar{y}}{2}$, $\sigma^2=\frac{s^2}{4(n-1)}$ y $C=(s^2)^{-n+\frac{1}{2}}\frac{\Gamma(\frac{\nu}{2})\sigma\sqrt{\nu\pi}}{\Gamma(\frac{\nu+1}{2})}$
+
+De la que tenemos que 
+$$
+\begin{array}{rl}
+& = \displaystyle C \int t(\xi|\mu,\nu,\sigma^2) \frac{e^{-\frac{\xi^2}{2}}}{\sqrt{2\pi}} d\xi
+\end{array}
+$$
+
+Nótese que el denominador de $C$ es la constante normalizadora obtenida en el ejercicio 2.21. Luego de estos cálculos podemos simular una muestra $\xi_1,...,\xi_n$ a partir de la distribución $t(\xi|\mu,\nu,\sigma^2)$ y así aproximar
+el valor de la integral antes descrita, mediante el siguiente promedio,
+$$\frac{C}{n}\sum_{i=1}^n \frac{e^{\frac{-\xi^2}{2}}}{\sqrt{2\pi}}$$
+
+Una importante característica ilustrada por el ejercicio anterior, es que para la aproximación de $J$ mediante el método de Monte Carlo no es necesario simular directamente sobre $g$. De hecho, $J$ puede ser representada de muchas maneras,
+$$J =\int \frac{h(x)g(x)}{\gamma(x)}dx \ \ \ \ (1)$$
+donde $\gamma$ es otra densidad. Por lo tanto, la generación de una muestra proveniente de $\gamma$, nos puede proveer de una aproximación de $J$ si se utiliza la función $\frac{h(x)g(x)}{\gamma(x)}$. Este método es conocido como muestreo de importancia y se aplica en una generalización muy amplia.
+
+Mientras que la ecuación (1) es cierta para cualquier densidad $\gamma$ con un soporte mayor que el de $g$, el comportamiento del promedio empírico $J_n$ puede deteriorarse considerablemente, cuando el valor $\left|\frac{h(x)g(x)}{\gamma(x)}\right|$ no es acotado, ya que esto puede ocasionar que el estimador resultante tenga
+varianza ifinita. Cuando usamos un muestreo de importancia uno podría siempre tomar atención de la potencia de la varianza infinita.
+
+Un incentivo adicional al usar el muestreo de importancia es que este método no requiere que la función $g$ sea completamente conocida, basta con solo conocer una constante normalizadora, $g(x)\propto \tilde{g}(x)$, de esta manera la siguiente expresión,
+$$\frac{\sum_{i=1}^n h(x_i)\tilde{g}(x_i)/\gamma(x_i)}{\sum_{i=1}^n \tilde{g}(x_i)/\gamma(x_i)}$$
+
+también converge a $J$ cuando $n$ tiende a infinito y cuando los $x_i$ son generados a partir de $\gamma$.
+
+El algoritmo para el muestreo de importancia se presenta acontinuación,
+
+- Para $i = 1,..., n$
+
+1) Simular $x_i\sim \gamma(x)$
+ 
+2) Calcular $\omega_i = \tilde{g}(x_i)/\gamma(x_i)$
+ 
+- Tomar $\hat{J_n} = \frac{\sum_{i=1}^n \omega_i h(x_i) }{\sum_{i=1}^n \omega_i}$ para aproximar $J$.
+
+Ya que existe un grado adicional de libertad en la selección de $\gamma$, la simulación de esta distribución puede ser impuesta y bajo ciertos ajustes, es posible elegir los valores $g(x_i)/\gamma(x_i)$ para que sean faciles de calcular.
 
 
 
